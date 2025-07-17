@@ -23,7 +23,20 @@ const BlogOverview = async () => {
       </div>
       <div className="flex flex-col gap-5 mt-8">
         {postOverview.docs.map((post) => (
-          <BlogCard key={post.id} post={post} />
+          <BlogCard
+            key={String(post.id)}
+            post={{
+              ...post,
+              id: String(post.id),
+              tags:
+                post.tags
+                  ?.filter((tag: any) => tag && tag.id != null)
+                  .map((tag: any) => ({
+                    ...tag,
+                    id: tag.id ?? undefined,
+                  })) ?? [],
+            }}
+          />
         ))}
       </div>
       <div className="flex justify-end pl-3 mt-10">
