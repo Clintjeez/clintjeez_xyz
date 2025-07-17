@@ -29,6 +29,9 @@ importers:
       '@tailwindcss/postcss':
         specifier: ^4.1.11
         version: 4.1.11
+      '@types/matter-js':
+        specifier: ^0.19.8
+        version: 0.19.8
       date-fns:
         specifier: ^4.1.0
         version: 4.1.0
@@ -1730,6 +1733,9 @@ packages:
 
   '@types/lodash@4.17.19':
     resolution: {integrity: sha512-NYqRyg/hIQrYPT9lbOeYc3kIRabJDn/k4qQHIXUpx88CBDww2fD15Sg5kbXlW86zm2XEW4g0QxkTI3/Kfkc7xQ==}
+
+  '@types/matter-js@0.19.8':
+    resolution: {integrity: sha512-W2ZWG58Lijv/4v768NgpeyFqqiOyslmAU7qqM1Lhz4XBoUgGtZtPz4CjcOKYtqHIak14dvPldslQhltqLTWwsw==}
 
   '@types/mdast@4.0.4':
     resolution: {integrity: sha512-kGaNbPh1k7AFzgpud/gMdvIm5xuECykRR+JnWKQno9TAXVa6WIVCGTPvYGekIDL4uwCZQSYbUxNBSb1aUo79oA==}
@@ -6601,6 +6607,8 @@ snapshots:
   '@types/json5@0.0.29': {}
 
   '@types/lodash@4.17.19': {}
+
+  '@types/matter-js@0.19.8': {}
 
   '@types/mdast@4.0.4':
     dependencies:
