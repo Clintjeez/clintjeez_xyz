@@ -1,16 +1,7 @@
-// import { getBlogPostsBySlug } from '@/app/lib/notion';
-// import { RenderBlock } from '@/app/components/RenderBlock';
 import { payloadData } from '@/app/lib/payload'
 import Link from 'next/link'
 import { PiCalendarDotsLight } from 'react-icons/pi'
-import { FaRegClock, FaTags } from 'react-icons/fa'
-import { IoShareOutline } from 'react-icons/io5'
-import { GoCopy } from 'react-icons/go'
-// import {
-//   calculateReadTime,
-//   getPostContent,
-//   getGoogleDriveImageUrl,
-// } from '@/app/lib/utils';
+import { FaRegClock } from 'react-icons/fa'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { format } from 'date-fns'
@@ -30,7 +21,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
           equals: slug,
         },
       },
-      depth: 2, // Include related data like cover image and author
+      depth: 2,
     })
 
     if (!post || !post.docs || post.docs.length === 0) {
@@ -40,7 +31,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
     const postData = post.docs[0]
     const readTime = calculatePostReadTime(postData)
 
-    // Ensure dates are serialized as strings
     const publishedDate = postData.publishedDate
       ? new Date(postData.publishedDate).toISOString()
       : null
