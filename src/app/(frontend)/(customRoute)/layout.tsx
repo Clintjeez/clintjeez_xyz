@@ -1,6 +1,6 @@
 'use client'
 import React, { ReactNode } from 'react'
-import Resources from '../(mainRoute)/resources/page'
+
 import '../globals.css'
 import Navbar from '../components/Navbar'
 

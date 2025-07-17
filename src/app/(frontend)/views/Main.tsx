@@ -1,7 +1,4 @@
 import React from 'react'
-
-import ResourceCta from '../components/ResourceCta'
-
 import BlogOverview from './BlogOverview'
 import ProjectsOverview from './ProjectsOverview'
 
@@ -10,7 +7,6 @@ const Main = () => {
     <div id="home" className="p-8">
       <ProjectsOverview />
       <BlogOverview />
-      {/* <ResourceCta /> */}
     </div>
   )
 }
