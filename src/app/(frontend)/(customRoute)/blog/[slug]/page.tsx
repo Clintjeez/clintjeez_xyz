@@ -9,8 +9,12 @@ import { ShareButton } from '../../../components/ShareButton'
 import RichTextRenderer from '../../../components/RichTextRenderer'
 import { calculatePostReadTime, formatReadTime } from '../../../lib/utils'
 
-export default async function Page({ params }: { params: { slug: string } }) {
-  const { slug } = params
+interface PageProps {
+  params: Promise<{ slug: string }>
+}
+
+export default async function Page({ params }: PageProps) {
+  const { slug } = await params
 
   try {
     const payload = await payloadData()
