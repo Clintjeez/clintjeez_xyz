@@ -2,8 +2,8 @@ import React, { useEffect, useState, useRef } from 'react'
 import Matter from 'matter-js'
 
 const STATIC_DENSITY = 15
-const PARTICLE_SIZE = 6
-const PARTICLE_BOUNCYNESS = 0.9
+// const PARTICLE_SIZE = 6
+// const PARTICLE_BOUNCYNESS = 0.9
 
 const wordsToDisplay: string[] = [
   'JavaScript',
@@ -15,12 +15,11 @@ const wordsToDisplay: string[] = [
   'Web3',
   'Solidity',
   'Rust',
+  'N8N',
+  'AI',
+  'SAAS',
+  'Automation',
 ]
-
-interface Word {
-  body: Matter.Body
-  word: string
-}
 
 const getRandomColor = () => {
   const letters = '0123456789ABCDEF'
@@ -39,14 +38,14 @@ const FallingWordsCanvas: React.FC = () => {
   const [scene, setScene] = useState<Matter.Render | undefined>()
 
   useEffect(() => {
-    let Engine = Matter.Engine
-    let Render = Matter.Render
-    let World = Matter.World
-    let Bodies = Matter.Bodies
-    let Runner = Matter.Runner
+    const Engine = Matter.Engine
+    const Render = Matter.Render
+    const World = Matter.World
+    const Bodies = Matter.Bodies
+    const Runner = Matter.Runner
 
-    let engine = Engine.create({})
-    let render = Render.create({
+    const engine = Engine.create({})
+    const render = Render.create({
       element: boxRef.current!,
       engine: engine,
       canvas: canvasRef.current!,
@@ -81,7 +80,7 @@ const FallingWordsCanvas: React.FC = () => {
 
   useEffect(() => {
     if (constraints && scene) {
-      let { width, height } = constraints
+      const { width, height } = constraints
 
       // Dynamically update canvas and bounds
       scene.bounds.max.x = width
@@ -111,7 +110,7 @@ const FallingWordsCanvas: React.FC = () => {
 
   useEffect(() => {
     if (scene && constraints) {
-      let { width } = constraints
+      const { width } = constraints
 
       // Create falling words
       for (let i = 0; i < wordsToDisplay.length; i++) {
