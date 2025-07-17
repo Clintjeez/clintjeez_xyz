@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
+import type { JSX } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { CodeBlock } from './RenderBlock/CodeBlock'
@@ -152,7 +153,11 @@ const RichTextRenderer: React.FC<RichTextRendererProps> = ({ content, className 
           h6: 'text-xs md:text-sm font-bold mb-1 mt-2',
         }
 
-        const HeadingTag = headingLevel as keyof JSX.IntrinsicElements
+        // Ensure headingLevel is always a valid heading string (h1-h6)
+        const validHeadings = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'] as const
+        const HeadingTag = (
+          validHeadings.includes(headingLevel as any) ? headingLevel : 'h2'
+        ) as keyof JSX.IntrinsicElements
         return (
           <HeadingTag
             key={index}
@@ -316,19 +321,20 @@ const RichTextRenderer: React.FC<RichTextRendererProps> = ({ content, className 
 
       case 'upload':
         // PayloadCMS rich text 'upload' node for images
-        if (node.value && typeof node.value === 'object' && node.value.url) {
+        if (node.value && typeof node.value === 'object' && 'url' in node.value) {
+          const value = node.value as { url: string; alt?: string; width?: number; height?: number }
           return (
             <figure key={index} className="my-4 md:my-6">
               <ImageWithFallback
-                src={node.value.url}
-                alt={node.value.alt || ''}
-                width={node.value.width || 800}
-                height={node.value.height || 400}
+                src={value.url}
+                alt={value.alt || ''}
+                width={value.width || 800}
+                height={value.height || 400}
                 className="w-full h-auto rounded-lg"
               />
-              {node.value.alt && (
+              {value.alt && (
                 <figcaption className="text-center text-xs md:text-sm text-gray-400 mt-2">
-                  {node.value.alt}
+                  {value.alt}
                 </figcaption>
               )}
             </figure>
