@@ -1,6 +1,6 @@
 name = "clintjeez-portfolio"
 compatibility_date = "2025-07-18"
-compatibility_flags = ["nodejs_compact"]
+compatibility_flags = ["nodejs_compat"]
 
-main = ".worker-next/index.mjs"
-assets = { directory = ".worker-next/assets", binding = "ASSETS"}
+main = ".open-next/server-functions/default/index.mjs"
+assets = { directory = ".open-next/assets", binding = "ASSETS"}

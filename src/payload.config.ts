@@ -35,7 +35,7 @@ export default buildConfig({
       connectionString: process.env.POSTGRES_URL || '',
     },
   }),
-  sharp,
+  // sharp,
   plugins: [
     payloadCloudPlugin(),
     // storage-adapter-placeholder
