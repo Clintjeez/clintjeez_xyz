@@ -1,0 +1,6 @@
+name = "clintjeez-portfolio"
+compatibility_date = "2025-07-18"
+compatibility_flags = ["nodejs_compact"]
+
+main = ".worker-next/index.mjs"
+assets = { directory = ".worker-next/assets", binding = "ASSETS"}
