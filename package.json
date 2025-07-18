@@ -15,6 +15,7 @@
     "start": "cross-env NODE_OPTIONS=--no-deprecation next start",
     "build:worker": "cloudflare",
     "dev:worker": "wrangler dev --port 8771",
+    "preview:worker": "npm run build:worker && npm run dev:worker",
     "deploy:worker": "npm run build:worker && wrangler deploy"
   },
   "dependencies": {
@@ -53,7 +54,8 @@
     "mini-css-extract-plugin": "^2.9.2",
     "postcss": "^8.5.6",
     "prettier": "^3.4.2",
-    "typescript": "5.7.3"
+    "typescript": "5.7.3",
+    "wrangler": "^4.25.0"
   },
   "engines": {
     "node": "^18.20.2 || >=20.9.0",
