@@ -1,1 +1,0 @@
-{"type":"route","meta":{"status":200,"headers":{"content-type":"application/json","x-next-cache-tags":"_N_T_/layout,_N_T_/my-route/layout,_N_T_/my-route/route,_N_T_/my-route"}},"body":"{\"message\":\"This is an example of a custom route.\"}"}
