@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import type { JSX } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -47,6 +47,17 @@ interface RichTextRendererProps {
   className?: string
 }
 
+// Client-side hydration check
+function useIsClient() {
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  return isClient
+}
+
 // Subcomponent for images with error fallback
 const ImageWithFallback: React.FC<{
   src: string
@@ -77,6 +88,12 @@ const ImageWithFallback: React.FC<{
 }
 
 const RichTextRenderer: React.FC<RichTextRendererProps> = ({ content, className = '' }) => {
+  const isClient = useIsClient()
+
+  // Prevent hydration mismatch by not rendering until client-side
+  if (!isClient) {
+    return <div className={className}>Loading...</div>
+  }
   if (!content) {
     console.log('RichTextRenderer: No content provided')
     return null
