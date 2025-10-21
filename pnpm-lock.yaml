@@ -77,6 +77,9 @@ importers:
       sass:
         specifier: ^1.93.2
         version: 1.93.2
+      sharp:
+        specifier: ^0.34.4
+        version: 0.34.4
       tailwindcss:
         specifier: ^4.1.11
         version: 4.1.11
@@ -7589,8 +7592,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@img/colour@1.0.0':
-    optional: true
+  '@img/colour@1.0.0': {}
 
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
@@ -9880,8 +9882,7 @@ snapshots:
 
   detect-libc@2.0.4: {}
 
-  detect-libc@2.1.2:
-    optional: true
+  detect-libc@2.1.2: {}
 
   devlop@1.1.0:
     dependencies:
@@ -12226,7 +12227,6 @@ snapshots:
       '@img/sharp-win32-arm64': 0.34.4
       '@img/sharp-win32-ia32': 0.34.4
       '@img/sharp-win32-x64': 0.34.4
-    optional: true
 
   shebang-command@2.0.0:
     dependencies:
