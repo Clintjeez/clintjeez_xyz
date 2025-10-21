@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import "tailwindcss";
+
+* {
+  font-family: 'Roboto Mono', monospace;
+  font-optical-sizing: auto;
+}
+
+body {
+  background-color: #17181d;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+
+.bg-wrapper {
+  z-index: -1;
+  background-color: #222326;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.bg-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  opacity: 1;
+  will-change: background, opacity;
+  transition-duration: 400ms;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: opacity;
+  background-image: radial-gradient(600px at var(--cursor-x) var(--cursor-y),
+      rgba(255, 254, 241, 0.15),
+      transparent 40%);
+  background-size: auto;
+  background-origin: padding-box;
+  z-index: 1;
+}
+
+.bg-tiles {
+  z-index: 1;
+  background-image: url('/tile_bg.svg');
+  background-position: 50% 0;
+  background-repeat: repeat;
+  background-size: 142px 71px;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+
+.glassmorphism-bg {
+  border: 1px solid #1d1d21;
+  background-color: #282c34;
+  background: linear-gradient(0deg,
+      rgba(40, 44, 52, 1) 0%,
+      rgba(40, 39, 41, 0.5) 80%);
+  box-shadow: 0 7px 15px 5px #28282856;
+  border-radius: 0.7rem;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  transition: 0.5s all;
+  overflow: hidden;
+}
+
+.glassmorphism-bg::before {
+  position: fixed;
+  content: '';
+  box-shadow: 0 0 100px 40px #ffffff08;
+  top: -10%;
+  left: -100%;
+  transform: rotate(-45deg);
+  height: 60rem;
+  transition: 0.9s all;
+}
+
+.glassmorphism-bg:hover {
+  border: 1px solid #ffffff44;
+  box-shadow: 0 7px 50px 10px #000000aa;
+  transform: scale(1.01);
+}
+
+.glassmorphism-bg:hover::before {
+  top: -100%;
+  left: 200%;
+}
+
+#projects>#hero {
+  display: none;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fafafa !important;
+  margin-top: 20px !important;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #777778 !important;
+}
+
+.circle-gradient-bg {
+  background: rgba(237, 216, 110, 0.274);
+  background: radial-gradient(circle, rgba(237, 216, 110, 0.156) 26%, rgba(27, 28, 33, 0.3799894957983193) 100%);
+}
