@@ -432,6 +432,23 @@ export interface CodeBlock {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "MarkdownBlock".
+ */
+export interface MarkdownBlock {
+  /**
+   * Write your content using Markdown syntax. Supports GitHub Flavored Markdown (GFM).
+   */
+  content: string;
+  /**
+   * Allow HTML tags in markdown (will be sanitized for security).
+   */
+  enableHTML?: boolean | null;
+  id?: string | null;
+  blockName?: string | null;
+  blockType: 'markdown-block';
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "auth".
  */
 export interface Auth {

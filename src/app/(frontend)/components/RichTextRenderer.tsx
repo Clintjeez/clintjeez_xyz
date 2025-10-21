@@ -5,6 +5,7 @@ import type { JSX } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { CodeBlock } from './RenderBlock/CodeBlock'
+import { MarkdownBlock } from './RenderBlock/MarkdownBlock'
 
 interface RichTextNode {
   type: string
@@ -38,6 +39,8 @@ interface RichTextNode {
     prompt?: string
     text?: string
     markdown?: any
+    content?: string
+    enableHTML?: boolean
   }
   id?: string
 }
@@ -253,6 +256,16 @@ const RichTextRenderer: React.FC<RichTextRendererProps> = ({ content, className 
             >
               {node.fields.code || ''}
             </CodeBlock>
+          )
+        }
+        // Check if this is a markdown block from PayloadCMS
+        if (node.fields?.blockType === 'markdown-block') {
+          return (
+            <MarkdownBlock
+              key={index}
+              content={node.fields.content || ''}
+              enableHTML={node.fields.enableHTML}
+            />
           )
         }
         // Optionally handle other custom blocks here

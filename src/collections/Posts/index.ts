@@ -1,6 +1,6 @@
 import type { CollectionConfig } from 'payload'
 import { lexicalEditor, BlocksFeature } from '@payloadcms/richtext-lexical'
-import { Code } from '@/blocks'
+import { Code, Markdown } from '@/blocks'
 
 export const Posts: CollectionConfig = {
   slug: 'posts',
@@ -44,7 +44,7 @@ export const Posts: CollectionConfig = {
         features: ({ defaultFeatures }) => [
           ...defaultFeatures,
           BlocksFeature({
-            blocks: [Code],
+            blocks: [Code, Markdown],
           }),
         ],
       }),
