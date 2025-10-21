@@ -25,7 +25,6 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({
 }) => {
   const codeRef = useRef<HTMLElement>(null)
   const [copied, setCopied] = useState(false)
-
   useEffect(() => {
     if (codeRef.current) {
       hljs.highlightElement(codeRef.current)
@@ -117,9 +116,7 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({
 
           {/* Filename */}
           {filename && (
-            <span className="text-xs md:text-sm text-gray-400 font-mono truncate">
-              {filename}
-            </span>
+            <span className="text-xs md:text-sm text-gray-400 font-mono truncate">{filename}</span>
           )}
         </div>
 
