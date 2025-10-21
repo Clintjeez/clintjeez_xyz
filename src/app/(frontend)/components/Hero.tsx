@@ -4,14 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import clintPhoto from '../../../../public/clinton.png'
 
-import {
-  FaGithubSquare,
-  FaLinkedin,
-  FaMedium,
-  FaEnvelope,
-  FaTelegram,
-  FaRegCalendarCheck,
-} from 'react-icons/fa'
+import { FaGithubSquare, FaLinkedin, FaMedium, FaEnvelope } from 'react-icons/fa'
 import { FaSquareXTwitter } from 'react-icons/fa6'
 import ProfileCard from './ProfileCard'
 import Navbar from './Navbar'
@@ -60,11 +53,11 @@ const Hero = () => {
             Hi! I&apos;m <span className="font-bold text-[#bfbfbf]">Clinton James 👋🏽</span>
           </h1>
           <p className="text-[#777778] text-[16px] lg:text-[23px] text-left mt-5">
-            <span className="text-[#bfbfbf]">software engineer</span> building digital products and
+            <span className="text-[#bfbfbf]">solutions engineer</span> building digital products and
             collaborating with teams to solve complex problems while exploring{' '}
+            <span className="text-[#bfbfbf] underline italic">AI</span>,{' '}
             <span className="text-[#bfbfbf] underline italic">Blockchain</span>,{' '}
-            <span className="text-[#bfbfbf] underline italic">Web3</span>,{' '}
-            <span className="text-[#bfbfbf] underline italic">AI</span> and{' '}
+            <span className="text-[#bfbfbf] underline italic">VC-Fund</span> and{' '}
             <span className="text-[#bfbfbf] underline italic">Automations</span> to create unique
             and empathic product experience.
           </p>
