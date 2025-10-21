@@ -206,6 +206,10 @@ export interface Post {
 export interface Project {
   id: number;
   title: string;
+  /**
+   * Upload a screenshot or preview image of your project
+   */
+  screenshot?: (number | null) | Media;
   projectDescription: string;
   stacks: {
     stack: string;
@@ -355,6 +359,7 @@ export interface PostsSelect<T extends boolean = true> {
  */
 export interface ProjectsSelect<T extends boolean = true> {
   title?: T;
+  screenshot?: T;
   projectDescription?: T;
   stacks?:
     | T

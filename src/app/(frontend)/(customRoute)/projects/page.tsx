@@ -6,6 +6,7 @@ const Projects = async () => {
     await payloadData()
   ).find({
     collection: 'projects',
+    depth: 1,
   })
   return (
     <section className="px-8 pt-8 pb-28">

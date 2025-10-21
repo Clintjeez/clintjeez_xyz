@@ -13,6 +13,16 @@ export const Projects: CollectionConfig = {
       label: 'Project Title',
     },
     {
+      name: 'screenshot',
+      type: 'upload',
+      relationTo: 'media',
+      required: false,
+      label: 'Project Screenshot',
+      admin: {
+        description: 'Upload a screenshot or preview image of your project',
+      },
+    },
+    {
       name: 'projectDescription',
       type: 'textarea',
       required: true,
