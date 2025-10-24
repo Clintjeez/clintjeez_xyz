@@ -56,6 +56,7 @@ const Hero = () => {
             <span className="text-[#bfbfbf]">Solutions engineer</span> building digital products and
             collaborating with teams to solve complex problems while exploring{' '}
             <span className="text-[#bfbfbf] underline italic">AI</span>,{' '}
+            <span className="text-[#bfbfbf] underline italic">RevOps</span>,{' '}
             <span className="text-[#bfbfbf] underline italic">Blockchain</span>, and{' '}
             <span className="text-[#bfbfbf] underline italic">Automations</span> to create unique
             and empathic product experience.
