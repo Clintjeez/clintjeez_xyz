@@ -53,11 +53,10 @@ const Hero = () => {
             Hi! I&apos;m <span className="font-bold text-[#bfbfbf]">Clinton James 👋🏽</span>
           </h1>
           <p className="text-[#777778] text-[16px] lg:text-[23px] text-left mt-5">
-            <span className="text-[#bfbfbf]">solutions engineer</span> building digital products and
+            <span className="text-[#bfbfbf]">Solutions engineer</span> building digital products and
             collaborating with teams to solve complex problems while exploring{' '}
             <span className="text-[#bfbfbf] underline italic">AI</span>,{' '}
-            <span className="text-[#bfbfbf] underline italic">Blockchain</span>,{' '}
-            <span className="text-[#bfbfbf] underline italic">VC-Fund</span> and{' '}
+            <span className="text-[#bfbfbf] underline italic">Blockchain</span>, and{' '}
             <span className="text-[#bfbfbf] underline italic">Automations</span> to create unique
             and empathic product experience.
           </p>
