@@ -2,36 +2,41 @@ import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
+const navItems = [
+  { href: '/offers', label: 'Offers' },
+  { href: '/work', label: 'Work' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/about', label: 'About' },
+]
+
 const Navbar = () => {
   const pathname = usePathname()
 
+  const isActive = (href: string) => href === '/' ? pathname === '/' : pathname.startsWith(href)
+
   return (
-    <nav className="p-8 flex gap-2 justify-between">
-      <Link href="/" className={`text-[14px] ${pathname === '/' ? 'text-[#edd86e]' : ''}`}>
+    <nav className="px-8 py-6 flex items-center justify-between text-[12px] md:text-[14px] border-b border-[#2a2a2e]">
+      <Link
+        href="/"
+        className={`font-medium tracking-wide transition-colors duration-300 hover:text-[#edd86e] ${
+          isActive('/') ? 'text-[#edd86e]' : 'text-[#bfbfbf]'
+        }`}
+      >
         ClintJeez.
       </Link>
-      <div className="flex justify-between gap-4 md:gap-5 text-[14px]">
-        <Link
-          href="/projects"
-          className={`hover:text-[#edd86e] ${pathname === '/projects' ? 'text-[#edd86e]' : ''}`}
-        >
-          Projects.
-        </Link>
-        <Link
-          href="/blog"
-          className={`hover:text-[#edd86e] ${pathname === '/blog' ? 'text-[#edd86e]' : ''}`}
-        >
-          Blog.
-        </Link>
-        {/* <Link href="/lab" className={`${pathname === '/lab' ? 'text-[#edd86e]' : ''}`}>
-          Courses.
-        </Link>
-
-        <Link href="/resources" className={`${pathname === '/resources' ? 'text-[#edd86e]' : ''}`}>
-          Resources.
-        </Link> */}
+      <div className="flex items-center gap-3 md:gap-6">
+        {navItems.map(({ href, label }) => (
+          <Link
+            key={href}
+            href={href}
+            className={`tracking-wide transition-all duration-300 border-b hover:text-[#edd86e] hover:border-[#edd86e] ${
+              isActive(href) ? 'text-[#edd86e] border-[#edd86e]' : 'text-[#c4c4c4] border-transparent'
+            }`}
+          >
+            {label}.
+          </Link>
+        ))}
       </div>
-      {/* <MobileNavBar /> */}
     </nav>
   )
 }

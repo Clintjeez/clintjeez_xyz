@@ -50,16 +50,18 @@ const Hero = () => {
             <Image src={clintPhoto} alt="clinton" className="w-[45%] shadow-xl rounded-xl" />
           </div>
           <h1 className="text-[#777778] text-left text-[18px] md:text-[20px]">
-            Hi! I&apos;m <span className="font-bold text-[#bfbfbf]">Clinton James 👋🏽</span>
+            Hi! I&apos;m <span className="font-bold text-[#bfbfbf]">Clinton James 👋🏽</span> — Growth
+            &amp; GTM Engineer
           </h1>
           <p className="text-[#777778] text-[16px] lg:text-[23px] text-left mt-5">
-            <span className="text-[#bfbfbf]">Solutions engineer</span> building digital products and
-            collaborating with teams to solve complex problems while exploring{' '}
-            <span className="text-[#bfbfbf] underline italic">AI</span>,{' '}
-            <span className="text-[#bfbfbf] underline italic">RevOps</span>,{' '}
-            <span className="text-[#bfbfbf] underline italic">Blockchain</span>, and{' '}
-            <span className="text-[#bfbfbf] underline italic">Automations</span> to create unique
-            and empathic product experience.
+            I build systems that turns your product into a revenue engine. From{' '}
+            <span className="text-[#bfbfbf] underline italic">growth engineering</span> and{' '}
+            <span className="text-[#bfbfbf] underline italic">GTM systems</span> to{' '}
+            <span className="text-[#bfbfbf] underline italic">AI automation</span> and{' '}
+            <span className="text-[#bfbfbf] underline italic">product-led growth</span> — 
+            Using code, automation, and data to create unique and empathic product experiences.
+             for SaaS founders and solopreneurs. Custom-built infrastructure that
+            acquires, converts, and retains.
           </p>
           {/* <!-- social --> */}
           <div className="flex flex-col md:flex-row md:items-center gap-10 md:gap-4 mt-8 text-[20px] text-[#c4c4c4]">
