@@ -37,8 +37,8 @@ const Hero = () => {
           <div className="flex justify-start mb-10 md:hidden">
             <Image src={clintPhoto} alt="clinton" className="w-[45%] shadow-xl rounded-xl" />
           </div>
-          <h1 className="text-[#777778] text-left text-[15px] md:text-[17px]">
-            Hi! I&apos;m <span className="font-bold text-[#bfbfbf]">Clinton James 👋🏽</span> — Growth
+          <h1 className="text-[#777778] text-left text-[15px] md:text-[20px]">
+            Hi! I&apos;m <span className="font-bold text-[#bfbfbf] md:text-[24px]">Clinton James 👋🏽</span> <br />Growth
             &amp; GTM Engineer
           </h1>
           <p className="text-[#777778] text-[14px] lg:text-[18px] text-left mt-4">
@@ -64,14 +64,13 @@ const Hero = () => {
               <Link href="https://medium.com/@clintjeez" target="_blank">
                 <FaMedium />
               </Link>
-              <Link href="mailto:clintjeez@gmail.com">
+              <Link href="mailto:hello@clintjeez.me">
                 <FaEnvelope />
               </Link>
             </div>
 
             <Link
-              target="_blank"
-              href="https://cal.com/clintonjames/15min"
+              href="/book-call"
               className="flex justify-between md:gap-6 items-center border border-[#edd86e] bg-[#17181d] hover:bg-[#484848] text-[#bfbfbf] text-[14px] md:text-[12px] font-bold px-3 py-1 rounded-md transition-all"
             >
               <span>Book a call</span>

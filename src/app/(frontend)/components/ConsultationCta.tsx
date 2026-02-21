@@ -23,12 +23,11 @@ const ConsultationCta = () => {
         Not sure where to start? Get a free growth audit.
       </h3>
       <p className="relative text-[13px] text-[#777778] leading-relaxed mb-6 md:pr-10">
-        Book a 15-minute call and I&apos;ll walk through your current stack, identify the
+        Book a 30-minute call and I&apos;ll walk through your current stack, identify the
         biggest bottleneck in your growth system, and give you a clear next step — no strings attached.
       </p>
       <Link
-        target="_blank"
-        href="https://cal.com/clintonjames/15min"
+        href="/book-call"
         className="relative inline-flex items-center gap-3 border border-[#edd86e] bg-[#17181d] hover:bg-[#484848] text-[#bfbfbf] text-[13px] font-bold px-5 py-2 rounded-md transition-all duration-300"
       >
         <span>Book a call</span>
