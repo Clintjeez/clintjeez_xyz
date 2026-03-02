@@ -2,6 +2,7 @@ import React from 'react'
 import type { Metadata } from 'next'
 import '../globals.css'
 import Hero from '../components/Hero'
+import ClientProvider from '../components/ClientProvider'
 
 export const metadata: Metadata = {
   title: 'Clinton James',
@@ -16,10 +17,12 @@ export default function MainLayout({
   return (
     <html lang="en">
       <body className="md:overflow-hidden">
-        <div className="flex flex-col md:flex-row md:h-screen md:overflow-hidden lg:overflow-hidden pb-20 md:p-0  ">
-          <Hero />
-          <div className="md:w-[58%] overflow-hidden md:overflow-scroll pb-5">{children}</div>
-        </div>
+        <ClientProvider>
+          <div className="flex flex-col md:flex-row md:h-screen md:overflow-hidden lg:overflow-hidden pb-20 md:p-0  ">
+            <Hero />
+            <div className="md:w-[58%] overflow-hidden md:overflow-scroll pb-5">{children}</div>
+          </div>
+        </ClientProvider>
         <script
           defer
           src="https://cloud.umami.is/script.js"

@@ -1,7 +1,9 @@
+'use client'
+
 import React from 'react'
-import Link from 'next/link'
 import { HiArrowLongRight } from 'react-icons/hi2'
 import ConsultationCta from '../components/ConsultationCta'
+import { useUnderConstruction } from '../components/UnderConstruction'
 import {
   TbSeo,
   TbMailBolt,
@@ -99,6 +101,8 @@ const offers = [
 ]
 
 const OffersOverview = () => {
+  const { open } = useUnderConstruction()
+
   return (
     <section className="mb-20">
       <div className="mb-16 md:mb-10">
@@ -133,13 +137,13 @@ const OffersOverview = () => {
                   </li>
                 ))}
               </ul>
-              <Link
-                href={`/offers#${offer.id}`}
-                className="inline-flex items-center gap-2 text-[12px] text-[#c4c4c4] hover:text-[#edd86e] transition-colors duration-300"
+              <button
+                onClick={open}
+                className="inline-flex items-center gap-2 text-[12px] text-[#c4c4c4] hover:text-[#edd86e] transition-colors duration-300 cursor-pointer"
               >
                 <span>Learn more</span>
                 <HiArrowLongRight className="text-[14px] transition-transform duration-300 group-hover:translate-x-1" />
-              </Link>
+              </button>
             </div>
           )
         })}
@@ -148,13 +152,13 @@ const OffersOverview = () => {
         <ConsultationCta />
       </div>
       <div className="flex justify-end pl-3 mt-10">
-        <Link
-          href="/offers"
-          className="flex items-center gap-3 text-[#777778] hover:text-[#fff] text-[16px] underline transition-colors duration-300"
+        <button
+          onClick={open}
+          className="flex items-center gap-3 text-[#777778] hover:text-[#fff] text-[16px] underline transition-colors duration-300 cursor-pointer"
         >
           <span>View all offers</span>
           <HiArrowLongRight className="text-[20px]" />
-        </Link>
+        </button>
       </div>
     </section>
   )

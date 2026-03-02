@@ -1,6 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useUnderConstruction } from './UnderConstruction'
+
+const unavailableRoutes = ['/offers', '/work', '/about']
 
 const navItems = [
   { href: '/offers', label: 'Offers' },
@@ -11,6 +14,7 @@ const navItems = [
 
 const Navbar = () => {
   const pathname = usePathname()
+  const { open } = useUnderConstruction()
 
   const isActive = (href: string) => href === '/' ? pathname === '/' : pathname.startsWith(href)
 
@@ -25,19 +29,29 @@ const Navbar = () => {
         ClintJeez.
       </Link>
       <div className="flex items-center gap-4 md:gap-7">
-        {navItems.map(({ href, label }) => (
-          <Link
-            key={href}
-            href={href}
-            className={`tracking-wide border-b pb-[2px] transition-all duration-300 ease-out hover:text-[#edd86e] hover:border-[#edd86e] ${
-              isActive(href)
-                ? 'text-[#edd86e] border-[#edd86e]'
-                : 'text-[#c4c4c4] border-transparent'
-            }`}
-          >
-            {label}.
-          </Link>
-        ))}
+        {navItems.map(({ href, label }) =>
+          unavailableRoutes.includes(href) ? (
+            <button
+              key={href}
+              onClick={open}
+              className="tracking-wide border-b pb-[2px] transition-all duration-300 ease-out hover:text-[#edd86e] hover:border-[#edd86e] cursor-pointer text-[#c4c4c4] border-transparent"
+            >
+              {label}.
+            </button>
+          ) : (
+            <Link
+              key={href}
+              href={href}
+              className={`tracking-wide border-b pb-[2px] transition-all duration-300 ease-out hover:text-[#edd86e] hover:border-[#edd86e] ${
+                isActive(href)
+                  ? 'text-[#edd86e] border-[#edd86e]'
+                  : 'text-[#c4c4c4] border-transparent'
+              }`}
+            >
+              {label}.
+            </Link>
+          )
+        )}
       </div>
     </nav>
   )

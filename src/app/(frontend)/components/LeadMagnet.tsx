@@ -5,34 +5,8 @@ import { FiDownload } from 'react-icons/fi'
 const LeadMagnet = () => {
   return (
     <div className="relative mb-14">
-      {/* Left rope — extends off-screen */}
-      <div
-        className="absolute w-[2px] bg-[#444] z-0"
-        style={{
-          top: -200,
-          bottom: '50%',
-          left: 40,
-        }}
-      />
-
-      {/* Right rope — extends off-screen */}
-      <div
-        className="absolute w-[2px] bg-[#444] z-0"
-        style={{
-          top: -200,
-          bottom: '50%',
-          right: 50,
-        }}
-      />
-
       {/* Billboard card */}
-      <section
-        className="relative overflow-hidden rounded-xl border border-[#2a2a2e] bg-[#1b1c21] p-6 shadow-xl shadow-[#00000040]"
-        style={{
-          transform: 'rotate(1.8deg)',
-          transformOrigin: 'top center',
-        }}
-      >
+      <section className="relative overflow-hidden rounded-xl border border-[#2a2a2e] bg-[#1b1c21] p-6 shadow-xl shadow-[#00000040]">
         {/* Subtle accent glow */}
         <div className="absolute -top-20 -right-20 h-40 w-40 rounded-full bg-[#edd86e] opacity-[0.04] blur-3xl" />
 
@@ -54,11 +28,11 @@ const LeadMagnet = () => {
               Free Resource
             </p>
             <h3 className="text-[#e0e0e0] text-[15px] md:text-[16px] font-bold leading-snug mb-2">
-              The Growth &amp; GTM Playbook for SaaS
+              The Growth &amp; GTM Playbook
             </h3>
             <p className="text-[12px] text-[#777778] leading-relaxed mb-4">
-              A tactical guide to building acquisition, activation, and retention systems that
-              scale — from outbound infrastructure to AI-powered automation.
+              A tactical guide to building acquisition, activation, and retention systems that scale
+              from outbound infrastructure to AI-powered automation.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3">
