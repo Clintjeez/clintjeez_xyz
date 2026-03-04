@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Excalifont';
+  src: url('/fonts/Excalifont-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --animate-marquee: marquee 25s linear infinite;
+  --font-excalifont: 'Excalifont', cursive;
 }
 
 @keyframes marquee {
@@ -14,12 +23,9 @@
   }
 }
 
-* {
+body {
   font-family: 'Roboto Mono', monospace;
   font-optical-sizing: auto;
-}
-
-body {
   background-color: #17181d;
   color: #fff;
   scroll-behavior: smooth;

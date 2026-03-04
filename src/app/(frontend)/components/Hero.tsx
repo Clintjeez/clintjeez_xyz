@@ -37,17 +37,19 @@ const Hero = () => {
           <div className="flex justify-start mb-10 md:hidden">
             <Image src={clintPhoto} alt="clinton" className="w-[45%] shadow-xl rounded-xl" />
           </div>
-          <h1 className="text-[#777778] text-left text-[15px] md:text-[20px]">
-            Hi! I&apos;m <span className="font-bold text-[#bfbfbf] md:text-[24px]">Clinton James 👋🏽</span> <br />Growth
-            &amp; GTM Engineer
+          <h1 className="font-excalifont text-[#777778] text-left text-[15px] md:text-[22px]">
+            Hey! I&apos;m{' '}
+            <span className="font-bold text-[#bfbfbf] md:text-[24px]">Clinton James </span> <br />
+            Growth &amp; GTM Engineer
           </h1>
           <p className="text-[#777778] text-[14px] lg:text-[18px] text-left mt-4">
-           I build the technical infrastructure between product and revenue. From{' '}
+            I build the technical infrastructure between product and revenue. From{' '}
             <span className="text-[#bfbfbf] underline italic">growth engineering</span> and{' '}
             <span className="text-[#bfbfbf] underline italic">GTM systems</span> to{' '}
             <span className="text-[#bfbfbf] underline italic">AI automation</span> and{' '}
-            <span className="text-[#bfbfbf] underline italic">product-led growth</span> —
-            combining code, automation, and data to acquires, converts, and retains customers for SaaS and Tech-enabled businesses.
+            <span className="text-[#bfbfbf] underline italic">product-led growth</span> — combining
+            code, automation, and data to acquires, converts, and retains customers for SaaS and
+            Tech-enabled businesses.
           </p>
           {/* <!-- social --> */}
           <div className="flex flex-col md:flex-row md:items-center gap-10 md:gap-4 mt-6 text-[18px] text-[#c4c4c4]">
