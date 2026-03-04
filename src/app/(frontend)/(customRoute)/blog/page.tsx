@@ -1,6 +1,23 @@
 import React from 'react'
+import type { Metadata } from 'next'
 import { payloadData } from '@/app/lib/payload'
 import SearchableBlogList from '../../components/SearchableBlogList'
+import { SITE_URL } from '../../lib/seo'
+
+export const metadata: Metadata = {
+  title: 'Blog',
+  description:
+    'Thoughts, guides, and experiences on growth engineering, GTM strategy, SaaS automation, and building technical infrastructure between product and revenue.',
+  alternates: {
+    canonical: `${SITE_URL}/blog`,
+  },
+  openGraph: {
+    title: 'Blog | Clinton James',
+    description:
+      'Thoughts and guides on growth engineering, GTM strategy, and SaaS automation.',
+    url: `${SITE_URL}/blog`,
+  },
+}
 
 const Blog = async () => {
   const allPost = await (

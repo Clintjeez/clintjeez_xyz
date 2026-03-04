@@ -1,28 +1,22 @@
-'use client'
+import type { Metadata } from 'next'
+import BookCallClient from './BookCallClient'
+import { SITE_URL } from '../../lib/seo'
 
-import React, { useEffect } from 'react'
-import Cal, { getCalApi } from '@calcom/embed-react'
-
-const BookCall = () => {
-   useEffect(() => {
-    (async function () {
-      const cal = await getCalApi({"namespace":"15min"});
-      cal("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#17181d","cal-bg":"#17181d","cal-bg-muted":"#17181d"},"dark":{"cal-bg":"#17181d","cal-bg-muted":"#17181d"}},"hideEventTypeDetails":false,"layout":"month_view"});
-    })();
-  }, [])
-
-
-
-  return (
-    <div className="h-full" >
-      <Cal
-        className="h-full"
-        namespace="15min"
-        calLink="clintonjames/15min"
-        config={{ layout: 'month_view' }}
-      />
-    </div>
-  )
+export const metadata: Metadata = {
+  title: 'Book a Call',
+  description:
+    'Schedule a free 15-minute consultation with Clinton James to discuss growth engineering, GTM strategy, and SaaS automation for your business.',
+  alternates: {
+    canonical: `${SITE_URL}/book-call`,
+  },
+  openGraph: {
+    title: 'Book a Call with Clinton James',
+    description:
+      'Schedule a free 15-minute consultation to discuss growth engineering and GTM strategy for your SaaS business.',
+    url: `${SITE_URL}/book-call`,
+  },
 }
 
-export default BookCall
+export default function BookCallPage() {
+  return <BookCallClient />
+}

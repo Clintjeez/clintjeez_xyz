@@ -3,10 +3,67 @@ import type { Metadata } from 'next'
 import '../globals.css'
 import Hero from '../components/Hero'
 import ClientProvider from '../components/ClientProvider'
+import {
+  SITE_URL,
+  SITE_NAME,
+  DEFAULT_DESCRIPTION,
+  DEFAULT_TITLE,
+  TWITTER_HANDLE,
+  OG_IMAGE_URL,
+} from '../lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Clinton James',
-  description: 'Software Engineer | Web3 Engineer ',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: DEFAULT_TITLE,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: DEFAULT_DESCRIPTION,
+  keywords: [
+    'Growth Engineer',
+    'GTM Engineer',
+    'SaaS Growth',
+    'Lead Generation',
+    'Product-Led Growth',
+    'Sales Automation',
+    'CRO',
+    'SEO Automation',
+    'AEO',
+    'Custom Integrations',
+  ],
+  authors: [{ name: SITE_NAME, url: SITE_URL }],
+  creator: SITE_NAME,
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    images: [
+      {
+        url: OG_IMAGE_URL,
+        width: 1200,
+        height: 630,
+        alt: 'Clinton James - Growth & GTM Engineer',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: TWITTER_HANDLE,
+    creator: TWITTER_HANDLE,
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    images: [OG_IMAGE_URL],
+  },
+  icons: {
+    icon: '/clinton.png',
+    apple: '/clinton.png',
+  },
+  alternates: {
+    canonical: SITE_URL,
+  },
 }
 
 export default function MainLayout({

@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { payloadData } from '@/app/lib/payload'
 import Link from 'next/link'
 import { PiCalendarDotsLight } from 'react-icons/pi'
@@ -8,9 +9,66 @@ import { format } from 'date-fns'
 import { ShareButton } from '../../../components/ShareButton'
 import RichTextRenderer from '../../../components/RichTextRenderer'
 import { calculatePostReadTime, formatReadTime } from '../../../lib/utils'
+import { SITE_URL, SITE_NAME, TWITTER_HANDLE } from '../../../lib/seo'
 
 interface PageProps {
   params: Promise<{ slug: string }>
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params
+
+  try {
+    const payload = await payloadData()
+    const post = await payload.find({
+      collection: 'posts',
+      where: { slug: { equals: slug } },
+      depth: 2,
+    })
+
+    if (!post?.docs?.length) {
+      return { title: 'Post Not Found' }
+    }
+
+    const postData = post.docs[0]
+    const title = (postData as any).meta?.metaTitle || postData.title
+    const description = (postData as any).meta?.metaDescription || postData.postDescription
+    const ogImage =
+      postData.coverImage && typeof postData.coverImage === 'object' && 'url' in postData.coverImage
+        ? (postData.coverImage as any).url
+        : undefined
+
+    return {
+      title,
+      description,
+      alternates: {
+        canonical: `${SITE_URL}/blog/${slug}`,
+      },
+      openGraph: {
+        type: 'article',
+        title,
+        description,
+        url: `${SITE_URL}/blog/${slug}`,
+        siteName: SITE_NAME,
+        publishedTime: postData.publishedDate || undefined,
+        modifiedTime: postData.updatedAt || undefined,
+        authors: [SITE_NAME],
+        ...(ogImage && {
+          images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
+        }),
+      },
+      twitter: {
+        card: 'summary_large_image',
+        site: TWITTER_HANDLE,
+        creator: TWITTER_HANDLE,
+        title,
+        description,
+        ...(ogImage && { images: [ogImage] }),
+      },
+    }
+  } catch {
+    return { title: 'Blog Post' }
+  }
 }
 
 export default async function Page({ params }: PageProps) {
@@ -40,8 +98,42 @@ export default async function Page({ params }: PageProps) {
       : null
     const updatedAt = postData.updatedAt ? new Date(postData.updatedAt).toISOString() : null
 
+    const articleJsonLd = {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: postData.title,
+      description: postData.postDescription,
+      image:
+        postData.coverImage && typeof postData.coverImage === 'object' && 'url' in postData.coverImage
+          ? (postData.coverImage as any).url
+          : undefined,
+      datePublished: publishedDate,
+      dateModified: updatedAt,
+      author: {
+        '@type': 'Person',
+        name:
+          postData.author && typeof postData.author === 'object' && 'name' in postData.author
+            ? (postData.author as any).name
+            : 'Clinton James',
+        url: SITE_URL,
+      },
+      publisher: {
+        '@type': 'Person',
+        name: 'Clinton James',
+        url: SITE_URL,
+      },
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': `${SITE_URL}/blog/${slug}`,
+      },
+    }
+
     return (
       <article className="p-4 md:p-8 lg:p-10">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+        />
         <div className="w-full md:w-[85%] lg:w-[70%] m-auto">
           <header>
             <div>

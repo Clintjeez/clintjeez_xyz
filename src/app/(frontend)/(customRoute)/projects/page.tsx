@@ -1,5 +1,16 @@
+import type { Metadata } from 'next'
 import ProjectCard from '../../components/ProjectCard'
 import { payloadData } from '@/app/lib/payload'
+import { SITE_URL } from '../../lib/seo'
+
+export const metadata: Metadata = {
+  title: 'Projects',
+  description:
+    'Explore projects and technical work by Clinton James — growth engineering tools, SaaS products, and automation systems.',
+  alternates: {
+    canonical: `${SITE_URL}/projects`,
+  },
+}
 
 const Projects = async () => {
   const allProject = await (
