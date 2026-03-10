@@ -77,7 +77,7 @@ export default function MainLayout({
         <ClientProvider>
           <div className="flex flex-col md:flex-row md:h-screen md:overflow-hidden lg:overflow-hidden pb-20 md:p-0  ">
             <Hero />
-            <div className="md:w-[58%] overflow-hidden md:overflow-scroll pb-5">{children}</div>
+            <div className="md:w-[58%] overflow-visible md:overflow-scroll pb-5">{children}</div>
           </div>
         </ClientProvider>
         <script

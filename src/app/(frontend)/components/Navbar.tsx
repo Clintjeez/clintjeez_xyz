@@ -9,16 +9,16 @@ const unavailableRoutes = ['/offers', '/work', '/about']
 
 const navItems = [
   { href: '/offers', label: 'Offers' },
-  { href: '/work', label: 'Work' },
+  // { href: '/work', label: 'Work' },
   { href: '/blog', label: 'Blog' },
-  { href: '/about', label: 'About' },
+  // { href: '/about', label: 'About' },
 ]
 
 const Navbar = () => {
   const pathname = usePathname()
   const { open } = useUnderConstruction()
 
-  const isActive = (href: string) => href === '/' ? pathname === '/' : pathname.startsWith(href)
+  const isActive = (href: string) => (href === '/' ? pathname === '/' : pathname.startsWith(href))
 
   return (
     <nav className="px-6 py-5 md:px-8 md:py-6 flex items-center justify-between text-[11px] md:text-[13px] border-b border-[#2a2a2e]">
@@ -52,7 +52,7 @@ const Navbar = () => {
             >
               {label}.
             </Link>
-          )
+          ),
         )}
       </div>
     </nav>

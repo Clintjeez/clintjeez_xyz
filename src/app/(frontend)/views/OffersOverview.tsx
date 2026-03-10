@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { HiArrowLongRight } from 'react-icons/hi2'
 import ConsultationCta from '../components/ConsultationCta'
 import { useUnderConstruction } from '../components/UnderConstruction'
@@ -100,8 +100,117 @@ const offers = [
   },
 ]
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 767px)')
+    setIsMobile(mq.matches)
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches)
+    mq.addEventListener('change', handler)
+    return () => mq.removeEventListener('change', handler)
+  }, [])
+  return isMobile
+}
+
+function OfferCard({
+  offer,
+  index,
+  isMobile,
+  onOpen,
+}: {
+  offer: (typeof offers)[number]
+  index: number
+  isMobile: boolean
+  onOpen: () => void
+}) {
+  const ref = useRef<HTMLDivElement>(null)
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    if (!isMobile || !ref.current) return
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true)
+        }
+      },
+      { threshold: 0.15 }
+    )
+    observer.observe(ref.current)
+    return () => observer.disconnect()
+  }, [isMobile])
+
+  const Icon = offer.icon
+
+  // Mobile: sticky stacked cards with reveal animation
+  // Desktop: standard grid card
+  return (
+    <div
+      ref={ref}
+      className={
+        isMobile
+          ? 'sticky'
+          : 'bg-[#1b1c21] rounded-xl p-5 border border-transparent hover:border-[#2a2a2e] transition-all duration-300 group'
+      }
+      style={
+        isMobile
+          ? {
+              top: `${100 + index * 8}px`,
+              zIndex: index + 1,
+            }
+          : undefined
+      }
+    >
+      <div
+        className={
+          isMobile
+            ? `bg-[#1b1c21] rounded-xl p-5 border border-[#2a2a2e]/40 group shadow-[0_-4px_20px_rgba(0,0,0,0.4)] transition-all duration-700 ease-out ${
+                isVisible
+                  ? 'opacity-100 translate-y-0'
+                  : 'opacity-0 translate-y-8'
+              }`
+            : ''
+        }
+        style={
+          isMobile
+            ? { transitionDelay: `${index * 50}ms` }
+            : undefined
+        }
+      >
+        <div className="flex items-start gap-3 mb-3">
+          <div className="relative">
+            <Icon className="text-[#edd86e] text-[22px] mt-[2px] shrink-0 relative z-10" />
+          </div>
+          <h3 className="text-[#e0e0e0] text-[14px] font-bold leading-snug">
+            {offer.title}
+          </h3>
+        </div>
+        <p className="text-[12px] text-[#777778] leading-relaxed mb-4">
+          {offer.description}
+        </p>
+        <ul className="space-y-2 mb-4">
+          {offer.process.map((step, i) => (
+            <li key={i} className="flex items-start gap-2 text-[11px] text-[#999]">
+              <span className="text-[#edd86e] mt-[2px] shrink-0">&#9679;</span>
+              {step}
+            </li>
+          ))}
+        </ul>
+        <button
+          onClick={onOpen}
+          className="inline-flex items-center gap-2 text-[12px] text-[#c4c4c4] hover:text-[#edd86e] transition-colors duration-300 cursor-pointer"
+        >
+          <span>Learn more</span>
+          <HiArrowLongRight className="text-[14px] transition-transform duration-300 group-hover:translate-x-1" />
+        </button>
+      </div>
+    </div>
+  )
+}
+
 const OffersOverview = () => {
   const { open } = useUnderConstruction()
+  const isMobile = useIsMobile()
 
   return (
     <section className="mb-20">
@@ -112,41 +221,22 @@ const OffersOverview = () => {
           engineered to unblock a specific stage of your revenue pipeline.
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
-        {offers.map((offer) => {
-          const Icon = offer.icon
-          return (
-            <div
-              key={offer.id}
-              className="bg-[#1b1c21] rounded-xl p-5 border border-transparent hover:border-[#2a2a2e] transition-all duration-300 group"
-            >
-              <div className="flex items-start gap-3 mb-3">
-                <Icon className="text-[#edd86e] text-[22px] mt-[2px] shrink-0" />
-                <h3 className="text-[#e0e0e0] text-[14px] font-bold leading-snug">
-                  {offer.title}
-                </h3>
-              </div>
-              <p className="text-[12px] text-[#777778] leading-relaxed mb-4">
-                {offer.description}
-              </p>
-              <ul className="space-y-2 mb-4">
-                {offer.process.map((step, i) => (
-                  <li key={i} className="flex items-start gap-2 text-[11px] text-[#999]">
-                    <span className="text-[#edd86e] mt-[2px] shrink-0">&#9679;</span>
-                    {step}
-                  </li>
-                ))}
-              </ul>
-              <button
-                onClick={open}
-                className="inline-flex items-center gap-2 text-[12px] text-[#c4c4c4] hover:text-[#edd86e] transition-colors duration-300 cursor-pointer"
-              >
-                <span>Learn more</span>
-                <HiArrowLongRight className="text-[14px] transition-transform duration-300 group-hover:translate-x-1" />
-              </button>
-            </div>
-          )
-        })}
+      <div
+        className={
+          isMobile
+            ? 'flex flex-col gap-4 mt-8'
+            : 'grid grid-cols-1 md:grid-cols-2 gap-5 mt-8'
+        }
+      >
+        {offers.map((offer, index) => (
+          <OfferCard
+            key={offer.id}
+            offer={offer}
+            index={index}
+            isMobile={isMobile}
+            onOpen={open}
+          />
+        ))}
       </div>
       <div className="mt-5">
         <ConsultationCta />
