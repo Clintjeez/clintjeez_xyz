@@ -45,7 +45,7 @@ const Hero = () => {
             <span className="text-[#bfbfbf] underline italic">growth engineering</span> and{' '}
             <span className="text-[#bfbfbf] underline italic">GTM systems</span> to{' '}
             <span className="text-[#bfbfbf] underline italic">AI automation</span> and{' '}
-            <span className="text-[#bfbfbf] underline italic">product-led growth</span> — combining
+            <span className="text-[#bfbfbf] underline italic">product-led growth</span> combining
             code, automation, and data to acquires, converts, and retains customers for SaaS and
             Tech-enabled businesses.
           </p>

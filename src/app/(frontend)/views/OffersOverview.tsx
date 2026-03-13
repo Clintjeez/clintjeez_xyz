@@ -4,14 +4,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { HiArrowLongRight } from 'react-icons/hi2'
 import ConsultationCta from '../components/ConsultationCta'
 import { useUnderConstruction } from '../components/UnderConstruction'
-import {
-  TbSeo,
-  TbMailBolt,
-  TbChartDots3,
-  TbRocket,
-  TbAB2,
-  TbPlugConnected,
-} from 'react-icons/tb'
+import { TbSeo, TbMailBolt, TbChartDots3, TbRocket, TbAB2, TbPlugConnected } from 'react-icons/tb'
 
 const offers = [
   {
@@ -134,7 +127,7 @@ function OfferCard({
           setIsVisible(true)
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0.15 },
     )
     observer.observe(ref.current)
     return () => observer.disconnect()
@@ -165,29 +158,19 @@ function OfferCard({
         className={
           isMobile
             ? `bg-[#1b1c21] rounded-xl p-5 border border-[#2a2a2e]/40 group shadow-[0_-4px_20px_rgba(0,0,0,0.4)] transition-all duration-700 ease-out ${
-                isVisible
-                  ? 'opacity-100 translate-y-0'
-                  : 'opacity-0 translate-y-8'
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`
             : ''
         }
-        style={
-          isMobile
-            ? { transitionDelay: `${index * 50}ms` }
-            : undefined
-        }
+        style={isMobile ? { transitionDelay: `${index * 50}ms` } : undefined}
       >
         <div className="flex items-start gap-3 mb-3">
           <div className="relative">
             <Icon className="text-[#edd86e] text-[22px] mt-[2px] shrink-0 relative z-10" />
           </div>
-          <h3 className="text-[#e0e0e0] text-[14px] font-bold leading-snug">
-            {offer.title}
-          </h3>
+          <h3 className="text-[#e0e0e0] text-[14px] font-bold leading-snug">{offer.title}</h3>
         </div>
-        <p className="text-[12px] text-[#777778] leading-relaxed mb-4">
-          {offer.description}
-        </p>
+        <p className="text-[12px] text-[#777778] leading-relaxed mb-4">{offer.description}</p>
         <ul className="space-y-2 mb-4">
           {offer.process.map((step, i) => (
             <li key={i} className="flex items-start gap-2 text-[11px] text-[#999]">
@@ -217,25 +200,17 @@ const OffersOverview = () => {
       <div className="mb-16 md:mb-10">
         <h1 className="mb-3 font-bold text-[16px]">What I Build</h1>
         <h2 className="text-[16px] md:text-[20px] md:pr-[50px] font-light text-[#777778]">
-          Modular growth systems you can adopt individually or combine — each one
-          engineered to unblock a specific stage of your revenue pipeline.
+          Modular growth systems you can adopt individually or combined. Each one engineered to
+          unblock a specific stage of your revenue pipeline.
         </h2>
       </div>
       <div
         className={
-          isMobile
-            ? 'flex flex-col gap-4 mt-8'
-            : 'grid grid-cols-1 md:grid-cols-2 gap-5 mt-8'
+          isMobile ? 'flex flex-col gap-4 mt-8' : 'grid grid-cols-1 md:grid-cols-2 gap-5 mt-8'
         }
       >
         {offers.map((offer, index) => (
-          <OfferCard
-            key={offer.id}
-            offer={offer}
-            index={index}
-            isMobile={isMobile}
-            onOpen={open}
-          />
+          <OfferCard key={offer.id} offer={offer} index={index} isMobile={isMobile} onOpen={open} />
         ))}
       </div>
       <div className="mt-5">
