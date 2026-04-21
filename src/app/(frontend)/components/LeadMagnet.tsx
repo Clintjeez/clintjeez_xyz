@@ -1,8 +1,21 @@
-import React from 'react'
+'use client'
+
+import React, { useState } from 'react'
 import { HiArrowLongRight } from 'react-icons/hi2'
 import { FiDownload } from 'react-icons/fi'
+import posthog from 'posthog-js'
 
 const LeadMagnet = () => {
+  const [email, setEmail] = useState('')
+
+  const handleSubmit = () => {
+    if (!email) return
+    posthog.capture('lead_magnet_submitted', {
+      resource: 'Growth & GTM Playbook',
+    })
+    posthog.identify(email, { email })
+  }
+
   return (
     <div className="relative mb-14">
       {/* Billboard card */}
@@ -39,9 +52,14 @@ const LeadMagnet = () => {
               <input
                 type="email"
                 placeholder="Your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="flex-1 rounded-md px-3 py-2 text-[12px] text-[#ddd] outline-none border border-[#2a2a2e] bg-[#17181d] placeholder-[#555] focus:border-[#edd86e] transition-colors duration-300"
               />
-              <button className="group flex items-center justify-center gap-2 border border-[#edd86e] bg-[#17181d] hover:bg-[#484848] text-[#bfbfbf] text-[12px] font-bold px-5 py-2 rounded-md transition-all duration-300">
+              <button
+                onClick={handleSubmit}
+                className="group flex items-center justify-center gap-2 border border-[#edd86e] bg-[#17181d] hover:bg-[#484848] text-[#bfbfbf] text-[12px] font-bold px-5 py-2 rounded-md transition-all duration-300"
+              >
                 <span>Get the Playbook</span>
                 <HiArrowLongRight className="text-[14px] text-[#edd86e] transition-transform duration-300 group-hover:translate-x-1" />
               </button>

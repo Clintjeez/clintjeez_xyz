@@ -1,6 +1,7 @@
 'use client'
 
 import { GoCopy } from 'react-icons/go'
+import posthog from 'posthog-js'
 
 interface ShareButtonProps {
   postSlug: string
@@ -10,6 +11,7 @@ export const ShareButton = ({ postSlug }: ShareButtonProps) => {
   const handleShare = () => {
     if (typeof window !== 'undefined') {
       navigator.clipboard.writeText(`${window.location.origin}/blog/${postSlug}`)
+      posthog.capture('blog_post_share_clicked', { post_slug: postSlug })
     }
   }
 

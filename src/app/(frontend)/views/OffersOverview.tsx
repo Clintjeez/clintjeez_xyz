@@ -5,6 +5,7 @@ import { HiArrowLongRight } from 'react-icons/hi2'
 import ConsultationCta from '../components/ConsultationCta'
 import { useUnderConstruction } from '../components/UnderConstruction'
 import { TbSeo, TbMailBolt, TbChartDots3, TbRocket, TbAB2, TbPlugConnected } from 'react-icons/tb'
+import posthog from 'posthog-js'
 
 const offers = [
   {
@@ -180,7 +181,13 @@ function OfferCard({
           ))}
         </ul>
         <button
-          onClick={onOpen}
+          onClick={() => {
+            posthog.capture('offer_learn_more_clicked', {
+              offer_id: offer.id,
+              offer_title: offer.title,
+            })
+            onOpen()
+          }}
           className="inline-flex items-center gap-2 text-[12px] text-[#c4c4c4] hover:text-[#edd86e] transition-colors duration-300 cursor-pointer"
         >
           <span>Learn more</span>
@@ -218,7 +225,10 @@ const OffersOverview = () => {
       </div>
       <div className="flex justify-end pl-3 mt-10">
         <button
-          onClick={open}
+          onClick={() => {
+            posthog.capture('view_all_offers_clicked')
+            open()
+          }}
           className="flex items-center gap-3 text-[#777778] hover:text-[#fff] text-[16px] underline transition-colors duration-300 cursor-pointer"
         >
           <span>View all offers</span>

@@ -1,7 +1,6 @@
 import React from 'react'
 import BlogCard from '../components/BlogCard'
-import Link from 'next/link'
-import { HiArrowLongRight } from 'react-icons/hi2'
+import { BlogViewMoreLink } from '../components/BlogViewMoreLink'
 import { payloadData } from '../../lib/payload'
 
 const BlogOverview = async () => {
@@ -40,13 +39,7 @@ const BlogOverview = async () => {
         ))}
       </div>
       <div className="flex justify-end pl-3 mt-10">
-        <Link
-          href="/blog"
-          className="flex items-center gap-3 text-[#777778] hover:text-[#fff] text-[16px] underline"
-        >
-          <span>View more</span>
-          <HiArrowLongRight className=" text-[20px]" />
-        </Link>
+        <BlogViewMoreLink />
       </div>
     </section>
   )
