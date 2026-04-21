@@ -38,6 +38,7 @@
     "next": "^15.5.7",
     "payload": "3.47.0",
     "posthog-js": "^1.369.3",
+    "posthog-node": "^5.29.2",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.1.0",
     "react-dom": "19.1.0",
