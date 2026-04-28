@@ -8,7 +8,7 @@ import { useUnderConstruction } from './UnderConstruction'
 const unavailableRoutes = ['/offers', '/work', '/about']
 
 const navItems = [
-  { href: '/offers', label: 'Offers' },
+  // { href: '/offers', label: 'Offers' },
   // { href: '/work', label: 'Work' },
   { href: '/blog', label: 'Blog' },
   // { href: '/about', label: 'About' },
