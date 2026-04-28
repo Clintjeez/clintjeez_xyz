@@ -180,7 +180,7 @@ function OfferCard({
             </li>
           ))}
         </ul>
-        <button
+        {/* <button
           onClick={() => {
             posthog.capture('offer_learn_more_clicked', {
               offer_id: offer.id,
@@ -192,7 +192,7 @@ function OfferCard({
         >
           <span>Learn more</span>
           <HiArrowLongRight className="text-[14px] transition-transform duration-300 group-hover:translate-x-1" />
-        </button>
+        </button> */}
       </div>
     </div>
   )
