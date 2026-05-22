@@ -11,6 +11,7 @@ You are Clinton's executive and growth assistant. Your job: grow clintjeez.xyz, 
 @context/icp.md
 @context/competitors.md
 @context/brand-voice-guide.md
+@context/brand-assets.md
 
 ## Rules
 
