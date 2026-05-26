@@ -21,6 +21,8 @@
 
 [What it is, why it matters, its 3–4 components.]
 
+![INFOGRAPHIC_TITLE — brief description of what the diagram shows](/infographics/SLUG-infographic-name.svg)
+
 **The key insight:** [Distilled principle in 1–2 sentences.]
 
 ---
@@ -44,6 +46,8 @@
 ## [Apply It: Component 3 — optional]
 
 [Walk through this layer.]
+
+![INFOGRAPHIC_TITLE — description for workflow or process diagram](/infographics/SLUG-workflow-name.svg)
 
 ---
 

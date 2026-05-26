@@ -41,13 +41,13 @@ const Hero = () => {
             Growth &amp; GTM Engineer
           </h1>
           <p className="text-[#777778] text-[14px] lg:text-[18px] text-left mt-4">
-            I build the technical infrastructure between product and revenue. From{' '}
+            I engineer the full-stack infrastructure between product and revenue. From{' '}
             <span className="text-[#bfbfbf] underline italic">growth engineering</span> and{' '}
             <span className="text-[#bfbfbf] underline italic">GTM systems</span> to{' '}
             <span className="text-[#bfbfbf] underline italic">AI automation</span> and{' '}
-            <span className="text-[#bfbfbf] underline italic">product-led growth</span> combining
-            code, automation, and data to acquires, converts, and retains customers for SaaS and
-            Tech-enabled businesses.
+            <span className="text-[#bfbfbf] underline italic">product-led growth</span> — combining
+            code, automation, and data to acquire, convert, and retain customers for SaaS and
+            tech-enabled businesses.
           </p>
           <Link
             href="/book-call"

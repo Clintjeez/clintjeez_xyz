@@ -49,6 +49,8 @@ Look for the actions that appear in Cohort A but not in Cohort B. The action tha
 
 This analysis takes 2–3 hours if your events are already instrumented in PostHog. If they're not, instrumenting comes first (covered in Step 2).
 
+![Cohort analysis method — Cohort A retained users vs Cohort B churned users, showing the divergence point that reveals your activation bottleneck](/infographics/article4-cohort-analysis.svg)
+
 **Common aha moments by product type:**
 
 - **CRM/sales tools:** First deal moved through a pipeline stage
@@ -122,6 +124,8 @@ Most drop-offs are friction problems or knowledge problems. Both are fixable wit
 
 The fastest fix for an activation drop-off is not a product redesign. It's a behaviorally-triggered email sequence that fires when a user stalls at the bottleneck step.
 
+![n8n behavioral email trigger workflow — stall detected at Step N, 4-hour timer, check completion, Email 1 at 4hrs, Email 2 at 24hrs, Email 3 booking link at 72hrs](/infographics/article4-behavioral-email-workflow.svg)
+
 The sequence logic:
 
 - **Trigger:** User completes Step N but does not complete Step N+1 within 4 hours
@@ -154,11 +158,7 @@ Activation Rate = (Users who reach the aha moment event within 7 days of signup)
 
 Set up a PostHog dashboard with this metric at the top. Check it weekly. Track the trend over time, not the absolute number.
 
-The baseline benchmarks by category:
-- AI/ML tools: 54.8% (highest)
-- Developer tools: 42–48%
-- B2B SaaS average: 37.5%
-- FinTech: ~5% (lowest)
+![SaaS activation rate benchmarks by category — AI/ML at 54.8%, Developer Tools at 45%, B2B SaaS average at 37.5%, FinTech at 5%](/infographics/article4-activation-benchmarks.svg)
 
 If you're below the category average, you have an activation problem to solve. If you're at or above it, the next constraint is probably in the [conversion or retention layer](/blog/why-your-saas-isnt-growing).
 

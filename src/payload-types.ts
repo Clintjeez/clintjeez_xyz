@@ -184,11 +184,13 @@ export interface Post {
     };
     [k: string]: unknown;
   };
-  tags: {
-    tag: string;
-    id?: string | null;
-  }[];
-  coverImage: number | Media;
+  tags?:
+    | {
+        tag: string;
+        id?: string | null;
+      }[]
+    | null;
+  coverImage?: (number | null) | Media;
   author?: (number | null) | User;
   publishedDate: string;
   meta?: {
@@ -198,6 +200,7 @@ export interface Post {
   };
   updatedAt: string;
   createdAt: string;
+  _status?: ('draft' | 'published') | null;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -352,6 +355,7 @@ export interface PostsSelect<T extends boolean = true> {
       };
   updatedAt?: T;
   createdAt?: T;
+  _status?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

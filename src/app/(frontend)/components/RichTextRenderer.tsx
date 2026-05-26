@@ -224,13 +224,15 @@ const RichTextRenderer: React.FC<RichTextRendererProps> = ({ content, className 
           </li>
         )
 
-      case 'link':
+      case 'link': {
+        const href = (node.fields as any)?.url || node.url || '#'
+        const newTab = (node.fields as any)?.newTab || node.openInNewTab
         return (
           <Link
             key={index}
-            href={node.url || '#'}
-            target={node.openInNewTab ? '_blank' : undefined}
-            rel={node.openInNewTab ? 'noopener noreferrer' : undefined}
+            href={href}
+            target={newTab ? '_blank' : undefined}
+            rel={newTab ? 'noopener noreferrer' : undefined}
             className="text-blue-400 hover:text-blue-300 underline text-sm md:text-base"
           >
             {node.children?.map((child: RichTextNode, childIndex: number) => (
@@ -240,6 +242,7 @@ const RichTextRenderer: React.FC<RichTextRendererProps> = ({ content, className 
             ))}
           </Link>
         )
+      }
 
       case 'block':
         // Check if this is a code block from PayloadCMS

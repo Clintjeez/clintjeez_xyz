@@ -1,6 +1,6 @@
 # The Cold Email Infrastructure Setup That Lands in Primary Inboxes
 
-*Pillar: 2 — GTM Engineering & Infrastructure | ICP: B2B founders doing outbound | Keyword: cold email infrastructure, cold email deliverability setup | Date: 2026-05-22*
+_Pillar: 2 — GTM Engineering & Infrastructure | ICP: B2B founders doing outbound | Keyword: cold email infrastructure, cold email deliverability setup | Date: 2026-05-22_
 
 **Meta description:** Most cold email advice focuses on copy. The real reason emails go to spam is infrastructure. Here's the complete technical setup that lands in primary inboxes.
 **Slug:** cold-email-infrastructure-setup
@@ -30,6 +30,8 @@ The components are:
 3. **Lead data and enrichment** — contact sourcing and verification
 4. **Sequencing platform** — the sending tool
 5. **Orchestration** — connecting everything via Clay and n8n
+
+![Cold email infrastructure: the 5-component stack — sending domains, mailbox warmup, lead enrichment, sequencing, n8n orchestration](/infographics/article3-cold-email-stack.svg)
 
 Each component has failure modes. Most founders skip two or three of them and wonder why their reply rate is 0.8%.
 
@@ -83,6 +85,8 @@ The math: if you want to send 300 cold emails per day, you need 8–10 warmed ma
 
 Monitor warmup health weekly using Google Postmaster Tools (free) or Instantly's deliverability score. A sudden drop in reputation score means something is wrong — usually too many spam complaints or too-fast ramp.
 
+![Mailbox warmup timeline — 21-day ramp protocol with daily sending limits and hard cap warning](/infographics/article3-warmup-timeline.svg)
+
 ---
 
 ## Component 3: Lead Data, Enrichment, and Verification
@@ -115,6 +119,7 @@ The company-level enrichment data becomes your personalization layer. A line lik
 The sequencing tool sends the emails, manages the cadence, handles replies, and tracks performance. The two platforms that dominate the cold email infrastructure space for good reason: **Instantly** and **Smartlead**.
 
 Both support:
+
 - Multi-mailbox rotation (sends from different mailboxes in the same campaign to spread sending volume)
 - Automatic warmup (integrated warmup pool that runs in the background)
 - Deliverability monitoring
@@ -157,11 +162,13 @@ The result: a single lead goes from ICP identification → enrichment → verifi
 ## The Real-World Result: What This Infrastructure Produces
 
 Before setting up proper infrastructure, a typical founder doing cold email manually sees:
+
 - Open rate: 25–35% (often inflated by bot opens)
 - Reply rate: 0.5–1.5%
 - Meetings booked: 1–2 per month from 200 emails
 
 After building the infrastructure outlined above:
+
 - Open rate: 50–65% (primary inbox placement, real opens)
 - Reply rate: 8–18%
 - Meetings booked: 8–20 per month from the same volume
@@ -185,4 +192,4 @@ For the full technical walkthrough on building each component, see: [What Is a G
 
 ---
 
-*Clinton James is a Growth & GTM Engineer who builds cold email infrastructure that converts — from domain setup and warmup to Clay enrichment, n8n orchestration, and reply-to-meeting automation. If your cold email isn't landing in primary inboxes, [let's fix the infrastructure: cal.com/clintonjames/15min](https://cal.com/clintonjames/15min).*
+_Clinton James is a Growth & GTM Engineer who builds cold email infrastructure that converts — from domain setup and warmup to Clay enrichment, n8n orchestration, and reply-to-meeting automation. If your cold email isn't landing in primary inboxes, [let's fix the infrastructure: cal.com/clintonjames/15min](https://cal.com/clintonjames/15min)._

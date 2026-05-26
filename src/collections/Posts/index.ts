@@ -4,6 +4,10 @@ import { Code, Markdown } from '@/blocks'
 
 export const Posts: CollectionConfig = {
   slug: 'posts',
+  versions: {
+    drafts: true,
+    maxPerDoc: 10,
+  },
   access: {
     read: () => true,
   },
@@ -53,7 +57,7 @@ export const Posts: CollectionConfig = {
     {
       name: 'tags',
       type: 'array',
-      required: true,
+      required: false,
       fields: [
         {
           name: 'tag',
@@ -66,7 +70,7 @@ export const Posts: CollectionConfig = {
       name: 'coverImage',
       type: 'relationship',
       relationTo: 'media',
-      required: true,
+      required: false,
     },
     {
       name: 'author',

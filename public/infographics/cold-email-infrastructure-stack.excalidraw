@@ -1,0 +1,394 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "rectangle",
+      "id": "bg",
+      "x": -10,
+      "y": -10,
+      "width": 1220,
+      "height": 770,
+      "backgroundColor": "#17181d",
+      "fillStyle": "solid",
+      "strokeColor": "#17181d",
+      "roughness": 0
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "x": 50,
+      "y": 28,
+      "text": "Cold Email Infrastructure: The 5-Component Stack",
+      "fontSize": 28,
+      "strokeColor": "#edd86e",
+      "fontFamily": 3
+    },
+    {
+      "type": "text",
+      "id": "sub",
+      "x": 50,
+      "y": 70,
+      "text": "Every component depends on the one before it. Skip one and the whole system fails.",
+      "fontSize": 15,
+      "strokeColor": "#bfbfbf",
+      "fontFamily": 3
+    },
+    {
+      "type": "rectangle",
+      "id": "c1",
+      "x": 30,
+      "y": 110,
+      "width": 200,
+      "height": 340,
+      "backgroundColor": "#0e2035",
+      "fillStyle": "solid",
+      "strokeColor": "#4a9eed",
+      "strokeWidth": 3,
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "c1n",
+      "x": 80,
+      "y": 122,
+      "text": "STEP 1",
+      "fontSize": 13,
+      "strokeColor": "#4a9eed",
+      "fontFamily": 3
+    },
+    {
+      "type": "text",
+      "id": "c1h",
+      "x": 50,
+      "y": 142,
+      "text": "Sending\nDomains",
+      "fontSize": 18,
+      "strokeColor": "#ffffff",
+      "fontFamily": 3
+    },
+    {
+      "type": "text",
+      "id": "c1b",
+      "x": 45,
+      "y": 195,
+      "text": "3\u20135 secondary\ndomains per sender\n\nNaming:\nget[company].com\ntry[company].com\n\nDNS required:\n\u2713 SPF record\n\u2713 DKIM keys\n\u2713 DMARC policy",
+      "fontSize": 13,
+      "strokeColor": "#bfbfbf",
+      "fontFamily": 3
+    },
+    {
+      "type": "arrow",
+      "id": "a12",
+      "x": 230,
+      "y": 280,
+      "width": 50,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#edd86e",
+      "strokeWidth": 2
+    },
+    {
+      "type": "rectangle",
+      "id": "c2",
+      "x": 280,
+      "y": 110,
+      "width": 200,
+      "height": 340,
+      "backgroundColor": "#0e2a1a",
+      "fillStyle": "solid",
+      "strokeColor": "#22c55e",
+      "strokeWidth": 3,
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "c2n",
+      "x": 330,
+      "y": 122,
+      "text": "STEP 2",
+      "fontSize": 13,
+      "strokeColor": "#22c55e",
+      "fontFamily": 3
+    },
+    {
+      "type": "text",
+      "id": "c2h",
+      "x": 295,
+      "y": 142,
+      "text": "Mailbox\nWarmup",
+      "fontSize": 18,
+      "strokeColor": "#ffffff",
+      "fontFamily": 3
+    },
+    {
+      "type": "text",
+      "id": "c2b",
+      "x": 295,
+      "y": 195,
+      "text": "1\u20132 mailboxes/domain\nReal first.last format\n\nWarmup timeline:\nDays 1\u20137: 5\u201310/day\nDays 8\u201314: 15\u201320/day\nDays 15\u201321: 25\u201330/day\nDay 21+: Max 30\u201340\n\nTools: Instantly\nor Smartlead",
+      "fontSize": 13,
+      "strokeColor": "#bfbfbf",
+      "fontFamily": 3
+    },
+    {
+      "type": "arrow",
+      "id": "a23",
+      "x": 480,
+      "y": 280,
+      "width": 50,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#edd86e",
+      "strokeWidth": 2
+    },
+    {
+      "type": "rectangle",
+      "id": "c3",
+      "x": 530,
+      "y": 110,
+      "width": 200,
+      "height": 340,
+      "backgroundColor": "#2a1a08",
+      "fillStyle": "solid",
+      "strokeColor": "#f59e0b",
+      "strokeWidth": 3,
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "c3n",
+      "x": 580,
+      "y": 122,
+      "text": "STEP 3",
+      "fontSize": 13,
+      "strokeColor": "#f59e0b",
+      "fontFamily": 3
+    },
+    {
+      "type": "text",
+      "id": "c3h",
+      "x": 540,
+      "y": 142,
+      "text": "Lead\nEnrichment",
+      "fontSize": 18,
+      "strokeColor": "#ffffff",
+      "fontFamily": 3
+    },
+    {
+      "type": "text",
+      "id": "c3b",
+      "x": 545,
+      "y": 195,
+      "text": "Clay waterfall logic:\nApollo \u2192 Hunter\n\u2192 Findymail\n\u2192 Datagma\n\nVerify with\nNeverBounce\n\nEnrich company:\nFunding / headcount\nTech stack\nRecent news",
+      "fontSize": 13,
+      "strokeColor": "#bfbfbf",
+      "fontFamily": 3
+    },
+    {
+      "type": "arrow",
+      "id": "a34",
+      "x": 730,
+      "y": 280,
+      "width": 50,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#edd86e",
+      "strokeWidth": 2
+    },
+    {
+      "type": "rectangle",
+      "id": "c4",
+      "x": 780,
+      "y": 110,
+      "width": 200,
+      "height": 340,
+      "backgroundColor": "#1a0a2a",
+      "fillStyle": "solid",
+      "strokeColor": "#8b5cf6",
+      "strokeWidth": 3,
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "c4n",
+      "x": 830,
+      "y": 122,
+      "text": "STEP 4",
+      "fontSize": 13,
+      "strokeColor": "#8b5cf6",
+      "fontFamily": 3
+    },
+    {
+      "type": "text",
+      "id": "c4h",
+      "x": 795,
+      "y": 142,
+      "text": "Sequencing\nPlatform",
+      "fontSize": 18,
+      "strokeColor": "#ffffff",
+      "fontFamily": 3
+    },
+    {
+      "type": "text",
+      "id": "c4b",
+      "x": 795,
+      "y": 195,
+      "text": "Instantly / Smartlead\nMulti-mailbox rotation\n\n3-touch sequence:\nEmail 1 (Day 1):\nProblem + offer\nEmail 2 (Day 4):\nDifferent angle\nEmail 3 (Day 8):\nThe close\n\n< 100 words each",
+      "fontSize": 13,
+      "strokeColor": "#bfbfbf",
+      "fontFamily": 3
+    },
+    {
+      "type": "arrow",
+      "id": "a45",
+      "x": 980,
+      "y": 280,
+      "width": 50,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#edd86e",
+      "strokeWidth": 2
+    },
+    {
+      "type": "rectangle",
+      "id": "c5",
+      "x": 1030,
+      "y": 110,
+      "width": 145,
+      "height": 340,
+      "backgroundColor": "#2a0f0f",
+      "fillStyle": "solid",
+      "strokeColor": "#ef4444",
+      "strokeWidth": 3,
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "c5n",
+      "x": 1060,
+      "y": 122,
+      "text": "STEP 5",
+      "fontSize": 13,
+      "strokeColor": "#ef4444",
+      "fontFamily": 3
+    },
+    {
+      "type": "text",
+      "id": "c5h",
+      "x": 1040,
+      "y": 142,
+      "text": "n8n\nOrchestration",
+      "fontSize": 18,
+      "strokeColor": "#ffffff",
+      "fontFamily": 3
+    },
+    {
+      "type": "text",
+      "id": "c5b",
+      "x": 1040,
+      "y": 205,
+      "text": "Reply detected\n\u2192 HubSpot deal\n\u2192 Slack alert\n\nPositive reply\n\u2192 Cal.com link\n\nNo reply (3x)\n\u2192 Re-engage\n   +30 days",
+      "fontSize": 13,
+      "strokeColor": "#bfbfbf",
+      "fontFamily": 3
+    },
+    {
+      "type": "rectangle",
+      "id": "note",
+      "x": 30,
+      "y": 480,
+      "width": 1145,
+      "height": 58,
+      "backgroundColor": "#1d1d21",
+      "fillStyle": "solid",
+      "strokeColor": "#edd86e",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "Before fixing your copy, fix your infrastructure. Most cold email problems are deliverability problems, not writing problems.",
+        "fontSize": 14,
+        "strokeColor": "#edd86e",
+        "fontFamily": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "credit",
+      "x": 960,
+      "y": 552,
+      "text": "clintjeez.xyz",
+      "fontSize": 13,
+      "strokeColor": "#444455",
+      "fontFamily": 3
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#17181d"
+  },
+  "files": {},
+  "_meta": {
+    "title": "Cold Email Infrastructure: The 5-Component Stack",
+    "shareUrl": "https://excalidraw.com/#json=DPToTTE_LN218BvteSjI-,TZ8QsDmOJ1NcsV1n-xMqag",
+    "brand": "clintjeez.xyz"
+  }
+}

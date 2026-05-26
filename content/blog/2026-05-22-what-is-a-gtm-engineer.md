@@ -27,6 +27,8 @@ GTM Engineering sits at the intersection of three disciplines:
 - **Growth** — deep knowledge of acquisition, activation, conversion, retention, and expansion mechanics
 - **Revenue Operations** — understanding of CRM architecture, pipeline management, lead routing, attribution, and sales automation
 
+![GTM Engineer — the intersection of Engineering, Growth, and Revenue Operations](/infographics/article2-gtm-engineer-disciplines.svg)
+
 The distinction that matters: a GTM Engineer doesn't just advise on strategy. They build the systems that execute it. They're equally comfortable writing a Clay enrichment workflow, instrumenting PostHog events, debugging a HubSpot automation, and designing a pricing page A/B test.
 
 **The key insight:** Most SaaS companies have a growth strategist (the marketer) and a revenue closer (the salesperson), but no one who owns the technical infrastructure connecting those two functions. The GTM Engineer is that connective layer.
@@ -36,6 +38,8 @@ The distinction that matters: a GTM Engineer doesn't just advise on strategy. Th
 ## What a GTM Engineer Actually Builds
 
 The confusion about the role comes from the breadth of the work. Here's what a GTM Engineer actually ships:
+
+![What a GTM Engineer Actually Ships — 3-column matrix: Acquisition Infrastructure, Activation and Conversion, Retention and Revenue](/infographics/article2-what-gtm-builds.svg)
 
 ### Acquisition Infrastructure
 
@@ -69,12 +73,7 @@ Every tool in that list is a component. The GTM Engineer is the person who makes
 
 These roles are often confused. Here's the distinction:
 
-| Role | Primary Focus | Technical Depth | Revenue Ownership |
-|------|--------------|----------------|-------------------|
-| Growth Marketer | Campaigns, content, paid channels | Low to medium | Top-of-funnel only |
-| Sales Engineer | Pre-sales technical demos, solutions | High | Deal support only |
-| RevOps Manager | CRM, reporting, pipeline hygiene | Medium | Process and data |
-| **GTM Engineer** | **Full-lifecycle infrastructure** | **High** | **Acquisition to retention** |
+![GTM Engineer vs other revenue roles — comparison of focus, technical depth, and revenue ownership scope](/infographics/article2-gtm-role-comparison.svg)
 
 The growth marketer runs the campaigns. The sales engineer supports the deal. The GTM Engineer builds the infrastructure that makes both of them more effective — and keeps working while they sleep.
 

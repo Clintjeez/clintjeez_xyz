@@ -10,6 +10,8 @@ const BlogOverview = async () => {
     collection: 'posts',
     limit: 4,
     depth: 1,
+    draft: false,
+    where: { _status: { equals: 'published' } },
   })
 
   return (

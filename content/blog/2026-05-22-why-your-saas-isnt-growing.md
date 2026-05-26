@@ -23,9 +23,13 @@ A SaaS Lifecycle Diagnosis is a structured audit of all eight stages of the cust
 
 The eight stages are: Discovery, Acquisition, Activation, Conversion, Retention, Revenue Expansion, Referral, and Reactivation.
 
+![The SaaS Lifecycle Diagnosis Framework — 8 stages, 4 diagnosis priorities, fix order mapped](/infographics/article1-saas-lifecycle-8-stages.svg)
+
 Most growth advice treats these stages as independent. They're not. They're a system. A failure in stage three (Activation) will make every improvement you make in stage two (Acquisition) irrelevant. You'll get more signups. They'll ghost you at the same rate. You'll keep buying traffic to fill a leaking funnel.
 
 **The key insight:** You can't fix a system by improving the wrong layer. Diagnosis has to come before prescription — every time.
+
+![The 4 Growth Levers — Diagnosis priority order with benchmarks and fix summary for each stage](/infographics/article1-diagnosis-4-priorities.svg)
 
 ---
 

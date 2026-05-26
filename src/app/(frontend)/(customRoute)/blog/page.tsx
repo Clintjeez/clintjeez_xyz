@@ -25,6 +25,8 @@ const Blog = async () => {
   ).find({
     collection: 'posts',
     depth: 1,
+    draft: false,
+    where: { _status: { equals: 'published' } },
   })
 
   return (

@@ -16,7 +16,8 @@
     "build:worker": "cloudflare",
     "dev:worker": "wrangler dev --port 8771",
     "preview:worker": "npm run build:worker && npm run dev:worker",
-    "deploy:worker": "npm run build:worker && wrangler deploy"
+    "deploy:worker": "npm run build:worker && wrangler deploy",
+    "sync-drafts": "tsx scripts/sync-blog-drafts.ts"
   },
   "dependencies": {
     "@calcom/embed-react": "^1.5.3",
@@ -57,12 +58,14 @@
     "@types/node": "^22.5.4",
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.2",
+    "chokidar": "^5.0.0",
     "cross-env": "^7.0.3",
     "eslint": "^9.16.0",
     "eslint-config-next": "^15.4.6",
     "mini-css-extract-plugin": "^2.9.2",
     "postcss": "^8.5.6",
     "prettier": "^3.4.2",
+    "tsx": "^4.22.3",
     "typescript": "5.7.3",
     "wrangler": "^4.25.0"
   },

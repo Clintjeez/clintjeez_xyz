@@ -1,239 +1,119 @@
 'use client'
 
-import React, { useEffect, useRef, useState } from 'react'
-import { HiArrowLongRight } from 'react-icons/hi2'
+import React from 'react'
 import ConsultationCta from '../components/ConsultationCta'
-import { useUnderConstruction } from '../components/UnderConstruction'
-import { TbSeo, TbMailBolt, TbChartDots3, TbRocket, TbAB2, TbPlugConnected } from 'react-icons/tb'
-import posthog from 'posthog-js'
+import {
+  TbSeo,
+  TbMailBolt,
+  TbRocket,
+  TbTrendingUp,
+  TbShieldCheck,
+  TbChartLine,
+  TbUsersGroup,
+  TbArrowBackUp,
+} from 'react-icons/tb'
 
-const offers = [
+const growthSystems = [
   {
-    id: 'seo-aeo',
-    title: 'SEO & AEO Automations',
-    description:
-      'Get found by humans and AI. Programmatic SEO systems and Answer Engine Optimization so your product shows up in Google, ChatGPT, and Perplexity.',
-    process: [
-      'Technical SEO audit & keyword mapping',
-      'Programmatic page generation (Next.js)',
-      'Structured data & entity markup for AI citation',
-      'Automated content pipelines with AI assistance',
-      'Rank tracking & organic attribution dashboards',
-    ],
+    id: 'discovery',
+    name: 'The Discovery Engine',
+    stage: 'Awareness / SEO',
+    description: 'Programmatic SEO + AIO so you rank in Google and AI answer engines.',
     icon: TbSeo,
   },
   {
-    id: 'lead-gen',
-    title: 'Lead Gen & Coldmail Infrastructure',
-    description:
-      'End-to-end outbound systems that fill your pipeline. From ICP targeting and enrichment to deliverable cold emails that book calls.',
-    process: [
-      'ICP definition & audience segmentation',
-      'Clay enrichment & Apollo contact sourcing',
-      'Instantly cold email setup with deliverability optimization',
-      'HubSpot CRM with lead scoring & routing',
-      'N8N orchestration connecting all tools into one pipeline',
-    ],
+    id: 'pipeline',
+    name: 'The Pipeline Machine',
+    stage: 'Lead Gen / Acquisition',
+    description: 'Clay enrichment + cold email infrastructure that books qualified calls.',
     icon: TbMailBolt,
   },
   {
-    id: 'plg-data',
-    title: 'Product-Led Growth & Data Infrastructure',
-    description:
-      'Instrument your product to grow itself. Usage tracking, behavioral analytics, and PLG systems that turn free users into paying customers.',
-    process: [
-      'Mixpanel or PostHog instrumentation & event taxonomy',
-      'Activation funnel mapping & drop-off analysis',
-      'Behavioral cohort tracking & segmentation',
-      'Product usage dashboards & health scoring',
-      'Data pipelines feeding growth loops & alerts',
-    ],
-    icon: TbChartDots3,
-  },
-  {
-    id: 'sales-conversion',
-    title: 'Sales & Conversion Automation',
-    description:
-      'Automate the path from trial to paid. PQL scoring, sales triggers, and nurture sequences that convert without manual follow-up.',
-    process: [
-      'Product Qualified Lead (PQL) scoring setup',
-      'Automated sales alerts via Slack & HubSpot',
-      'Trial nurture & expiration email sequences',
-      'Self-serve checkout optimization',
-      'Sales-assist routing for high-ACV prospects',
-    ],
+    id: 'activation',
+    name: 'The Activation Accelerator',
+    stage: 'Onboarding / Activation',
+    description: 'PostHog funnels + behavioural triggers that deliver the aha moment.',
     icon: TbRocket,
   },
   {
-    id: 'cro-testing',
-    title: 'Product CRO & A/B Testing',
-    description:
-      'Data-driven experiments that lift revenue. Landing page optimization, pricing tests, and onboarding experiments backed by real numbers.',
-    process: [
-      'Conversion audit across key user journeys',
-      'A/B testing infrastructure setup',
-      'Landing page & pricing page experiments',
-      'Onboarding flow optimization with PostHog funnels',
-      'Weekly experiment reports with statistical analysis',
-    ],
-    icon: TbAB2,
+    id: 'conversion',
+    name: 'The Conversion Engine',
+    stage: 'Trial-to-Paid',
+    description: 'PQL scoring + automated upgrade sequences that convert without manual follow-up.',
+    icon: TbTrendingUp,
   },
   {
-    id: 'custom-integrations',
-    title: 'Custom Integrations & Automations',
-    description:
-      'Connect your tools into one system. Custom N8N, Make, and Zapier workflows that eliminate manual work and keep your stack in sync.',
-    process: [
-      'Workflow audit & automation opportunity mapping',
-      'Custom N8N / Make / Zapier workflow builds',
-      'API integrations between SaaS tools',
-      'AI agent automations (Claude, OpenAI)',
-      'Monitoring, error handling & documentation',
-    ],
-    icon: TbPlugConnected,
+    id: 'retention',
+    name: 'The Retention Shield',
+    stage: 'Churn Prevention',
+    description: 'Health scoring + n8n alerts that catch at-risk accounts before they cancel.',
+    icon: TbShieldCheck,
+  },
+  {
+    id: 'revenue',
+    name: 'The Revenue Architect',
+    stage: 'Pricing / Monetisation',
+    description: 'Usage-based triggers + expansion sequences that grow MRR from existing accounts.',
+    icon: TbChartLine,
+  },
+  {
+    id: 'referral',
+    name: 'The Viral Growth Loop',
+    stage: 'Referral / Advocacy',
+    description: 'Automated advocacy loops that turn satisfied customers into qualified pipeline.',
+    icon: TbUsersGroup,
+  },
+  {
+    id: 'reactivation',
+    name: 'The Revenue Recovery',
+    stage: 'Win-back / Reactivation',
+    description: 'Behavioural win-back sequences that recover churned accounts and failed payments.',
+    icon: TbArrowBackUp,
   },
 ]
 
-function useIsMobile() {
-  const [isMobile, setIsMobile] = useState(false)
-  useEffect(() => {
-    const mq = window.matchMedia('(max-width: 767px)')
-    setIsMobile(mq.matches)
-    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches)
-    mq.addEventListener('change', handler)
-    return () => mq.removeEventListener('change', handler)
-  }, [])
-  return isMobile
-}
-
-function OfferCard({
-  offer,
-  index,
-  isMobile,
-  onOpen,
-}: {
-  offer: (typeof offers)[number]
-  index: number
-  isMobile: boolean
-  onOpen: () => void
-}) {
-  const ref = useRef<HTMLDivElement>(null)
-  const [isVisible, setIsVisible] = useState(false)
-
-  useEffect(() => {
-    if (!isMobile || !ref.current) return
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-        }
-      },
-      { threshold: 0.15 },
-    )
-    observer.observe(ref.current)
-    return () => observer.disconnect()
-  }, [isMobile])
-
-  const Icon = offer.icon
-
-  // Mobile: sticky stacked cards with reveal animation
-  // Desktop: standard grid card
+function GrowthSystemCard({ system }: { system: (typeof growthSystems)[number] }) {
+  const Icon = system.icon
   return (
-    <div
-      ref={ref}
-      className={
-        isMobile
-          ? 'sticky'
-          : 'bg-[#1b1c21] rounded-xl p-5 border border-transparent hover:border-[#2a2a2e] transition-all duration-300 group'
-      }
-      style={
-        isMobile
-          ? {
-              top: `${100 + index * 8}px`,
-              zIndex: index + 1,
-            }
-          : undefined
-      }
-    >
-      <div
-        className={
-          isMobile
-            ? `bg-[#1b1c21] rounded-xl p-5 border border-[#2a2a2e]/40 group shadow-[0_-4px_20px_rgba(0,0,0,0.4)] transition-all duration-700 ease-out ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-              }`
-            : ''
-        }
-        style={isMobile ? { transitionDelay: `${index * 50}ms` } : undefined}
-      >
-        <div className="flex items-start gap-3 mb-3">
-          <div className="relative">
-            <Icon className="text-[#edd86e] text-[22px] mt-[2px] shrink-0 relative z-10" />
-          </div>
-          <h3 className="text-[#e0e0e0] text-[14px] font-bold leading-snug">{offer.title}</h3>
+    <div className="bg-[#1b1c21] rounded-lg p-4 border border-transparent hover:border-[#2a2a2e] transition-all duration-300 group">
+      <div className="flex items-start gap-3 mb-2">
+        <Icon className="text-[#edd86e] text-[18px] mt-[1px] shrink-0" />
+        <div className="min-w-0">
+          <h4 className="text-[#e0e0e0] text-[11px] font-bold leading-snug truncate">
+            {system.name}
+          </h4>
+          <span className="text-[9px] text-[#edd86e]/70 uppercase tracking-wide">
+            {system.stage}
+          </span>
         </div>
-        <p className="text-[12px] text-[#777778] leading-relaxed mb-4">{offer.description}</p>
-        <ul className="space-y-2 mb-4">
-          {offer.process.map((step, i) => (
-            <li key={i} className="flex items-start gap-2 text-[11px] text-[#999]">
-              <span className="text-[#edd86e] mt-[2px] shrink-0">&#9679;</span>
-              {step}
-            </li>
-          ))}
-        </ul>
-        {/* <button
-          onClick={() => {
-            posthog.capture('offer_learn_more_clicked', {
-              offer_id: offer.id,
-              offer_title: offer.title,
-            })
-            onOpen()
-          }}
-          className="inline-flex items-center gap-2 text-[12px] text-[#c4c4c4] hover:text-[#edd86e] transition-colors duration-300 cursor-pointer"
-        >
-          <span>Learn more</span>
-          <HiArrowLongRight className="text-[14px] transition-transform duration-300 group-hover:translate-x-1" />
-        </button> */}
       </div>
+      <p className="text-[10px] text-[#777778] leading-relaxed">{system.description}</p>
     </div>
   )
 }
 
 const OffersOverview = () => {
-  const { open } = useUnderConstruction()
-  const isMobile = useIsMobile()
-
   return (
     <section className="mb-20">
-      <div className="mb-16 md:mb-10">
-        <h1 className="mb-3 font-bold text-[16px]">What I Build</h1>
+      {/* Section Header */}
+      <div className="mb-10">
+        <h1 className="mb-3 font-bold text-[16px]">Services</h1>
         <h2 className="text-[16px] md:text-[20px] md:pr-[50px] font-light text-[#777778]">
-          Modular growth systems you can adopt individually or combined. Each one engineered to
-          unblock a specific stage of your revenue pipeline.
+          Each system targets one stage of the customer lifecycle. A sprint ships one. A build ships
+          three.
         </h2>
       </div>
-      <div
-        className={
-          isMobile ? 'flex flex-col gap-4 mt-8' : 'grid grid-cols-1 md:grid-cols-2 gap-5 mt-8'
-        }
-      >
-        {offers.map((offer, index) => (
-          <OfferCard key={offer.id} offer={offer} index={index} isMobile={isMobile} onOpen={open} />
+
+      {/* Growth Systems */}
+      <div className="grid grid-cols-2 gap-3">
+        {growthSystems.map((system) => (
+          <GrowthSystemCard key={system.id} system={system} />
         ))}
       </div>
-      <div className="mt-5">
+
+      {/* Consultation CTA */}
+      <div className="mt-10">
         <ConsultationCta />
-      </div>
-      <div className="flex justify-end pl-3 mt-10">
-        <button
-          onClick={() => {
-            posthog.capture('view_all_offers_clicked')
-            open()
-          }}
-          className="flex items-center gap-3 text-[#777778] hover:text-[#fff] text-[16px] underline transition-colors duration-300 cursor-pointer"
-        >
-          <span>View all offers</span>
-          <HiArrowLongRight className="text-[20px]" />
-        </button>
       </div>
     </section>
   )

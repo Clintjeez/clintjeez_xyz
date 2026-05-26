@@ -22,8 +22,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     const payload = await payloadData()
     const post = await payload.find({
       collection: 'posts',
-      where: { slug: { equals: slug } },
+      where: { and: [{ slug: { equals: slug } }, { _status: { equals: 'published' } }] },
       depth: 2,
+      draft: false,
     })
 
     if (!post?.docs?.length) {
@@ -78,12 +79,9 @@ export default async function Page({ params }: PageProps) {
     const payload = await payloadData()
     const post = await payload.find({
       collection: 'posts',
-      where: {
-        slug: {
-          equals: slug,
-        },
-      },
+      where: { and: [{ slug: { equals: slug } }, { _status: { equals: 'published' } }] },
       depth: 2,
+      draft: false,
     })
 
     if (!post || !post.docs || post.docs.length === 0) {

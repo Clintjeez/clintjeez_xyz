@@ -1,0 +1,498 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "rectangle",
+      "id": "bg",
+      "x": -10,
+      "y": -10,
+      "width": 1220,
+      "height": 920,
+      "backgroundColor": "#17181d",
+      "fillStyle": "solid",
+      "strokeColor": "#17181d",
+      "roughness": 0,
+      "opacity": 100
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "x": 50,
+      "y": 30,
+      "text": "The SaaS Lifecycle Diagnosis Framework",
+      "fontSize": 30,
+      "strokeColor": "#edd86e",
+      "fontFamily": 3
+    },
+    {
+      "type": "text",
+      "id": "sub",
+      "x": 50,
+      "y": 75,
+      "text": "Fix in this order \u2014 every upstream failure makes downstream fixes irrelevant.",
+      "fontSize": 16,
+      "strokeColor": "#bfbfbf",
+      "fontFamily": 3
+    },
+    {
+      "type": "text",
+      "id": "row1lbl",
+      "x": 50,
+      "y": 110,
+      "text": "PIPELINE STAGES (left to right, row 1 \u2192 row 2)",
+      "fontSize": 12,
+      "strokeColor": "#777778",
+      "fontFamily": 3
+    },
+    {
+      "type": "rectangle",
+      "id": "s1",
+      "x": 50,
+      "y": 135,
+      "width": 200,
+      "height": 90,
+      "backgroundColor": "#1d2535",
+      "fillStyle": "solid",
+      "strokeColor": "#4a9eed",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "1. Discovery\nAwareness / SEO",
+        "fontSize": 14,
+        "strokeColor": "#bfbfbf",
+        "fontFamily": 3
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "a12",
+      "x": 250,
+      "y": 180,
+      "width": 50,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#444455",
+      "strokeWidth": 2
+    },
+    {
+      "type": "rectangle",
+      "id": "s2",
+      "x": 300,
+      "y": 135,
+      "width": 200,
+      "height": 90,
+      "backgroundColor": "#1d2535",
+      "fillStyle": "solid",
+      "strokeColor": "#4a9eed",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "2. Acquisition\nPipeline / Leads",
+        "fontSize": 14,
+        "strokeColor": "#bfbfbf",
+        "fontFamily": 3
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "a23",
+      "x": 500,
+      "y": 180,
+      "width": 50,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          50,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#444455",
+      "strokeWidth": 2
+    },
+    {
+      "type": "rectangle",
+      "id": "s3",
+      "x": 550,
+      "y": 120,
+      "width": 220,
+      "height": 115,
+      "backgroundColor": "#122a1a",
+      "fillStyle": "solid",
+      "strokeColor": "#22c55e",
+      "strokeWidth": 3,
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "3. ACTIVATION\nAha moment",
+        "fontSize": 15,
+        "strokeColor": "#ffffff",
+        "fontFamily": 3
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "badge1",
+      "x": 668,
+      "y": 100,
+      "width": 135,
+      "height": 26,
+      "backgroundColor": "#22c55e",
+      "fillStyle": "solid",
+      "strokeColor": "#22c55e",
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "\u2605 CHECK FIRST",
+        "fontSize": 11,
+        "strokeColor": "#17181d",
+        "fontFamily": 3
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "a34",
+      "x": 770,
+      "y": 178,
+      "width": 60,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          60,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#444455",
+      "strokeWidth": 2
+    },
+    {
+      "type": "rectangle",
+      "id": "s4",
+      "x": 830,
+      "y": 120,
+      "width": 220,
+      "height": 115,
+      "backgroundColor": "#2a1f08",
+      "fillStyle": "solid",
+      "strokeColor": "#f59e0b",
+      "strokeWidth": 3,
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "4. CONVERSION\nTrial \u2192 Paid",
+        "fontSize": 15,
+        "strokeColor": "#ffffff",
+        "fontFamily": 3
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "badge2",
+      "x": 948,
+      "y": 100,
+      "width": 135,
+      "height": 26,
+      "backgroundColor": "#f59e0b",
+      "fillStyle": "solid",
+      "strokeColor": "#f59e0b",
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "\u2605 CHECK SECOND",
+        "fontSize": 11,
+        "strokeColor": "#17181d",
+        "fontFamily": 3
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "adown",
+      "x": 1050,
+      "y": 235,
+      "width": 0,
+      "height": 110,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          110
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#444455",
+      "strokeWidth": 2
+    },
+    {
+      "type": "rectangle",
+      "id": "s5",
+      "x": 830,
+      "y": 365,
+      "width": 220,
+      "height": 115,
+      "backgroundColor": "#2a0f0f",
+      "fillStyle": "solid",
+      "strokeColor": "#ef4444",
+      "strokeWidth": 3,
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "5. RETENTION\nChurn prevention",
+        "fontSize": 15,
+        "strokeColor": "#ffffff",
+        "fontFamily": 3
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "badge3",
+      "x": 838,
+      "y": 493,
+      "width": 130,
+      "height": 26,
+      "backgroundColor": "#ef4444",
+      "fillStyle": "solid",
+      "strokeColor": "#ef4444",
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "\u2605 CHECK THIRD",
+        "fontSize": 11,
+        "strokeColor": "#ffffff",
+        "fontFamily": 3
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "a56",
+      "x": 830,
+      "y": 422,
+      "width": -60,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -60,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#444455",
+      "strokeWidth": 2
+    },
+    {
+      "type": "rectangle",
+      "id": "s6",
+      "x": 550,
+      "y": 365,
+      "width": 220,
+      "height": 115,
+      "backgroundColor": "#1a1030",
+      "fillStyle": "solid",
+      "strokeColor": "#8b5cf6",
+      "strokeWidth": 3,
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "6. REVENUE EXP.\nPricing & upsell",
+        "fontSize": 15,
+        "strokeColor": "#ffffff",
+        "fontFamily": 3
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "badge4",
+      "x": 558,
+      "y": 493,
+      "width": 130,
+      "height": 26,
+      "backgroundColor": "#8b5cf6",
+      "fillStyle": "solid",
+      "strokeColor": "#8b5cf6",
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "\u2605 CHECK FOURTH",
+        "fontSize": 11,
+        "strokeColor": "#ffffff",
+        "fontFamily": 3
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "a67",
+      "x": 550,
+      "y": 422,
+      "width": -50,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -50,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#444455",
+      "strokeWidth": 2
+    },
+    {
+      "type": "rectangle",
+      "id": "s7",
+      "x": 300,
+      "y": 375,
+      "width": 200,
+      "height": 90,
+      "backgroundColor": "#1d2535",
+      "fillStyle": "solid",
+      "strokeColor": "#4a9eed",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "7. Referral\nAdvocacy loop",
+        "fontSize": 14,
+        "strokeColor": "#bfbfbf",
+        "fontFamily": 3
+      }
+    },
+    {
+      "type": "arrow",
+      "id": "a78",
+      "x": 300,
+      "y": 420,
+      "width": -50,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -50,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#444455",
+      "strokeWidth": 2
+    },
+    {
+      "type": "rectangle",
+      "id": "s8",
+      "x": 50,
+      "y": 375,
+      "width": 200,
+      "height": 90,
+      "backgroundColor": "#1d2535",
+      "fillStyle": "solid",
+      "strokeColor": "#4a9eed",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "8. Reactivation\nWin-back system",
+        "fontSize": 14,
+        "strokeColor": "#bfbfbf",
+        "fontFamily": 3
+      }
+    },
+    {
+      "type": "rectangle",
+      "id": "note",
+      "x": 50,
+      "y": 545,
+      "width": 1100,
+      "height": 58,
+      "backgroundColor": "#1d1d21",
+      "fillStyle": "solid",
+      "strokeColor": "#edd86e",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "Most SaaS founders keep buying acquisition when the leak is at stage 3 or 4. Diagnosis before prescription \u2014 every time.",
+        "fontSize": 14,
+        "strokeColor": "#edd86e",
+        "fontFamily": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "credit",
+      "x": 900,
+      "y": 618,
+      "text": "clintjeez.xyz",
+      "fontSize": 13,
+      "strokeColor": "#444455",
+      "fontFamily": 3
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#17181d"
+  },
+  "files": {},
+  "_meta": {
+    "title": "The SaaS Lifecycle Diagnosis Framework",
+    "shareUrl": "https://excalidraw.com/#json=DrZUCX-QEz9pefvxQ9Wus,ibSJkMS3gP0C0-lrGWYNWQ",
+    "brand": "clintjeez.xyz"
+  }
+}

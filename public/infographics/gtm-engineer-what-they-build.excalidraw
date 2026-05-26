@@ -1,0 +1,230 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "rectangle",
+      "id": "bg",
+      "x": -10,
+      "y": -10,
+      "width": 1220,
+      "height": 920,
+      "backgroundColor": "#17181d",
+      "fillStyle": "solid",
+      "strokeColor": "#17181d",
+      "roughness": 0
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "x": 50,
+      "y": 30,
+      "text": "What a GTM Engineer Actually Builds",
+      "fontSize": 30,
+      "strokeColor": "#edd86e",
+      "fontFamily": 3
+    },
+    {
+      "type": "text",
+      "id": "sub",
+      "x": 50,
+      "y": 75,
+      "text": "Acquisition \u00b7 Activation & Conversion \u00b7 Retention & Revenue \u2014 engineered as one system.",
+      "fontSize": 16,
+      "strokeColor": "#bfbfbf",
+      "fontFamily": 3
+    },
+    {
+      "type": "rectangle",
+      "id": "col1",
+      "x": 50,
+      "y": 115,
+      "width": 340,
+      "height": 400,
+      "backgroundColor": "#0e1f2a",
+      "fillStyle": "solid",
+      "strokeColor": "#4a9eed",
+      "strokeWidth": 3,
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "col1h",
+      "x": 170,
+      "y": 125,
+      "text": "ACQUISITION",
+      "fontSize": 18,
+      "strokeColor": "#4a9eed",
+      "fontFamily": 3
+    },
+    {
+      "type": "text",
+      "id": "col1b",
+      "x": 70,
+      "y": 165,
+      "text": "Cold email infrastructure\n\u2014 3\u20135 sending domains\n\u2014 SPF / DKIM / DMARC\n\u2014 21-day warmup protocol\n\nClay waterfall enrichment\n\u2014 Apollo \u2192 Hunter \u2192 verify\n\u2014 Company data overlay\n\u2014 80\u201390% contact coverage\n\nProgrammatic SEO\n\u2014 Next.js dynamic routes\n\u2014 AI citation structure\n\u2014 Comparison / alt pages",
+      "fontSize": 14,
+      "strokeColor": "#bfbfbf",
+      "fontFamily": 3
+    },
+    {
+      "type": "rectangle",
+      "id": "col2",
+      "x": 430,
+      "y": 115,
+      "width": 340,
+      "height": 400,
+      "backgroundColor": "#1a2a10",
+      "fillStyle": "solid",
+      "strokeColor": "#22c55e",
+      "strokeWidth": 3,
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "col2h",
+      "x": 490,
+      "y": 125,
+      "text": "ACTIVATION & CONVERSION",
+      "fontSize": 18,
+      "strokeColor": "#22c55e",
+      "fontFamily": 3
+    },
+    {
+      "type": "text",
+      "id": "col2b",
+      "x": 450,
+      "y": 165,
+      "text": "PostHog event taxonomy\n\u2014 Signup \u2192 aha moment funnel\n\u2014 Cohort A vs B analysis\n\u2014 Drop-off identification\n\nPQL scoring\n\u2014 In-app behavior threshold\n\u2014 Conversion correlation\n\u2014 Automated Slack alerts\n\nn8n behavioral triggers\n\u2014 Stall detected \u2192 4hr email\n\u2014 Loom walkthrough delivery\n\u2014 Booking link at 72hrs",
+      "fontSize": 14,
+      "strokeColor": "#bfbfbf",
+      "fontFamily": 3
+    },
+    {
+      "type": "rectangle",
+      "id": "col3",
+      "x": 810,
+      "y": 115,
+      "width": 340,
+      "height": 400,
+      "backgroundColor": "#1a0a2a",
+      "fillStyle": "solid",
+      "strokeColor": "#8b5cf6",
+      "strokeWidth": 3,
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "col3h",
+      "x": 870,
+      "y": 125,
+      "text": "RETENTION & REVENUE",
+      "fontSize": 18,
+      "strokeColor": "#8b5cf6",
+      "fontFamily": 3
+    },
+    {
+      "type": "text",
+      "id": "col3b",
+      "x": 830,
+      "y": 165,
+      "text": "Customer health scoring\n\u2014 Login freq + feature use\n\u2014 Support ticket volume\n\u2014 Churn-risk alerts\n\nPricing infrastructure\n\u2014 Usage tracking in Stripe\n\u2014 Expansion triggers\n\u2014 Dunning + smart retry\n\nHubSpot CRM backbone\n\u2014 Pipeline from every tool\n\u2014 Attribution connected\n\u2014 Single source of truth",
+      "fontSize": 14,
+      "strokeColor": "#bfbfbf",
+      "fontFamily": 3
+    },
+    {
+      "type": "arrow",
+      "id": "arr1",
+      "x": 390,
+      "y": 315,
+      "width": 40,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#edd86e",
+      "strokeWidth": 2
+    },
+    {
+      "type": "arrow",
+      "id": "arr2",
+      "x": 770,
+      "y": 315,
+      "width": 40,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          40,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#edd86e",
+      "strokeWidth": 2
+    },
+    {
+      "type": "rectangle",
+      "id": "note",
+      "x": 50,
+      "y": 545,
+      "width": 1100,
+      "height": 58,
+      "backgroundColor": "#1d1d21",
+      "fillStyle": "solid",
+      "strokeColor": "#edd86e",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "roundness": {
+        "type": 3
+      },
+      "label": {
+        "text": "Any one of these tools used in isolation produces mediocre results. The GTM Engineer orchestrates them as a system.",
+        "fontSize": 15,
+        "strokeColor": "#edd86e",
+        "fontFamily": 3
+      }
+    },
+    {
+      "type": "text",
+      "id": "credit",
+      "x": 900,
+      "y": 618,
+      "text": "clintjeez.xyz",
+      "fontSize": 13,
+      "strokeColor": "#444455",
+      "fontFamily": 3
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#17181d"
+  },
+  "files": {},
+  "_meta": {
+    "title": "What a GTM Engineer Actually Builds",
+    "shareUrl": "https://excalidraw.com/#json=ieKXC5mO_z-moXNF2jU5-,LADxPt4JJXfTBT9v6Ezv5w",
+    "brand": "clintjeez.xyz"
+  }
+}
