@@ -144,21 +144,20 @@ async function syncFile(filePath: string, existingSlugMap: Map<string, number>):
     const existingId = existingSlugMap.get(parsed.slug)
 
     if (existingId) {
-      // Update content of existing post
+      // Only update content — never touch _status (publish/draft is managed in admin)
       await payload.update({
         collection: 'posts',
         id: existingId,
-        data: { content: parsed.content, _status: 'published' } as any,
-        draft: false,
+        data: { content: parsed.content } as any,
         overrideAccess: true,
       })
       console.log(`updated — "${parsed.title}"`)
     } else {
-      // Create new post as published
+      // New posts start as draft — publish manually in admin when ready
       const created = await payload.create({
         collection: 'posts',
-        data: { ...parsed, _status: 'published' } as any,
-        draft: false,
+        data: { ...parsed, _status: 'draft' } as any,
+        draft: true,
         overrideAccess: true,
       })
       existingSlugMap.set(parsed.slug, created.id as number)
