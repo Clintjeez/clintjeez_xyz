@@ -4,6 +4,8 @@ import { payloadData } from '@/app/lib/payload'
 import SearchableBlogList from '../../components/SearchableBlogList'
 import { SITE_URL } from '../../lib/seo'
 
+export const dynamic = 'force-dynamic'
+
 export const metadata: Metadata = {
   title: 'Blog',
   description:
@@ -27,6 +29,7 @@ const Blog = async () => {
     depth: 1,
     draft: false,
     where: { _status: { equals: 'published' } },
+    sort: '-publishedDate',
   })
 
   return (

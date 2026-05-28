@@ -12,6 +12,7 @@ const BlogOverview = async () => {
     depth: 1,
     draft: false,
     where: { _status: { equals: 'published' } },
+    sort: '-publishedDate',
   })
 
   return (

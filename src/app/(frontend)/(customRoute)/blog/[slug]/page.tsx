@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { payloadData } from '@/app/lib/payload'
+
+export const dynamic = 'force-dynamic'
 import Link from 'next/link'
 import { PiCalendarDotsLight } from 'react-icons/pi'
 import { FaRegClock } from 'react-icons/fa'

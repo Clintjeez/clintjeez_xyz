@@ -2,6 +2,8 @@ import React from 'react'
 import Main from '../views/Main'
 import { SITE_URL } from '../lib/seo'
 
+export const dynamic = 'force-dynamic'
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
