@@ -67,7 +67,8 @@ const growthSystems = [
     id: 'reactivation',
     name: 'The Revenue Recovery',
     stage: 'Win-back / Reactivation',
-    description: 'Behavioural win-back sequences that recover churned accounts and failed payments.',
+    description:
+      'Behavioural win-back sequences that recover churned accounts and failed payments.',
     icon: TbArrowBackUp,
   },
 ]
@@ -97,7 +98,7 @@ const OffersOverview = () => {
     <section className="mb-20">
       {/* Section Header */}
       <div className="mb-10">
-        <h1 className="mb-3 font-bold text-[16px]">Services</h1>
+        <h1 className="mb-3 font-bold text-[16px]">Offers</h1>
         <h2 className="text-[16px] md:text-[20px] md:pr-[50px] font-light text-[#777778]">
           Each system targets one stage of the customer lifecycle. A sprint ships one. A build ships
           three.
@@ -105,7 +106,7 @@ const OffersOverview = () => {
       </div>
 
       {/* Growth Systems */}
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {growthSystems.map((system) => (
           <GrowthSystemCard key={system.id} system={system} />
         ))}

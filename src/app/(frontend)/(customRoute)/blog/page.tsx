@@ -15,8 +15,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Blog | Clinton James',
-    description:
-      'Thoughts and guides on growth engineering, GTM strategy, and SaaS automation.',
+    description: 'Thoughts and guides on growth engineering, GTM strategy, and SaaS automation.',
     url: `${SITE_URL}/blog`,
   },
 }
@@ -35,10 +34,10 @@ const Blog = async () => {
   return (
     <section className="px-8 pt-8 pb-28">
       <div className="mb-20 text-[#777778] flex justify-end">
-        <h3 className="text-[18px] md:w-[850px] text-center md:text-right md:text-[25px] font-light ">
-          &ndash; a collection of my thoughts, guides, and experiences that I find worth sharing.
-          Here, you&apos;ll find practical advice, personal reflections, and explorations of ideas
-          that shape my approach to building and problem-solving.
+        <h3 className="text-[18px] md:w-[850px] text-right md:text-[25px] font-light ">
+          a collection of my thoughts, guides, and experiences that I find worth sharing. Here,
+          you&apos;ll find practical advice, personal reflections, and explorations of ideas that
+          shape my approach to building and problem-solving.
         </h3>
       </div>
       <SearchableBlogList posts={allPost.docs} />

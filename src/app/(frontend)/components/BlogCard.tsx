@@ -20,14 +20,14 @@ const BlogCard = ({ post }: { post: BlogPost }) => {
       onClick={() =>
         posthog.capture('blog_post_clicked', { post_slug: post.slug, post_title: post.title })
       }
-      className="block w-full md:hover:scale-[1.1] transition"
+      className="block w-full h-full md:hover:scale-[1.1] transition"
     >
-      <div className="bg-[#1b1c21] md:min-h-[250px] h-auto p-5 sm:p-8 md:group-hover:opacity-100 rounded-md overflow-hidden">
+      <div className="bg-[#1b1c21] h-full flex flex-col p-5 sm:p-8 rounded-md overflow-hidden">
         <h3 className="text-[16px] sm:text-[20px] break-words">{post.title}</h3>
         <p className="text-[#777778] text-[11px] sm:text-[12px] font-light my-4 break-words">
           {post.postDescription}
         </p>
-        <div className="flex justify-end mt-6 sm:mt-10">
+        <div className="flex justify-end mt-auto pt-4">
           {post.tags && post.tags.length > 0 && (
             <div className="flex items-center gap-2 sm:gap-3 flex-wrap justify-end">
               <FaTags className="text-[#bfbfbf] text-[11px] shrink-0" />
