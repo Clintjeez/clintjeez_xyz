@@ -72,12 +72,14 @@ export default function MainLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className="md:overflow-hidden">
         <ClientProvider>
           <div className="flex flex-col md:flex-row md:h-screen md:overflow-hidden lg:overflow-hidden pb-20 md:p-0  ">
             <Hero />
-            <div className="md:w-[58%] overflow-visible md:overflow-scroll pb-5">{children}</div>
+            <div className="relative md:w-[58%] overflow-visible md:overflow-scroll pb-5">
+              {children}
+            </div>
           </div>
         </ClientProvider>
         <script

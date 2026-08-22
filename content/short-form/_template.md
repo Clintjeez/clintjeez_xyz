@@ -4,7 +4,7 @@
 **Target length:** 3–4 min | ~550 words spoken
 **Format:** Talking head, direct to camera
 **Platforms:** TikTok · YouTube Shorts · Instagram Reels
-**Source article:** [clintjeez.xyz/blog/slug or "original"]
+**Source article:** [clintjeez.com/blog/slug or "original"]
 
 ---
 

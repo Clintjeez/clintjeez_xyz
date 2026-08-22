@@ -23,6 +23,15 @@ export const Projects: CollectionConfig = {
       },
     },
     {
+      name: 'role',
+      type: 'text',
+      required: false,
+      label: 'Role',
+      admin: {
+        description: 'Job title or role, for work/experience entries (e.g. "AI Engineer")',
+      },
+    },
+    {
       name: 'projectDescription',
       type: 'textarea',
       required: true,
@@ -31,7 +40,7 @@ export const Projects: CollectionConfig = {
     {
       name: 'stacks',
       type: 'array',
-      required: true,
+      required: false,
       label: 'Tech Stacks',
       fields: [
         {
@@ -58,6 +67,27 @@ export const Projects: CollectionConfig = {
       label: 'Live Project URL',
       admin: {
         placeholder: 'https://your-project.com',
+      },
+    },
+    {
+      name: 'featured',
+      type: 'checkbox',
+      defaultValue: false,
+      label: 'Featured',
+      admin: {
+        description: 'Show in the "Work & Experience" section on the homepage (top 6)',
+        position: 'sidebar',
+      },
+    },
+    {
+      name: 'featuredOrder',
+      type: 'number',
+      required: false,
+      label: 'Featured Order',
+      admin: {
+        description: 'Lower numbers appear first among featured items',
+        position: 'sidebar',
+        condition: (_, siblingData) => Boolean(siblingData?.featured),
       },
     },
   ],

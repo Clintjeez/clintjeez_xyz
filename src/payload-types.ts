@@ -213,13 +213,27 @@ export interface Project {
    * Upload a screenshot or preview image of your project
    */
   screenshot?: (number | null) | Media;
+  /**
+   * Job title or role, for work/experience entries (e.g. "AI Engineer")
+   */
+  role?: string | null;
   projectDescription: string;
-  stacks: {
-    stack: string;
-    id?: string | null;
-  }[];
+  stacks?:
+    | {
+        stack: string;
+        id?: string | null;
+      }[]
+    | null;
   githubUrl?: string | null;
   liveUrl?: string | null;
+  /**
+   * Show in the "Work & Experience" section on the homepage (top 6)
+   */
+  featured?: boolean | null;
+  /**
+   * Lower numbers appear first among featured items
+   */
+  featuredOrder?: number | null;
   updatedAt: string;
   createdAt: string;
 }
@@ -364,6 +378,7 @@ export interface PostsSelect<T extends boolean = true> {
 export interface ProjectsSelect<T extends boolean = true> {
   title?: T;
   screenshot?: T;
+  role?: T;
   projectDescription?: T;
   stacks?:
     | T
@@ -373,6 +388,8 @@ export interface ProjectsSelect<T extends boolean = true> {
       };
   githubUrl?: T;
   liveUrl?: T;
+  featured?: T;
+  featuredOrder?: T;
   updatedAt?: T;
   createdAt?: T;
 }

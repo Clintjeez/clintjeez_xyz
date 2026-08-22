@@ -16,7 +16,7 @@ type BlogPost = {
 const BlogCard = ({ post }: { post: BlogPost }) => {
   return (
     <Link
-      href={`/blog/${post.slug}`}
+      href={`/writings/${post.slug}`}
       onClick={() =>
         posthog.capture('blog_post_clicked', { post_slug: post.slug, post_title: post.title })
       }

@@ -21,9 +21,10 @@ const BookCallClient = () => {
   }, [])
 
   return (
-    <div className="h-full">
+    <div className="h-full md:absolute md:inset-0">
       <Cal
-        className="h-full"
+        className="h-full w-full"
+        style={{ width: '100%', height: '100%', overflow: 'scroll' }}
         namespace="15min"
         calLink="clintonjames/15min"
         config={{ layout: 'month_view' }}

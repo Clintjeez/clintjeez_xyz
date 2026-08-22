@@ -45,13 +45,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title,
       description,
       alternates: {
-        canonical: `${SITE_URL}/blog/${slug}`,
+        canonical: `${SITE_URL}/writings/${slug}`,
       },
       openGraph: {
         type: 'article',
         title,
         description,
-        url: `${SITE_URL}/blog/${slug}`,
+        url: `${SITE_URL}/writings/${slug}`,
         siteName: SITE_NAME,
         publishedTime: postData.publishedDate || undefined,
         modifiedTime: postData.updatedAt || undefined,
@@ -124,7 +124,7 @@ export default async function Page({ params }: PageProps) {
       },
       mainEntityOfPage: {
         '@type': 'WebPage',
-        '@id': `${SITE_URL}/blog/${slug}`,
+        '@id': `${SITE_URL}/writings/${slug}`,
       },
     }
 
@@ -245,7 +245,7 @@ export default async function Page({ params }: PageProps) {
                 Last updated: {updatedAt && format(new Date(updatedAt), 'MMM dd, yyyy')}
               </div>
               <Link
-                href="/blog"
+                href="/writings"
                 className="text-[#777778] hover:text-white text-xs sm:text-sm underline"
               >
                 ← Back to all posts

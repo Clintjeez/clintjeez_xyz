@@ -2,6 +2,10 @@
 
 For Clinton's outreach to win clients — not for building client deliverables.
 
+## Offer First
+
+Before writing any copy, decide the offer using `context/offer-framework.md` (the 3 Levers: Service Lead Magnet, Guarantee, Easy Yes). Every email below assumes Lever 1 or Lever 3 has already been chosen — this SOP covers wording, not what's being offered.
+
 ## ICP Targeting
 
 See `context/icp.md` for full profiles. Priority target: Early-Stage SaaS Founders ($0–$500K ARR) showing visible growth plateau signals.
@@ -24,19 +28,19 @@ Examples:
 **Body structure:**
 1. One-line personalization (specific to them — not "I love what you're building")
 2. What you noticed (the diagnosis — a specific visible problem signal)
-3. What you do about it (one sentence — not a pitch deck)
+3. The lever offer (one sentence — the Lever 1 derivative or Lever 3 Loom offer, not a pitch deck)
 4. Soft CTA (15-min call OR just reply with one question)
 
 **Length:** Under 100 words. Always.
 
-**Lead with:** The $366 Growth Sprint. Never open with the $3,500 Build.
+**Lead with:** The $366 Growth Sprint as the paid tier context, if it comes up. Never open with the $3,500 Build. The opener itself sells the lever offer (Lever 1 or 3), not a tier.
 
 ## Follow-Up Sequence
 
 | Day | Email | Angle |
 |-----|-------|-------|
-| 1 | Opener | Diagnosis + Sprint offer |
-| 4 | Follow-up 1 | Different angle on the same problem |
+| 1 | Opener | Diagnosis + Lever 1 (researched prospect) or Lever 3 (volume outreach) |
+| 4 | Follow-up 1 | If Day 1 was Lever 1 with no reply, switch to Lever 3 — lower the ask, don't repeat it |
 | 8 | Follow-up 2 | "Closing the loop" — last attempt |
 | 30+ | Re-engage | Share a relevant article or case study |
 

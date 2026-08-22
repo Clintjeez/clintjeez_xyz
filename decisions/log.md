@@ -26,6 +26,11 @@ Include the date and the reasoning. This is your institutional memory.
 **Decision:** $366 Sprint / $3,500 Build / $1,333/mo Retainer.
 **Why:** Specific non-round numbers signal deliberate pricing. All three undercut agency rates by 60–80% while delivering senior-level execution. Entry point ($366) is low enough to be impulse-buy, high enough to filter serious leads.
 
+### Adopted the 3-Lever Offer Framework for all outreach
+**Decision:** All cold outreach now runs on `context/offer-framework.md` — Lever 1 (Service Lead Magnet, a free derivative mapped to one of the 8 growth systems), Lever 2 (Guarantee, sales-call-only for great-fit prospects), Lever 3 (Easy Yes, a 3-min Loom teardown for volume outreach).
+**Why:** Generic "free consultation"/"free audit" offers don't start real conversations. A pre-built derivative or bounded micro-deliverable proves diagnosis-before-prescription in the outreach itself instead of just claiming it.
+**Note:** The 48-hour free sprint campaign (`content/campaigns/48hr-sprint/`) stays a separate, time-boxed proof-layer play — it gives away the whole Tier 1 service for case studies, not a derivative. Once its 5 slots fill, all outreach reverts to this framework. `sops/cold-email.md` updated to route through it.
+
 ---
 
 *Add new decisions below as they're made. Format: ### Title → Why → Note/Risk*

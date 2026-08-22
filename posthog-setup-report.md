@@ -1,7 +1,7 @@
 <wizard-report>
 # PostHog post-wizard report
 
-The wizard has completed a deep integration of PostHog analytics into clintjeez.xyz (Next.js 15 App Router). PostHog is initialized client-side via `instrumentation-client.ts` (the recommended approach for Next.js 15.3+), with a reverse proxy configured in `next.config.mjs` to route events through `/ingest` for better ad-blocker resilience. A server-side PostHog client was created at `src/lib/posthog-server.ts` for future API route usage. Ten events were instrumented across key conversion and engagement touchpoints.
+The wizard has completed a deep integration of PostHog analytics into clintjeez.com (Next.js 15 App Router). PostHog is initialized client-side via `instrumentation-client.ts` (the recommended approach for Next.js 15.3+), with a reverse proxy configured in `next.config.mjs` to route events through `/ingest` for better ad-blocker resilience. A server-side PostHog client was created at `src/lib/posthog-server.ts` for future API route usage. Ten events were instrumented across key conversion and engagement touchpoints.
 
 | Event Name | Description | File |
 |---|---|---|

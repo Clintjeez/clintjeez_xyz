@@ -12,12 +12,16 @@ const MobileNavBar = () => {
       {openNav && (
         <div className="absolute w-[50%] right-[30px] top-[57px] border glassmorphism-bg transition duration-700 ease-in-out ">
           <nav className="flex flex-col items-end gap-5 p-5">
-            <Link href="projects" className={pathname === '/projects' ? 'text-[#edd86e]' : ''}>
-              Projects
+            <Link href="works" className={pathname === '/works' ? 'text-[#edd86e]' : ''}>
+              Works
             </Link>
 
-            <Link href="blog" className={pathname === '/blog' ? 'text-[#edd86e]' : ''}>
-              Blog
+            <Link href="writings" className={pathname === '/writings' ? 'text-[#edd86e]' : ''}>
+              Writings
+            </Link>
+
+            <Link href="resources" className={pathname === '/resources' ? 'text-[#edd86e]' : ''}>
+              Resources
             </Link>
           </nav>
           <div

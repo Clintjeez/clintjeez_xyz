@@ -1,6 +1,6 @@
 # Brand Assets, Media & Style Guide
 
-*Extracted from clintjeez.xyz codebase — May 2026*
+*Extracted from clintjeez.com codebase — May 2026*
 *Use this as the visual reference when generating content, writing image alt text, describing screenshots, or briefing designers.*
 
 ---
@@ -146,7 +146,7 @@ Use these when referencing the tech stack in visual content (blog thumbnails, Li
 
 | Platform | Handle | Profile URL |
 |----------|--------|-------------|
-| Site | clintjeez.xyz | https://clintjeez.xyz |
+| Site | clintjeez.com | https://clintjeez.com |
 | LinkedIn | clinton-james-9ba608b0 | linkedin.com/in/clinton-james-9ba608b0 |
 | X / Twitter | @ClintJeezz | x.com/ClintJeezz |
 | GitHub | Clintjeez | github.com/Clintjeez |
@@ -162,7 +162,7 @@ Default title: Clinton James | Growth & GTM Engineer
 Description:   Growth & GTM Engineer with 9+ years of experience. I build technical
                infrastructure between product and revenue — SEO/AEO, Lead Gen, PLG,
                Sales Automation, CRO, and Custom Integrations for SaaS founders.
-OG image:      https://clintjeez.xyz/clinton.png (1200×630)
+OG image:      https://clintjeez.com/clinton.png (1200×630)
 Twitter card:  summary_large_image
 Twitter:       @ClintJeezz
 ```

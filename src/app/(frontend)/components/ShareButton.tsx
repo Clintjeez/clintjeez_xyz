@@ -10,7 +10,7 @@ interface ShareButtonProps {
 export const ShareButton = ({ postSlug }: ShareButtonProps) => {
   const handleShare = () => {
     if (typeof window !== 'undefined') {
-      navigator.clipboard.writeText(`${window.location.origin}/blog/${postSlug}`)
+      navigator.clipboard.writeText(`${window.location.origin}/writings/${postSlug}`)
       posthog.capture('blog_post_share_clicked', { post_slug: postSlug })
     }
   }

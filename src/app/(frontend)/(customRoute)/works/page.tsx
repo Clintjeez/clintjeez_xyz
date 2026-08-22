@@ -4,11 +4,11 @@ import { payloadData } from '@/app/lib/payload'
 import { SITE_URL } from '../../lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Projects',
+  title: 'Works',
   description:
     'Explore projects and technical work by Clinton James — growth engineering tools, SaaS products, and automation systems.',
   alternates: {
-    canonical: `${SITE_URL}/projects`,
+    canonical: `${SITE_URL}/works`,
   },
 }
 

@@ -14,7 +14,7 @@
 - LinkedIn: https://www.linkedin.com/in/clinton-james-9ba608b0/
 - Twitter/X: https://twitter.com/ClintJeezz
 - Medium: https://medium.com/@clintjeez
-- Portfolio: clintjeez.xyz
+- Portfolio: clintjeez.com
 
 ---
 
@@ -32,7 +32,7 @@ Specializes in working with SaaS founders and solopreneurs to build products tha
 
 | Competency | Evidence |
 |-----------|----------|
-| **Full-stack product development** | Built clintjeez.xyz — a Next.js 15 + Payload CMS + PostgreSQL full-stack application with server/client component architecture, dynamic routing, and edge deployment on Cloudflare Workers |
+| **Full-stack product development** | Built clintjeez.com — a Next.js 15 + Payload CMS + PostgreSQL full-stack application with server/client component architecture, dynamic routing, and edge deployment on Cloudflare Workers |
 | **Conversion-optimized experiences** | Designed a split-screen landing page with interactive hero (cursor tracking, physics-based falling words animation via Matter.js), strategic CTAs, and a clear conversion funnel: Homepage → Projects/Blog → Book a Call |
 | **Content-driven acquisition** | Built a complete blog system with SEO metadata, programmatic slug generation, read-time calculation, tag-based filtering, and social sharing — all backed by a headless CMS for non-technical content operations |
 | **Funnel design** | Implemented a multi-step conversion funnel: Free content (blog/projects) → E-book lead magnet ("Guide to Building Digital Products") → Email capture → Discovery call booking (Cal.com integration) → Paid engagement |
@@ -160,4 +160,4 @@ The tech stack (Next.js + Payload + Cloudflare) is optimized for speed — both 
 
 - **Book a call:** https://cal.com/clintonjames/15min
 - **Email:** clintjeez@gmail.com
-- **Portfolio:** clintjeez.xyz
+- **Portfolio:** clintjeez.com

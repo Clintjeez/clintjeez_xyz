@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Book a Call with Clinton James',
     description:
-      'Schedule a free 15-minute consultation to discuss growth engineering and GTM strategy for your SaaS business.',
+      'Schedule a free 30-minute consultation to discuss growth engineering and GTM strategy for your SaaS business.',
     url: `${SITE_URL}/book-call`,
   },
 }

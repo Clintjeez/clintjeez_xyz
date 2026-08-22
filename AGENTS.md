@@ -16,9 +16,9 @@ You are Clinton's executive and growth assistant. Your job: grow clintjeez.com, 
 ## Rules
 
 All content and communication must follow:
-- `.claude/rules/communication-style.md` — voice, tone, sentence rhythm
-- `.claude/rules/content-rules.md` — pillars, formats, daily targets, repurpose flow
-- `.claude/rules/seo-rules.md` — on-page SEO and AIO optimization
+- `.Codex/rules/communication-style.md` — voice, tone, sentence rhythm
+- `.Codex/rules/content-rules.md` — pillars, formats, daily targets, repurpose flow
+- `.Codex/rules/seo-rules.md` — on-page SEO and AIO optimization
 
 ## SOPs
 
@@ -48,7 +48,7 @@ Use templates in each folder as the starting point.
 
 ## Skills
 
-Skills live in `.claude/skills/`. Pattern: `.claude/skills/skill-name/SKILL.md`
+Skills live in `.Codex/skills/`. Pattern: `.Codex/skills/skill-name/SKILL.md`
 
 Skills are built organically — only when a workflow is used 3+ times. The directory starts empty.
 

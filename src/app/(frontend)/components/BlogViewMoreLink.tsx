@@ -7,7 +7,7 @@ import posthog from 'posthog-js'
 export const BlogViewMoreLink = () => {
   return (
     <Link
-      href="/blog"
+      href="/writings"
       onClick={() => posthog.capture('blog_view_more_clicked')}
       className="flex items-center gap-3 text-[#777778] hover:text-[#fff] text-[16px] underline"
     >

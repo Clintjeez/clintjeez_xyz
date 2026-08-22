@@ -353,4 +353,4 @@ The through-line is the engineering mindset applied to growth. That's what makes
 
 ---
 
-*Last updated: May 2026 | Built from full analysis of all published blog content on clintjeez.xyz*
+*Last updated: May 2026 | Built from full analysis of all published blog content on clintjeez.com*

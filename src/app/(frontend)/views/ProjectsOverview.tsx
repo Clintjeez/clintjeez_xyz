@@ -28,7 +28,7 @@ const ProjectsOverview = async () => {
       </div>
       <div className="flex justify-end pl-3 mt-10">
         <Link
-          href="/projects"
+          href="/works"
           className="flex items-center gap-3 text-[#777778] hover:text-[#fff] text-[16px] underline"
         >
           <span>View more</span>

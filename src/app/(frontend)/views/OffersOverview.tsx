@@ -100,8 +100,7 @@ const OffersOverview = () => {
       <div className="mb-10">
         <h1 className="mb-3 font-bold text-[16px]">Offers</h1>
         <h2 className="text-[16px] md:text-[20px] md:pr-[50px] font-light text-[#777778]">
-          Each system targets one stage of the customer lifecycle. A sprint ships one. A build ships
-          three.
+          Each system fixes one growth bottleneck. A sprint ships one. A build ships three.
         </h2>
       </div>
 

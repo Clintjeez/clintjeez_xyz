@@ -9,8 +9,9 @@ const unavailableRoutes = ['/offers', '/work', '/about']
 
 const navItems = [
   // { href: '/offers', label: 'Offers' },
-  // { href: '/work', label: 'Work' },
-  { href: '/blog', label: 'Blog' },
+  { href: '/works', label: 'Works' },
+  { href: '/writings', label: 'Writings' },
+  { href: '/resources', label: 'Resources' },
   // { href: '/about', label: 'About' },
 ]
 

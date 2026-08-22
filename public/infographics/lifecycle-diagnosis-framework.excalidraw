@@ -480,7 +480,7 @@
       "id": "credit",
       "x": 900,
       "y": 618,
-      "text": "clintjeez.xyz",
+      "text": "clintjeez.com",
       "fontSize": 13,
       "strokeColor": "#444455",
       "fontFamily": 3
@@ -493,6 +493,6 @@
   "_meta": {
     "title": "The SaaS Lifecycle Diagnosis Framework",
     "shareUrl": "https://excalidraw.com/#json=DrZUCX-QEz9pefvxQ9Wus,ibSJkMS3gP0C0-lrGWYNWQ",
-    "brand": "clintjeez.xyz"
+    "brand": "clintjeez.com"
   }
 }

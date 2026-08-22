@@ -2,7 +2,7 @@
 
 **Brand:** ClintJeez
 **Role:** Growth & GTM Engineer
-**Site:** clintjeez.xyz
+**Site:** clintjeez.com
 **Email:** clintjeez@gmail.com
 **LinkedIn:** linkedin.com/in/clinton-james-9ba608b0
 **X/Twitter:** @ClintJeezz

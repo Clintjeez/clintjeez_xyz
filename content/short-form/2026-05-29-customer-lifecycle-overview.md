@@ -4,7 +4,7 @@
 **Target length:** 3–4 min | ~550 words spoken
 **Format:** Talking head, direct to camera
 **Platforms:** TikTok · YouTube Shorts · Instagram Reels
-**Source article:** clintjeez.xyz/blog/why-your-saas-isnt-growing
+**Source article:** clintjeez.com/blog/why-your-saas-isnt-growing
 
 ---
 

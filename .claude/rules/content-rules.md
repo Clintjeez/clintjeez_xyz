@@ -59,7 +59,7 @@ Every blog article follows this architecture:
 
 | Channel | Daily Output |
 |---------|-------------|
-| Blog (clintjeez.xyz) | 2 articles |
+| Blog (clintjeez.com) | 2 articles |
 | LinkedIn | 3 posts (rotate post types) |
 | X/Twitter | 3 posts or threads |
 | YouTube | 1 script per week |

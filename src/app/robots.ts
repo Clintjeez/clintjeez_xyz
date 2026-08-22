@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/admin/', '/api/'],
       },
     ],
-    sitemap: 'https://clintjeez.xyz/sitemap.xml',
+    sitemap: 'https://clintjeez.com/sitemap.xml',
   }
 }

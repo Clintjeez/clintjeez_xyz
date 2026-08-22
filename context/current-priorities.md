@@ -21,7 +21,7 @@ Each free sprint is also a paid research session in disguise. Document: what the
 
 | Channel | Daily Target | Time Slot |
 |---------|-------------|-----------|
-| Blog (clintjeez.xyz) | 2 articles | Morning |
+| Blog (clintjeez.com) | 2 articles | Morning |
 | LinkedIn | 3 posts | 9am / 12pm / 5pm |
 | X/Twitter | 3 posts or threads | 8am / 1pm / 7pm |
 | YouTube | 1 script/week | Friday |
@@ -38,7 +38,7 @@ Each free sprint is also a paid research session in disguise. Document: what the
 ## Not A Priority Right Now
 
 - Paid advertising
-- New features on clintjeez.xyz
+- New features on clintjeez.com
 - Course creation or productized info products
 - Hiring or delegation
 - Redesigning the site

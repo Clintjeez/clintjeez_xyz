@@ -28,7 +28,7 @@
 - [ ] Ends with 4–6 numbered action steps
 - [ ] Meta description written (150–160 chars, includes keyword)
 - [ ] Primary keyword in H1 and first 100 words
-- [ ] Minimum 2 internal links to clintjeez.xyz content
+- [ ] Minimum 2 internal links to clintjeez.com content
 - [ ] Bio anchor included
 - [ ] Mapped to one of the 5 content pillars
 - [ ] AIO: definition sentence, named framework, numbered steps, "where to start" section

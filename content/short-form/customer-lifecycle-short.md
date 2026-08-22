@@ -1,7 +1,7 @@
 # Customer LifeCycle
 
 The Hook
-$0 to $20k monthly revenue wont just happen for that your business or SaaS company.
+You hear founders announce $0 to $20k monthly in revenue wont just happen for your SaaS product.
 Customer lifecycle is the foundation every SaaS product growth strategy is either built on or quietly collapsing without.
 
 The Promise
@@ -20,6 +20,8 @@ they converted to paid,
 they stayed,
 they expanded and
 some of them referred others.
+
+I'm Clinton — Growth & GTM Engineer. I spend my time building the infrastructure between SaaS products and revenue — diagnosing what's actually broken in the lifecycle and shipping the fix. over a decade of product and engineering, multiple sectors, every system I talk about here I've personally built and shipped.
 
 The Framework
 The eight stages of the customer lifecycle are:
@@ -43,6 +45,6 @@ The customer lifecycle isn't a concept. It's the system your business either has
 
 And the moment you stop asking "how do I get more customers" and start asking "where in this eight-stage system is my revenue actually stuck" — that's when growth stops feeling like guesswork.
 
-I'm Clinton — Growth & GTM Engineer. I spend my time building the infrastructure between SaaS products and revenue — diagnosing what's actually broken in the lifecycle and shipping the fix. over a decade of product and engineering, multiple sectors, every system I talk about here I've personally built and shipped.
+
 
 I've got more videos like this coming up that goes deep on each lifecycle stage, the diagonisis, the fix, the infrastructure and everything about engineering your growth. please follow and like

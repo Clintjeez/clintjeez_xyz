@@ -7,13 +7,13 @@
 
 ---
 
-If you think you have a churn problem, look at your activation rate first.
+If you think you have a churn problem, you should look at your activation rate first.
 
 In almost every early-stage SaaS I've diagnosed, what looked like churn was actually an activation failure that happened 30 days earlier. Users signed up, experienced nothing, and quietly left. By the time they showed up as churn data, the problem was already a month old.
 
 The average SaaS activation rate is 37.5%. Most early-stage products sit at 20–25%. That means 3 out of every 4 users who trusted you enough to sign up never experienced what you built. They paid with their email address, their attention, and sometimes their credit card — and you gave them a blank dashboard and a "get started" email they didn't open.
 
-This isn't a product problem. It's an instrumentation problem. You can't fix what you can't see. And most SaaS founders can't see their activation funnel because they've never mapped it in PostHog.
+This isn't a product problem. It's an instrumentation problem.And you can't fix what you can't see. Most SaaS founders can't see their activation funnel because they've never mapped it in PostHog.
 
 Here's how to find the exact drop-off point — and the infrastructure to fix it — in 48 hours.
 

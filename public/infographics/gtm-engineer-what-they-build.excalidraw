@@ -212,7 +212,7 @@
       "id": "credit",
       "x": 900,
       "y": 618,
-      "text": "clintjeez.xyz",
+      "text": "clintjeez.com",
       "fontSize": 13,
       "strokeColor": "#444455",
       "fontFamily": 3
@@ -225,6 +225,6 @@
   "_meta": {
     "title": "What a GTM Engineer Actually Builds",
     "shareUrl": "https://excalidraw.com/#json=ieKXC5mO_z-moXNF2jU5-,LADxPt4JJXfTBT9v6Ezv5w",
-    "brand": "clintjeez.xyz"
+    "brand": "clintjeez.com"
   }
 }

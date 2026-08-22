@@ -46,7 +46,7 @@ interface CustomLayoutProps {
 
 export default function CustomLayout({ children }: CustomLayoutProps) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
         <UnderConstructionProvider>
           <Navbar />

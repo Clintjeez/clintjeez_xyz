@@ -28,6 +28,9 @@ const ProjectCard = ({ project }: { project: Project }) => {
 
         <div className="p-4">
           <h3 className="text-[20px]">{project.title}</h3>
+          {project.role && (
+            <p className="mt-1 text-[11px] text-[#edd86e]">{project.role}</p>
+          )}
           <p className="mt-2 text-[12px] text-[#777778]">{project.projectDescription}</p>
 
           <ul className="flex flex-wrap text-[9px] gap-2 mt-3 ">

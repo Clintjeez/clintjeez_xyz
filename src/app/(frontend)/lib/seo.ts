@@ -1,4 +1,4 @@
-export const SITE_URL = 'https://clintjeez.xyz'
+export const SITE_URL = 'https://clintjeez.com'
 export const SITE_NAME = 'Clinton James'
 export const DEFAULT_TITLE = 'Clinton James | Growth & GTM Engineer'
 export const DEFAULT_DESCRIPTION =

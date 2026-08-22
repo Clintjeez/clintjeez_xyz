@@ -30,7 +30,7 @@ Every published piece of content must follow both sets of rules. AIO = AI-Optimi
 **Keyword Placement**
 - Primary keyword in H1 and within first 100 words
 - Use LSI (related) keywords naturally throughout — never force them
-- Minimum 2 internal links to other clintjeez.xyz content per article
+- Minimum 2 internal links to other clintjeez.com content per article
 
 **Images**
 - Descriptive alt text that includes the primary keyword naturally

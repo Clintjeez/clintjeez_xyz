@@ -7,16 +7,16 @@ import { SITE_URL } from '../../lib/seo'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: 'Blog',
+  title: 'Writings',
   description:
     'Thoughts, guides, and experiences on growth engineering, GTM strategy, SaaS automation, and building technical infrastructure between product and revenue.',
   alternates: {
-    canonical: `${SITE_URL}/blog`,
+    canonical: `${SITE_URL}/writings`,
   },
   openGraph: {
-    title: 'Blog | Clinton James',
+    title: 'Writings | Clinton James',
     description: 'Thoughts and guides on growth engineering, GTM strategy, and SaaS automation.',
-    url: `${SITE_URL}/blog`,
+    url: `${SITE_URL}/writings`,
   },
 }
 

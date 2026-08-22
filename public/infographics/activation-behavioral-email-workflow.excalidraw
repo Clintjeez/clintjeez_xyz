@@ -409,7 +409,7 @@
       "id": "credit",
       "x": 760,
       "y": 906,
-      "text": "clintjeez.xyz",
+      "text": "clintjeez.com",
       "fontSize": 13,
       "strokeColor": "#444455",
       "fontFamily": 3
@@ -422,6 +422,6 @@
   "_meta": {
     "title": "Behavioral Email Fix: n8n Activation Workflow",
     "shareUrl": "https://excalidraw.com/#json=RIpuTbyY3yZ98Sla2B2XD,PZGVOt-Q9O9fekbIFirsdg",
-    "brand": "clintjeez.xyz"
+    "brand": "clintjeez.com"
   }
 }
