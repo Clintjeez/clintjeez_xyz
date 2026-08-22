@@ -78,9 +78,9 @@ const entries: Entry[] = [
   },
   {
     title: 'Alubasa Labs',
-    role: 'Solutions Engineer',
+    role: 'Founder & Lead Architect',
     projectDescription:
-      'AI-driven automation workflows and tailored solutions for business operations',
+      'Venture studio and fractional technical partner helping African founders and non-tech businesses — real estate, legal, agriculture, finance, health — build revenue infrastructure: CRM, ERP, accounting, cybersecurity, and AI adoption',
     logoFile: 'alubasa-labs.jpeg',
     featuredOrder: 4,
   },
