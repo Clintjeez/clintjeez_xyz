@@ -42,3 +42,6 @@ next-env.d.ts
 
 /media
 .env.local
+
+# local tool configs with secrets
+.codex/
