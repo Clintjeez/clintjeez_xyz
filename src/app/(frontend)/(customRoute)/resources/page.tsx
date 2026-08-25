@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { SITE_URL } from '../../lib/seo'
 
 export const metadata: Metadata = {
@@ -27,9 +28,9 @@ const Resources = () => {
       </div>
       <div className="text-[#777778] text-[14px] md:text-[16px]">
         Nothing published here yet. In the meantime, browse the{' '}
-        <a href="/writings" className="text-[#edd86e8c] hover:text-[#edd86e] underline">
+        <Link href="/writings" className="text-[#edd86e8c] hover:text-[#edd86e] underline">
           writings
-        </a>{' '}
+        </Link>{' '}
         for frameworks you can use today.
       </div>
     </section>
