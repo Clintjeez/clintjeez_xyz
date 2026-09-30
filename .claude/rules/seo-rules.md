@@ -31,6 +31,7 @@ Every published piece of content must follow both sets of rules. AIO = AI-Optimi
 - Primary keyword in H1 and within first 100 words
 - Use LSI (related) keywords naturally throughout — never force them
 - Minimum 2 internal links to other clintjeez.com content per article
+- Internal blog links use the path `https://clintjeez.com/writings/[slug]` — the live route is `/writings/`, not `/blog/` (that's only the local folder name in `content/blog/`)
 
 **Images**
 - Descriptive alt text that includes the primary keyword naturally

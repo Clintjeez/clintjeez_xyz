@@ -2,25 +2,42 @@ import React from 'react'
 import type { Metadata } from 'next'
 import { payloadData } from '@/app/lib/payload'
 import SearchableBlogList from '../../components/SearchableBlogList'
+import Pagination from '../../components/Pagination'
 import { SITE_URL } from '../../lib/seo'
 
 export const dynamic = 'force-dynamic'
 
-export const metadata: Metadata = {
-  title: 'Writings',
-  description:
-    'Thoughts, guides, and experiences on growth engineering, GTM strategy, SaaS automation, and building technical infrastructure between product and revenue.',
-  alternates: {
-    canonical: `${SITE_URL}/writings`,
-  },
-  openGraph: {
-    title: 'Writings | Clinton James',
-    description: 'Thoughts and guides on growth engineering, GTM strategy, and SaaS automation.',
-    url: `${SITE_URL}/writings`,
-  },
+const POSTS_PER_PAGE = 9
+
+interface PageProps {
+  searchParams: Promise<{ page?: string }>
 }
 
-const Blog = async () => {
+export async function generateMetadata({ searchParams }: PageProps): Promise<Metadata> {
+  const { page } = await searchParams
+  const currentPage = Math.max(1, Number(page) || 1)
+  const canonical =
+    currentPage > 1 ? `${SITE_URL}/writings?page=${currentPage}` : `${SITE_URL}/writings`
+
+  return {
+    title: 'Writings',
+    description:
+      'Thoughts, guides, and experiences on growth engineering, GTM strategy, SaaS automation, and building technical infrastructure between product and revenue.',
+    alternates: {
+      canonical,
+    },
+    openGraph: {
+      title: 'Writings | Clinton James',
+      description: 'Thoughts and guides on growth engineering, GTM strategy, and SaaS automation.',
+      url: canonical,
+    },
+  }
+}
+
+const Blog = async ({ searchParams }: PageProps) => {
+  const { page } = await searchParams
+  const currentPage = Math.max(1, Number(page) || 1)
+
   const allPost = await (
     await payloadData()
   ).find({
@@ -29,6 +46,8 @@ const Blog = async () => {
     draft: false,
     where: { _status: { equals: 'published' } },
     sort: '-publishedDate',
+    limit: POSTS_PER_PAGE,
+    page: currentPage,
   })
 
   return (
@@ -41,6 +60,7 @@ const Blog = async () => {
         </h3>
       </div>
       <SearchableBlogList posts={allPost.docs} />
+      <Pagination currentPage={allPost.page ?? 1} totalPages={allPost.totalPages ?? 1} />
     </section>
   )
 }

@@ -50,14 +50,30 @@ there's a link in the description. It's $366."
 - **Screen share:** Record at 1080p minimum. Zoom in on key elements. Narrate every click.
 - **Both:** Use chapters in the YouTube description (00:00 Hook, 01:30 Context, etc.)
 
+## Long-Form vs. Short-Form
+
+Scripts are split by folder, not just by length — the two formats are written differently, not just trimmed versions of each other.
+
+| | Long-Form | Short-Form |
+|---|---|---|
+| Folder | `content/youtube/long-form/` | `content/youtube/short-form/` |
+| Runtime | Under 10 min | Under 60s (30–45s sweet spot) |
+| Structure | Hook → Promise → Context → Core Content → Key Takeaway → CTA | Hook → Payoff → CTA |
+| Idea count | Full framework, multi-step | One idea only |
+| Platform | YouTube | YouTube Shorts, IG Reels, TikTok (same cut) |
+| Usually | Original production, may pair with a slide deck | Clipped from a long-form video or blog article |
+
 ## Steps
 
-1. Choose topic and video type
-2. Write full script using the structure above
-3. Note which sections need screen share vs. talking head
-4. Save to `content/youtube/YYYY-MM-DD-title.md`
-5. Film against the script (can improvise, but script sets the structure)
+1. Choose topic and video type (long-form or short-form)
+2. Write full script using the matching structure above
+3. Note which sections need screen share, slide deck, or talking head
+4. Long-form: save to `content/youtube/long-form/YYYY-MM-DD-title.md`
+   Short-form: save to `content/youtube/short-form/YYYY-MM-DD-title.md`
+5. If paired with a slide deck, mark slide changes inline as `[SLIDE N: what's on screen]`
+6. Film against the script (can improvise, but script sets the structure)
 
-## Output Template
+## Output Templates
 
-See `content/youtube/_template.md`
+- Long-form: `content/youtube/long-form/_template.md`
+- Short-form: `content/youtube/short-form/_template.md`

@@ -1,5 +1,5 @@
 # LinkedIn Posts — "What Is a GTM Engineer"
-*Source: clintjeez.com/blog/what-is-a-gtm-engineer*
+*Source: clintjeez.com/writings/what-is-a-gtm-engineer*
 *Date: 2026-06-03 | Pillar: 5 — GTM Engineering as a Discipline*
 
 ---
@@ -23,7 +23,7 @@ The distinction that matters: a GTM Engineer doesn't just advise on strategy. Th
 
 Most SaaS companies have the strategy. They don't have the infrastructure.
 
-Full breakdown → clintjeez.com/blog/what-is-a-gtm-engineer
+Full breakdown → clintjeez.com/writings/what-is-a-gtm-engineer
 
 #GTMEngineering #SaaS #GrowthEngineering
 
@@ -50,7 +50,7 @@ Eight weeks in: trial-to-paid went from 6% to 19%. Revenue 3x'd from the same tr
 
 Zero new ads. Zero new traffic. The infrastructure changed. Everything else followed.
 
-Full breakdown → clintjeez.com/blog/what-is-a-gtm-engineer
+Full breakdown → clintjeez.com/writings/what-is-a-gtm-engineer
 
 #GTMEngineering #SaaS #ProductLedGrowth
 
@@ -73,7 +73,7 @@ Strategy is cheap. Infrastructure is the moat.
 
 The fastest-growing technical SaaS companies figured this out. They stopped buying strategy and started building the infrastructure between their product and their revenue.
 
-Full breakdown → clintjeez.com/blog/what-is-a-gtm-engineer
+Full breakdown → clintjeez.com/writings/what-is-a-gtm-engineer
 
 #GTMEngineering #SaaS #GrowthSystems
 
@@ -98,6 +98,6 @@ Most founders skip step 1 and wonder why every growth decision downstream is gue
 
 Measure first. Build second.
 
-Full breakdown → clintjeez.com/blog/what-is-a-gtm-engineer
+Full breakdown → clintjeez.com/writings/what-is-a-gtm-engineer
 
 #SaaS #GTMEngineering #Growth

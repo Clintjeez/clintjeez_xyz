@@ -1,10 +1,15 @@
-# YouTube Script Template
+# Long-Form YouTube Script Template
 
 *Type: [Framework / Tool Walkthrough / GTM Audit / Case Study / Agentic Demo]*
 *Pillar: [1–5]*
 *Source: [Blog article slug or "original concept"]*
 *Date: YYYY-MM-DD*
-*Format: [Talking Head / Screen Share / Both]*
+*Format: [Talking Head / Screen Share / Talking Head + Slide Deck / Both]*
+*Target runtime: [Under 10 min]*
+
+Long-form scripts live here: `content/youtube/long-form/`. For sub-60s Shorts/Reels cuts, use `content/youtube/short-form/_template.md` instead — different structure, don't force this template into a short.
+
+When the format is **Talking Head + Slide Deck**, mark every slide change inline as `[SLIDE N: what's on screen]` right before the line where it should appear, and list the full deck outline under DESCRIPTION so it can be built before filming.
 
 ---
 

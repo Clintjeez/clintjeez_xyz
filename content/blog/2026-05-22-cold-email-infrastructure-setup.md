@@ -188,7 +188,7 @@ The copy didn't change. The message didn't change. The infrastructure changed �
 
 The infrastructure takes 3–4 days to set up and 21 days to warm. After that, it runs. The machine sends while you work on everything else. That's what cold email infrastructure is supposed to do — not require daily intervention, but compound over time as you add contacts, test copy variants, and optimize based on real reply data.
 
-For the full technical walkthrough on building each component, see: [What Is a GTM Engineer](/blog/what-is-a-gtm-engineer)
+For the full technical walkthrough on building each component, see: [What Is a GTM Engineer](/writings/what-is-a-gtm-engineer)
 
 ---
 

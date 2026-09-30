@@ -1,5 +1,5 @@
 # LinkedIn Posts — "Why Your SaaS Isn't Growing"
-*Source: clintjeez.com/blog/why-your-saas-isnt-growing*
+*Source: clintjeez.com/writings/why-your-saas-isnt-growing*
 *Date: 2026-06-03 | Pillar: 1 — Systems Thinking for Growth*
 
 ---
@@ -28,7 +28,7 @@ The diagnosis order that matters:
 
 Fix in order. Not in whichever order feels most urgent.
 
-Full framework → clintjeez.com/blog/why-your-saas-isnt-growing
+Full framework → clintjeez.com/writings/why-your-saas-isnt-growing
 
 #SaaS #GrowthEngineering #GTM
 
@@ -55,7 +55,7 @@ Before you increase your ad budget, run this diagnosis: what did your paid custo
 
 Then spend more on acquisition.
 
-Full framework → clintjeez.com/blog/why-your-saas-isnt-growing
+Full framework → clintjeez.com/writings/why-your-saas-isnt-growing
 
 #SaaS #ProductLedGrowth #Activation
 
@@ -82,7 +82,7 @@ Activation rate: 22% → 38% in 45 days.
 
 Same ad spend: 14 paid conversions → 27. The data was already there. They just didn't have the framework to read it.
 
-Full breakdown → clintjeez.com/blog/why-your-saas-isnt-growing
+Full breakdown → clintjeez.com/writings/why-your-saas-isnt-growing
 
 #SaaS #Growth #GrowthEngineering
 
@@ -109,6 +109,6 @@ Before spending another dollar on acquisition:
 
 Stop pouring water into a bucket with holes in the bottom.
 
-Full framework → clintjeez.com/blog/why-your-saas-isnt-growing
+Full framework → clintjeez.com/writings/why-your-saas-isnt-growing
 
 #SaaS #ChurnPrevention #GrowthEngineering

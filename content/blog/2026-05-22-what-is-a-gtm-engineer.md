@@ -129,7 +129,7 @@ The fastest path to making your SaaS grow predictably is building the infrastruc
 
 ## Where to Start
 
-1. **Audit your lifecycle.** Which of the eight stages (Discovery, Acquisition, Activation, Conversion, Retention, Expansion, Referral, Reactivation) has no infrastructure? That's your first build. See: [Why Your SaaS Isn't Growing (It's Not Your Acquisition)](/blog/why-your-saas-isnt-growing)
+1. **Audit your lifecycle.** Which of the eight stages (Discovery, Acquisition, Activation, Conversion, Retention, Expansion, Referral, Reactivation) has no infrastructure? That's your first build. See: [Why Your SaaS Isn't Growing (It's Not Your Acquisition)](/writings/why-your-saas-isnt-growing)
 2. **Instrument your product.** If you don't have PostHog or Mixpanel installed with a real event taxonomy, stop everything and do this first. You can't engineer what you can't measure.
 3. **Define your PQL.** Run a cohort analysis on your last 50 converted customers. What did they do in their first 48 hours that churned users didn't? That's your PQL threshold.
 4. **Build one automation.** n8n is free to self-host. Build one workflow — the PQL alert, the onboarding stall email, the payment retry — and ship it. The first workflow changes how you think about all the others.

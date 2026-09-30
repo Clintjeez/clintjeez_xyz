@@ -160,7 +160,7 @@ Set up a PostHog dashboard with this metric at the top. Check it weekly. Track t
 
 ![SaaS activation rate benchmarks by category — AI/ML at 54.8%, Developer Tools at 45%, B2B SaaS average at 37.5%, FinTech at 5%](/infographics/article4-activation-benchmarks.svg)
 
-If you're below the category average, you have an activation problem to solve. If you're at or above it, the next constraint is probably in the [conversion or retention layer](/blog/why-your-saas-isnt-growing).
+If you're below the category average, you have an activation problem to solve. If you're at or above it, the next constraint is probably in the [conversion or retention layer](/writings/why-your-saas-isnt-growing).
 
 ---
 
@@ -189,7 +189,7 @@ The entire fix took 48 hours to build and deploy.
 
 The diagnosis takes 48 hours. The infrastructure takes another 48 hours to build and test. Within two weeks, you'll have a working activation system and a number that actually tells you whether your onboarding is working.
 
-For the full lifecycle context — what to fix after activation — see: [Why Your SaaS Isn't Growing (It's Not Your Acquisition)](/blog/why-your-saas-isnt-growing)
+For the full lifecycle context — what to fix after activation — see: [Why Your SaaS Isn't Growing (It's Not Your Acquisition)](/writings/why-your-saas-isnt-growing)
 
 ---
 

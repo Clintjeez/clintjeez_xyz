@@ -1,5 +1,5 @@
 # X / Twitter Posts — "What Is a GTM Engineer"
-*Source: clintjeez.com/blog/what-is-a-gtm-engineer*
+*Source: clintjeez.com/writings/what-is-a-gtm-engineer*
 *Date: 2026-06-03 | Pillar: 5 — GTM Engineering as a Discipline*
 
 ---
@@ -15,7 +15,7 @@ That gap is why leads fall through the cracks, onboarding is broken, and the CRM
 
 The role that fills it: GTM Engineer.
 
-→ clintjeez.com/blog/what-is-a-gtm-engineer
+→ clintjeez.com/writings/what-is-a-gtm-engineer
 
 ---
 
@@ -76,7 +76,7 @@ After 4 weeks of GTM engineering (PostHog instrumentation + PQL scoring + n8n au
 
 Trial-to-paid: 6% → 19%. Revenue 3x'd. Zero new ads.
 
-Full breakdown → clintjeez.com/blog/what-is-a-gtm-engineer
+Full breakdown → clintjeez.com/writings/what-is-a-gtm-engineer
 
 ---
 
@@ -89,7 +89,7 @@ GTM Engineering hands you working infrastructure.
 
 One keeps running when the contract ends. The other doesn't.
 
-→ clintjeez.com/blog/what-is-a-gtm-engineer
+→ clintjeez.com/writings/what-is-a-gtm-engineer
 
 ---
 
@@ -104,4 +104,4 @@ If no — every growth decision you're making is guesswork.
 
 That's the first GTM Engineering fix. Everything downstream depends on it.
 
-→ clintjeez.com/blog/what-is-a-gtm-engineer
+→ clintjeez.com/writings/what-is-a-gtm-engineer

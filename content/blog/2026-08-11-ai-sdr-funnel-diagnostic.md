@@ -47,7 +47,7 @@ A real input layer is built from buying signals: hiring patterns, tech stack cha
 
 An AI SDR should never run the first version of your sequence. If nobody has manually sent this exact messaging, on this exact channel, to this exact segment — and tracked the reply rate — you don't have a process. You have an untested hypothesis, and you're about to automate it before you know if it works.
 
-The fix is sequencing, not skipping: run the sequence manually for 5–10 days, track reply rate by segment, and only then hand the proven version to the agent. This is the same principle behind [how to find your SaaS activation problem in 48 hours](https://clintjeez.com/blog/find-saas-activation-problem-48-hours) — you diagnose and prove the system manually before you automate it. Automating a process nobody has validated doesn't save time. It scales an experiment you haven't finished running.
+The fix is sequencing, not skipping: run the sequence manually for 5–10 days, track reply rate by segment, and only then hand the proven version to the agent. This is the same principle behind [how to find your SaaS activation problem in 48 hours](https://clintjeez.com/writings/find-saas-activation-problem-48-hours) — you diagnose and prove the system manually before you automate it. Automating a process nobody has validated doesn't save time. It scales an experiment you haven't finished running.
 
 **The key insight:** Repeatability comes before automation, not after it. If you can't describe exactly why your current outbound motion works — which segment, which channel, which message — an agent can't replicate a pattern that doesn't exist yet.
 
@@ -93,7 +93,7 @@ The meta-lesson: agents don't build your GTM system. They reveal, at speed, exac
 1. Pull your last 20 booked meetings and check whether the list they came from was signal-filtered or a raw export.
 2. Run your current outbound sequence manually for 5–10 days and record a real reply-rate baseline before letting an agent touch it.
 3. Map what happens after a meeting books — demo show-up rate, trial conversion, activation rate — before you evaluate any AI SDR tool.
-4. If the Output layer is broken, fix it first. Instrument activation in [PostHog](https://clintjeez.com/blog/find-saas-activation-problem-48-hours) before adding more volume to the top of the funnel.
+4. If the Output layer is broken, fix it first. Instrument activation in [PostHog](https://clintjeez.com/writings/find-saas-activation-problem-48-hours) before adding more volume to the top of the funnel.
 5. Only activate an AI SDR once Input and Process both pass the diagnostic on their own, without the agent's help.
 6. Track pipeline value and closed revenue after launch — not meetings booked — as the metric that decides whether the agent stays.
 
@@ -110,7 +110,7 @@ Only if the Input, Process, and Output layers already work manually. If your out
 An AI SDR automates sending. A signal-based system determines who to send to and why, using enrichment layers like Clay instead of a raw TAM export. The agent handles execution; the system handles targeting — and you need the second one before the first one is worth paying for.
 
 **How do I know if my funnel is ready for an AI SDR?**
-Run the Pre-Agent Diagnostic: confirm your list is signal-filtered (Input), your sequence has a proven manual reply-rate baseline (Process), and your downstream conversion from meeting to closed revenue is healthy (Output). If any layer fails, fix it before adding agent volume — see [what a GTM engineer actually owns](https://clintjeez.com/blog/what-is-a-gtm-engineer) across the full pipeline, not just outbound.
+Run the Pre-Agent Diagnostic: confirm your list is signal-filtered (Input), your sequence has a proven manual reply-rate baseline (Process), and your downstream conversion from meeting to closed revenue is healthy (Output). If any layer fails, fix it before adding agent volume — see [what a GTM engineer actually owns](https://clintjeez.com/writings/what-is-a-gtm-engineer) across the full pipeline, not just outbound.
 
 ---
 

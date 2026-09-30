@@ -41,7 +41,7 @@ Produced content goes in `content/`:
 - Blog → `content/blog/` (filename: `YYYY-MM-DD-slug.md`)
 - LinkedIn → `content/linkedin/`
 - X → `content/x/`
-- YouTube → `content/youtube/`
+- YouTube → `content/youtube/long-form/` (under 10 min) or `content/youtube/short-form/` (under 60s, Shorts/Reels/TikTok)
 - Campaigns → `content/campaigns/`
 
 Use templates in each folder as the starting point.

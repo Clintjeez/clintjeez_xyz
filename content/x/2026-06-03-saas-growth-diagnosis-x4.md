@@ -1,5 +1,5 @@
 # X / Twitter Posts — "Why Your SaaS Isn't Growing"
-*Source: clintjeez.com/blog/why-your-saas-isnt-growing*
+*Source: clintjeez.com/writings/why-your-saas-isnt-growing*
 *Date: 2026-06-03 | Pillar: 1 — Systems Thinking for Growth*
 
 ---
@@ -15,7 +15,7 @@ More traffic into a 22% activation rate = more users ghosting you faster.
 
 Fix what happens after the signup. Then spend on acquisition.
 
-→ clintjeez.com/blog/why-your-saas-isnt-growing
+→ clintjeez.com/writings/why-your-saas-isnt-growing
 
 ---
 
@@ -30,7 +30,7 @@ Most early-stage products are below 30%.
 
 That's not a traffic problem. It's a lifecycle problem.
 
-→ clintjeez.com/blog/why-your-saas-isnt-growing
+→ clintjeez.com/writings/why-your-saas-isnt-growing
 
 ---
 
@@ -91,7 +91,7 @@ The data was already there the whole time.
 
 They just didn't have the framework to read it.
 
-Full diagnostic framework (free) → clintjeez.com/blog/why-your-saas-isnt-growing
+Full diagnostic framework (free) → clintjeez.com/writings/why-your-saas-isnt-growing
 
 ---
 
@@ -106,4 +106,4 @@ You can fix that in a weekend with proper dunning logic.
 
 Fix the leak before buying more water.
 
-→ clintjeez.com/blog/why-your-saas-isnt-growing
+→ clintjeez.com/writings/why-your-saas-isnt-growing
