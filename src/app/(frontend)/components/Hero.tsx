@@ -38,16 +38,23 @@ const Hero = () => {
           <h1 className="font-excalifont text-[#777778] text-left text-[15px] md:text-[22px]">
             Hey! I&apos;m{' '}
             <span className="font-bold text-[#bfbfbf] md:text-[24px]">Clinton James </span> <br />
-            Growth &amp; GTM Engineer
+            AI Engineer — Growth &amp; GTM Systems
           </h1>
-          <p className="text-[#777778] text-[14px] lg:text-[18px] text-left mt-4">
-            I engineer the full-stack infrastructure between product and revenue. From{' '}
-            <span className="text-[#bfbfbf] underline italic">growth engineering</span> and{' '}
-            <span className="text-[#bfbfbf] underline italic">GTM systems</span> to{' '}
-            <span className="text-[#bfbfbf] underline italic">AI automation</span> and{' '}
-            <span className="text-[#bfbfbf] underline italic">product-led growth</span> — combining
-            code, automation, and data to acquire, convert, and retain customers for SaaS and
-            tech-enabled businesses.
+          <p className="text-[#777778] text-[14px] lg:text-[18px] font-light text-left mt-4">
+            I build and deploy AI systems that sit between product and revenue. I excel as a
+            Product Generalist, Design Thinker, Code Ninja, and AI Hacker at my{' '}
+            <a
+              href="https://www.alubasalabs.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-excalifont font-bold text-[#edd86e] md:text-[24px] hover:underline"
+            >
+              Studio
+            </a>
+            . My diverse expertise is well-suited for data-driven environments, blending tech
+            innovation with strategic product development and user-centric design. I&apos;m driven
+            by solving ambitious problems and by applying microeconomic principles to how products
+            are built, priced, and grown.
           </p>
           <Link
             href="/book-call"

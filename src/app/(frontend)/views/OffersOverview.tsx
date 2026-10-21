@@ -2,78 +2,42 @@
 
 import React from 'react'
 import ConsultationCta from '../components/ConsultationCta'
-import {
-  TbSeo,
-  TbMailBolt,
-  TbRocket,
-  TbTrendingUp,
-  TbShieldCheck,
-  TbChartLine,
-  TbUsersGroup,
-  TbArrowBackUp,
-} from 'react-icons/tb'
+import { TbRobot, TbDatabaseSearch, TbBrain, TbAutomation } from 'react-icons/tb'
 
-const growthSystems = [
+const deployments = [
   {
-    id: 'discovery',
-    name: 'The Discovery Engine',
-    stage: 'Awareness / SEO',
-    description: 'Programmatic SEO + AIO so you rank in Google and AI answer engines.',
-    icon: TbSeo,
-  },
-  {
-    id: 'pipeline',
-    name: 'The Pipeline Machine',
-    stage: 'Lead Gen / Acquisition',
-    description: 'Clay enrichment + cold email infrastructure that books qualified calls.',
-    icon: TbMailBolt,
-  },
-  {
-    id: 'activation',
-    name: 'The Activation Accelerator',
-    stage: 'Onboarding / Activation',
-    description: 'PostHog funnels + behavioural triggers that deliver the aha moment.',
-    icon: TbRocket,
-  },
-  {
-    id: 'conversion',
-    name: 'The Conversion Engine',
-    stage: 'Trial-to-Paid',
-    description: 'PQL scoring + automated upgrade sequences that convert without manual follow-up.',
-    icon: TbTrendingUp,
-  },
-  {
-    id: 'retention',
-    name: 'The Retention Shield',
-    stage: 'Churn Prevention',
-    description: 'Health scoring + n8n alerts that catch at-risk accounts before they cancel.',
-    icon: TbShieldCheck,
-  },
-  {
-    id: 'revenue',
-    name: 'The Revenue Architect',
-    stage: 'Pricing / Monetisation',
-    description: 'Usage-based triggers + expansion sequences that grow MRR from existing accounts.',
-    icon: TbChartLine,
-  },
-  {
-    id: 'referral',
-    name: 'The Viral Growth Loop',
-    stage: 'Referral / Advocacy',
-    description: 'Automated advocacy loops that turn satisfied customers into qualified pipeline.',
-    icon: TbUsersGroup,
-  },
-  {
-    id: 'reactivation',
-    name: 'The Revenue Recovery',
-    stage: 'Win-back / Reactivation',
+    id: 'agents',
+    name: 'AI Agents',
+    stage: 'Support / Sales',
     description:
-      'Behavioural win-back sequences that recover churned accounts and failed payments.',
-    icon: TbArrowBackUp,
+      'Agents wired into your CRM or helpdesk with tool calls, guardrails, and an eval suite.',
+    icon: TbRobot,
+  },
+  {
+    id: 'rag',
+    name: 'Knowledge Assistants',
+    stage: 'RAG / Internal Docs',
+    description: 'Answers grounded in your docs and data, with retrieval accuracy you can measure.',
+    icon: TbDatabaseSearch,
+  },
+  {
+    id: 'predictive',
+    name: 'Predictive Models',
+    stage: 'Churn / Lead Scoring',
+    description:
+      'ML models trained on your product data that flag risk and intent before you miss it.',
+    icon: TbBrain,
+  },
+  {
+    id: 'automation',
+    name: 'AI Workflow Automation',
+    stage: 'GTM / Operations',
+    description: 'n8n pipelines with an LLM layer that remove manual work from growth and ops.',
+    icon: TbAutomation,
   },
 ]
 
-function GrowthSystemCard({ system }: { system: (typeof growthSystems)[number] }) {
+function DeploymentCard({ system }: { system: (typeof deployments)[number] }) {
   const Icon = system.icon
   return (
     <div className="bg-[#1b1c21] rounded-lg p-4 border border-transparent hover:border-[#2a2a2e] transition-all duration-300 group">
@@ -98,16 +62,16 @@ const OffersOverview = () => {
     <section className="mb-20">
       {/* Section Header */}
       <div className="mb-10">
-        <h1 className="mb-3 font-bold text-[16px]">Offers</h1>
+        <h1 className="mb-3 font-bold text-[16px]">What I Deploy</h1>
         <h2 className="text-[16px] md:text-[20px] md:pr-[50px] font-light text-[#777778]">
-          Each system fixes one growth bottleneck. A sprint ships one. A build ships three.
+          Each one starts with a diagnosis and ends with a measured result.
         </h2>
       </div>
 
-      {/* Growth Systems */}
+      {/* Deployments */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-        {growthSystems.map((system) => (
-          <GrowthSystemCard key={system.id} system={system} />
+        {deployments.map((system) => (
+          <DeploymentCard key={system.id} system={system} />
         ))}
       </div>
 

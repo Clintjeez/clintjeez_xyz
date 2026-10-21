@@ -20,8 +20,8 @@ const WorkOverview = async () => {
       <div className="mb-10">
         <h1 className="mb-3 font-bold text-[16px]">Work & Experience</h1>
         <h2 className="text-[16px] md:text-[20px] md:pr-[50px] font-light text-[#777778]">
-          9 years of building software — from frontend interfaces to full-stack SaaS products and
-          growth systems.
+          9 years of building software — from full-stack SaaS products and growth systems to AI
+          applications deployed for real users.
         </h2>
       </div>
 

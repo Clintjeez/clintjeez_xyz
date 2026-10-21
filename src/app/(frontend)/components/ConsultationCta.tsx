@@ -20,15 +20,16 @@ const ConsultationCta = () => {
         />
       </div>
       <p className="relative text-[10px] uppercase tracking-widest text-[#edd86e] font-semibold mb-2">
-        Free 48-Hour Sprint
+        Free 48-Hour AI Deployment Sprint
       </p>
       <h3 className="relative text-[#e0e0e0] text-[16px] md:text-[20px] font-bold leading-snug mb-3">
-        Get your first sprint free. No strings attached.
+        One workflow. One AI system. Deployed in 48 hours.
       </h3>
       <p className="relative text-[13px] text-[#777778] leading-relaxed mb-6 md:pr-10">
-        I&apos;m running a limited cohort of free 48-hour sprints for early-stage SaaS founders.
-        One bottleneck diagnosed. One fix built and deployed. All I ask for is a short video
-        testimonial if it works.
+        I&apos;m running a limited cohort of free sprints for small teams with a repetitive,
+        data-heavy workflow. One workflow diagnosed. One AI system built and deployed into your
+        stack, measured before and after. All I ask for is a short video testimonial and
+        permission to publish an anonymized case study if it works.
       </p>
       <Link
         href="/book-call"

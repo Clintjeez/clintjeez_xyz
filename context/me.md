@@ -1,7 +1,8 @@
 # Clinton James — Identity & Positioning
 
 **Brand:** ClintJeez
-**Role:** Growth & GTM Engineer
+**Role:** AI Engineer — Growth & GTM Systems
+**Career goal:** Forward Deployed Engineer (primary). Adjacent targets: Applied AI Engineer, AI Solutions Engineer
 **Site:** clintjeez.com
 **Email:** clintjeez@gmail.com
 **LinkedIn:** linkedin.com/in/clinton-james-9ba608b0
@@ -11,36 +12,38 @@
 
 ## One-Line Positioning
 
-I engineer the full-stack infrastructure between product and revenue — from first click to loyal customer.
+I build and deploy AI systems that sit between product and revenue.
 
 ## Positioning Statement
 
-Clinton James is a Growth & GTM Engineer with 9 years of cross-sector experience at the intersection of technical execution and business strategy. He helps SaaS founders, indie hackers, B2B/B2C brands, SMEs, and Web3 projects engineer systematic revenue growth — from customer lifecycle infrastructure to the distribution channels most operators overlook: Reddit, cold email, and AIO/SEO.
+Clinton James is an AI Engineer with 9 years of cross-sector experience shipping production systems where engineering meets business outcomes. He builds AI agents, LLM applications, and ML pipelines, and deploys them inside real businesses, where adoption and revenue impact are the measure of success.
+
+His edge is the half most engineers lack: years of working directly with founders and operators to diagnose the real problem before building anything. That is the Forward Deployed Engineer job: embed with the customer, find the bottleneck, ship the system, prove the result.
 
 He doesn't just advise. He ships the systems.
 
-## Unfair Advantages
+## Why Clinton Fits FDE Roles
 
-1. **Full-stack + revenue strategy in one person** — most people do one or the other
-2. **9 years across multiple sectors** — pattern recognition competitors don't have
-3. **Web3/crypto GTM fluency** — a lane competitors ignore entirely
-4. **Automation-native** — thinks in workflows, builds in days, not sprints
-5. **Practitioner, not theorist** — every framework he teaches, he has shipped
+1. **Customer-facing engineer by default.** 9 years of scoping, diagnosing, and delivering directly for clients, not just behind a ticket queue
+2. **Ships end to end.** Full-stack product, infrastructure, data, and automation in one person
+3. **Outcome-anchored.** Measures systems by activation, conversion, retention, and revenue, the same language FDE customers use
+4. **Pattern recognition across sectors.** SaaS, B2B services, Web3: fast to understand a new customer's domain
+5. **Practitioner, not theorist.** Every framework he teaches, he has shipped
 
 ## What Clinton Is Known For (Building Toward)
 
-- Engineering customer lifecycle systems end-to-end (acquisition → activation → retention)
-- SEO & AIO (AI-Optimized Content) — ranking in Google and AI answer engines
-- Reddit growth marketing — non-spammy, value-first community presence
-- Cold email infrastructure that lands in primary inboxes
-- GTM systems thinking applied to SaaS and Web3
+- Building and deploying production AI: agents, RAG, LLM evals, ML pipelines
+- Applying AI to real business workflows: GTM, growth, and customer lifecycle systems
+- Diagnosing before building: "Before you automate anything, diagnose everything."
+- SEO & AIO: ranking in Google and AI answer engines
+- Public build log of AI/ML projects as the proof layer for FDE applications
 
 ## Technical Stack
 
+**AI / ML:** Claude Code, Cursor, AI-native from the build layer up. *[TODO: add the models, frameworks, vector DBs, and eval tooling used in current AI/ML projects]*
 **Product:** React 19, Next.js 15, TypeScript, Tailwind CSS, Node.js, Payload CMS, PostgreSQL
 **Infrastructure:** Cloudflare Workers, Cloudflare R2, Docker
 **GTM Tools:** Clay, Apollo, Instantly, HubSpot, PostHog, n8n, Supabase, Stripe
-**AI:** Claude Code, Cursor — AI-native from the build layer up
 
 ## Signature Phrases
 

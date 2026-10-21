@@ -1,58 +1,78 @@
-# Campaign: 48-Hour Free Growth Sprint
+# Campaign: 48-Hour Free AI Deployment Sprint
+
+*Reframed October 2026: was the "48-Hour Free Growth Sprint." See `decisions/log.md`.*
 
 ## Objective
 
-Run 3–5 free 48-hour growth sprints for select SaaS founders.
-Exchange: one video testimonial + written case study approval.
+Run 3–5 free 48-hour AI deployment sprints for small teams.
+Exchange: one video testimonial + permission to publish an anonymized case study and technical write-up.
 
 ## Why This Campaign Exists
 
-Zero case studies = hard to close paid clients at $3,500.
-This campaign builds the proof layer before charging full price.
-Each sprint is also an ICP research session — what breaks, how fast we can diagnose it, what the fix looks like.
+The main path is a Forward Deployed Engineer role. FDE work means embedding with a customer, diagnosing the real problem, shipping a system into their stack, and proving the result.
+
+Each sprint is a rehearsal of that job, done for real. The output is portfolio proof that FDE hiring managers can verify: a real customer, a deployed system, and a measured before/after.
 
 ## ICP for This Campaign
 
-- Early-stage SaaS founder (0–$200K ARR)
-- Active on LinkedIn or X
-- Has a visible growth problem (stalled signups, low activation, high churn signals)
+- Small team (1–20 people): SaaS, agency, or service business
+- Has a repetitive, data-heavy workflow: support tickets, lead qualification, document lookup, reporting, data entry
+- Uses tools with APIs (HubSpot, Intercom, Notion, Google Workspace, Airtable, Stripe, PostHog)
+- Can give access to real (or realistic) data within 24 hours
 - Willing to record a 2-min video testimonial on Loom
+
+**Skip:** teams with no API-accessible tools, anyone who needs on-prem or compliance review before data access, and "just build me a chatbot" requests with no workflow behind them.
+
+## Sprint Menu
+
+Pick the one that fits the diagnosis. Each maps to a card on the site's "What I Deploy" section.
+
+| Sprint | Example | Metric to Measure |
+|--------|---------|-------------------|
+| **AI Agent** | Support agent that drafts replies from the helpdesk + docs; sales agent that qualifies inbound leads into HubSpot | % tickets resolved/drafted, response time, qualification accuracy |
+| **Knowledge Assistant (RAG)** | Q&A over internal docs, SOPs, or product knowledge | Retrieval precision@k, answer accuracy on a labeled test set |
+| **Predictive Model** | Churn-risk or lead-score model from product/CRM data | Precision/recall, lift vs. current heuristic |
+| **AI Workflow Automation** | n8n pipeline with an LLM step: enrichment, classification, summarization, routing | Hours saved/week, error rate vs. manual |
 
 ## Campaign Process
 
-1. **Identify** 20 qualified founders per week from LinkedIn/X
-2. **Outreach** via cold email (use `sops/cold-email.md`)
-3. **On reply** — schedule a 30-min diagnosis call
-4. **Run the sprint** — 48 hours from call to deliverable
-5. **Deliver** — send results with clear before/after
-6. **Capture** — record a 10-min video call, get the testimonial
-7. **Document** — write the case study (use case study format below)
+1. **Identify** 20 qualified teams per week from LinkedIn/X
+2. **Outreach** via DM or cold email (use `cold-dm-playbook.md` + `sops/cold-email.md`)
+3. **On reply:** 30-min diagnosis call. Map the workflow, pick one sprint, agree on the success metric *before* building
+4. **Baseline:** capture the "before" number on day 0
+5. **Build + deploy:** 48 hours from call to a system running in their stack
+6. **Eval:** run the system against a test set or a week of live data, then record the "after" number
+7. **Capture:** 10-min handover call, then a Loom testimonial
+8. **Document:** case study + technical write-up (format below), then post a build log on LinkedIn/X
 
 ## Prospect Tracker
 
-| # | Name | Company | ARR | Channel | Contacted | Replied | Call Done | Sprint Done | Testimonial |
-|---|------|---------|-----|---------|-----------|---------|-----------|-------------|-------------|
-| 1 | | | | | | | | | |
-| 2 | | | | | | | | | |
-| 3 | | | | | | | | | |
-| 4 | | | | | | | | | |
-| 5 | | | | | | | | | |
+| # | Name | Company | Workflow | Sprint Type | Channel | Contacted | Replied | Call Done | Deployed | Metric Before → After | Testimonial |
+|---|------|---------|----------|-------------|---------|-----------|---------|-----------|----------|----------------------|-------------|
+| 1 | | | | | | | | | | | |
+| 2 | | | | | | | | | | | |
+| 3 | | | | | | | | | | | |
+| 4 | | | | | | | | | | | |
+| 5 | | | | | | | | | | | |
 
 ## Case Study Format
 
 Save each completed case study to `content/campaigns/48hr-sprint/case-studies/CS-001-company-name.md`
 
 **Structure:**
-1. **The Founder** — name, company, stage, what they were struggling with
-2. **The Diagnosis** — what we found in the first 30 minutes
-3. **What We Built in 48 Hours** — specific deliverable (named, not vague)
-4. **The Result** — a number, even an early signal ("open rate went from 8% to 31%")
-5. **Their Words** — 1–2 sentence direct quote from the founder
-6. **Video Testimonial** — Loom link
+1. **The Team:** company (anonymized if needed), size, the workflow that was eating time
+2. **The Diagnosis:** what the real bottleneck was, found in the first 30 minutes
+3. **The System:** architecture in plain terms: model, retrieval/data sources, tools integrated, guardrails
+4. **The Eval:** how success was measured, the test set, failure cases found and fixed
+5. **The Result:** before → after on the agreed metric
+6. **Their Words:** 1–2 sentence direct quote
+7. **Video Testimonial:** Loom link
+8. **Technical Write-up:** link to the public repo or blog post (sanitized, with no client data)
 
 ## Success Criteria
 
 Campaign is complete when we have:
-- [ ] 3 published case studies with real numbers
+- [ ] 3 deployed systems with measured before/after results
 - [ ] 3 video testimonials on record
-- [ ] Pattern documented: which bottleneck appears most in the ICP
+- [ ] 3 published case studies + at least 1 public technical write-up
+- [ ] Each case study usable as a talking point in FDE interviews (problem → diagnosis → system → result)

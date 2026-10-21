@@ -1,47 +1,64 @@
 # Goals
 
-## 6-Month Goals — by November 2026
-
-**Revenue**
-- 5 paid Growth System Builds completed → $17,500
-- 2 active retainer clients → $2,666/mo recurring
-- Total: ~$20K+ in first 6 months
-
-**Proof Layer**
-- 10 case studies from the free 48-hour sprint campaign
-- 10+ video testimonials on record
-
-**Audience**
-- 500+ LinkedIn followers (organic, ICP-aligned)
-- 300+ X/Twitter followers
-- YouTube channel launched with 5+ videos published
-
-**Content**
-- 50+ indexed blog articles ranking for GTM and growth keywords
-- Established content flywheel running without drop-off
-
----
-
-## 12-Month Goals — by May 2027
-
-**Revenue**
-- $8,000–$10,000 MRR (mix of builds + retainers)
-- Inbound is the primary client acquisition channel — no more cold outreach needed
-
-**Audience**
-- 3,000+ LinkedIn followers
-- 1,500+ X followers
-- YouTube at 500+ subscribers
-- Medium cross-posting adding SEO surface area
-
-**Authority**
-- Top 5 in Google/AI rankings for "GTM engineer for SaaS" category keywords
-- Recognized voice in SaaS lifecycle growth and GTM engineering
-- 20+ published case studies with real numbers
+*Reset October 2026: main path is now a Forward Deployed Engineer role. See `decisions/log.md`.*
+*Previous GTM-consulting goals (May 2026) are in git history.*
 
 ---
 
 ## North Star
 
-Build a personal brand where inbound makes cold outreach optional — not necessary.
-The content flywheel becomes the pipeline.
+**Signed offer for a Forward Deployed Engineer role at an AI company by April 2027.**
+
+Everything else (projects, content, consulting) exists to make that offer easier to win.
+
+---
+
+## 3-Month Goals — by January 2027
+
+**Proof Layer (the priority)**
+- 3 shipped AI/ML proof projects: public repo, deployed demo, written case study, 2–3 min Loom walkthrough each
+- At least 1 of the 3 deployed for a real user or client, with a measured before/after result
+- Each project shows FDE signals: a scoped customer problem, an eval or metric, a production deploy, and a write-up a non-engineer can follow
+
+**Pipeline**
+- 60+ tailored FDE / Applied AI applications sent (~5/week)
+- 40+ referral or hiring-manager outreaches (~3–4/week)
+- 8+ first-round interviews
+- 2+ final rounds
+
+**Interview Readiness**
+- Coding: 75+ medium problems in Python, timed
+- Problem decomposition: 15+ mock "customer has messy problem X, design the solution" sessions (Palantir-style decomposition)
+- System design: 6+ LLM-system designs practiced (RAG, agents, eval pipelines, latency/cost tradeoffs)
+- Story bank: 8 STAR stories mapped to FDE competencies (ambiguity, customer conflict, shipping under pressure, measurable impact)
+
+**Public Presence**
+- LinkedIn headline, X bio, GitHub profile, and site all say AI Engineer, consistent everywhere
+- GitHub: 3 pinned proof repos with clean READMEs
+- 1 build-log post per week per proof project (LinkedIn + X)
+
+---
+
+## 6-Month Goals — by April 2027
+
+- **Signed FDE offer** (or Applied AI / AI Solutions Engineer at an AI-native company)
+- 5 AI/ML projects in the public portfolio
+- 2+ case studies from real deployments with real numbers
+- Recognized on LinkedIn/X as someone who ships production AI, not just someone who talks about it
+- 1,000+ LinkedIn followers, mostly engineers, hiring managers, and AI founders
+
+---
+
+## Secondary — Consulting (Supporting Proof, Not Revenue Path)
+
+- Only take engagements that double as AI deployment case studies
+- Target: 1–2 AI deployment engagements by January 2027, run like FDE work (embed, diagnose, ship, measure)
+- Revenue from consulting is a bonus, not a goal metric
+
+---
+
+## What Does Not Count as Progress
+
+- Content volume without a shipped project behind it
+- Applications without tailoring or a referral attempt
+- Courses or tutorials without a deployed artifact at the end

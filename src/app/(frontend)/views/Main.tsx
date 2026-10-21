@@ -8,8 +8,8 @@ import Footer from '../components/Footer'
 const Main = () => {
   return (
     <div id="home" className="p-8">
-      <OffersOverview />
       <WorkOverview />
+      <OffersOverview />
       <BlogOverview />
       <Footer />
     </div>

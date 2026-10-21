@@ -33,4 +33,19 @@ Include the date and the reasoning. This is your institutional memory.
 
 ---
 
+## October 2026
+
+### Repositioned from Growth & GTM Engineer to AI Engineer, with FDE roles as the main path
+**Decision:** Changed the title to "AI Engineer — Growth & GTM Systems." Landing a Forward Deployed Engineer role is now the primary goal. The consulting tiers ($366 / $3,500 / $1,333/mo) are now supporting proof, not the main revenue path.
+**Why:** Focus has shifted to building AI/ML projects and applying to FDE roles. Recruiters search for "AI Engineer" and "Forward Deployed," and "Growth" first reads as a marketer. FDE work (embed with a customer, diagnose, ship, prove the result) maps directly onto 9 years of client-facing delivery, which is the scarce half most FDE candidates lack.
+**Note:** Growth stays in the title as the specialty, because it sets him apart in a crowded AI Engineer field. Updated so far: site title/meta/JSON-LD/hero, `context/me.md`, CLAUDE.md/AGENTS.md, `context/goals.md` (north star: FDE offer by April 2027), `context/current-priorities.md` (proof projects + application pipeline). Still to rework: content pillars, SEO keyword clusters, services framing, brand voice, LinkedIn/X bios.
+**Risk:** The title is only a claim until there are 2–3 shipped AI/ML projects with real depth (agents, RAG, evals, deployed, measured). Proof projects come before volume content.
+
+### Offers section and free sprint reframed around AI deployment
+**Decision:** The homepage now goes Hero → Work → What I Deploy → Blog. The 8 growth-system cards are replaced by 4 AI deployment cards (AI Agents, Knowledge Assistants, Predictive Models, AI Workflow Automation). The free sprint is now the "48-Hour AI Deployment Sprint," which also asks for permission to publish an anonymized case study. Removed the unused `PricingPlans.tsx`.
+**Why:** Offers sat right below the hero, so recruiters saw a GTM consulting menu first. Each sprint now works as a real FDE-style deployment that produces portfolio proof.
+**Note:** The 8 growth systems remain as domain knowledge and content material. `cold-dm-playbook.md` scripts still use the growth-sprint pitch and need rewriting.
+
+---
+
 *Add new decisions below as they're made. Format: ### Title → Why → Note/Risk*

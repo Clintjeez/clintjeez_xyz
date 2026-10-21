@@ -10,9 +10,9 @@ const jsonLd = {
   name: 'Clinton James',
   url: SITE_URL,
   image: `${SITE_URL}/clinton.png`,
-  jobTitle: 'Growth & GTM Engineer',
+  jobTitle: 'AI Engineer',
   description:
-    'Growth & GTM Engineer with 9+ years of experience building technical infrastructure between product and revenue for SaaS founders.',
+    'AI Engineer with 9+ years shipping production systems. Builds and deploys AI agents, LLM applications, and ML pipelines that sit between product and revenue.',
   sameAs: [
     'https://github.com/Clintjeez',
     'https://www.linkedin.com/in/clinton-james-dev/',
@@ -20,6 +20,12 @@ const jsonLd = {
     'https://medium.com/@clintjeez',
   ],
   knowsAbout: [
+    'AI Engineering',
+    'Large Language Models',
+    'AI Agents',
+    'Retrieval-Augmented Generation',
+    'Machine Learning',
+    'Forward Deployed Engineering',
     'Growth Engineering',
     'Go-to-Market Strategy',
     'SEO Automation',
