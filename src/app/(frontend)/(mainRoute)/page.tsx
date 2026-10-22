@@ -10,9 +10,9 @@ const jsonLd = {
   name: 'Clinton James',
   url: SITE_URL,
   image: `${SITE_URL}/clinton.png`,
-  jobTitle: 'AI Engineer',
+  jobTitle: 'AI & Growth Systems Engineer',
   description:
-    'AI Engineer with 9+ years shipping production systems. Builds and deploys AI agents, LLM applications, and ML pipelines that sit between product and revenue.',
+    'AI & Growth Systems Engineer with 9+ years shipping production systems. Builds and deploys AI agents, LLM applications, and ML pipelines at the intersection of product and revenue.',
   sameAs: [
     'https://github.com/Clintjeez',
     'https://www.linkedin.com/in/clinton-james-dev/',

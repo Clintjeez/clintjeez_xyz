@@ -33,7 +33,7 @@ Everything else (projects, content, consulting) exists to make that offer easier
 - Story bank: 8 STAR stories mapped to FDE competencies (ambiguity, customer conflict, shipping under pressure, measurable impact)
 
 **Public Presence**
-- LinkedIn headline, X bio, GitHub profile, and site all say AI Engineer, consistent everywhere
+- LinkedIn headline, X bio, GitHub profile, and site all say AI & Growth Systems Engineer, consistent everywhere
 - GitHub: 3 pinned proof repos with clean READMEs
 - 1 build-log post per week per proof project (LinkedIn + X)
 

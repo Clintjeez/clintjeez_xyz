@@ -1,11 +1,11 @@
 # Clinton James — Identity & Positioning
 
 **Brand:** ClintJeez
-**Role:** AI Engineer — Growth & GTM Systems
+**Role:** AI & Growth Systems Engineer
 **Career goal:** Forward Deployed Engineer (primary). Adjacent targets: Applied AI Engineer, AI Solutions Engineer
 **Site:** clintjeez.com
-**Email:** clintjeez@gmail.com
-**LinkedIn:** linkedin.com/in/clinton-james-9ba608b0
+**Email:** clintjeez@gmail.com (public/site: hey@clintjeez.com)
+**LinkedIn:** linkedin.com/in/clinton-james-dev
 **X/Twitter:** @ClintJeezz
 **GitHub:** github.com/Clintjeez
 **Book a call:** cal.com/clintonjames/15min
@@ -16,7 +16,7 @@ I build and deploy AI systems that sit between product and revenue.
 
 ## Positioning Statement
 
-Clinton James is an AI Engineer with 9 years of cross-sector experience shipping production systems where engineering meets business outcomes. He builds AI agents, LLM applications, and ML pipelines, and deploys them inside real businesses, where adoption and revenue impact are the measure of success.
+Clinton James is an AI & Growth Systems Engineer with 9 years of cross-sector experience shipping production systems where engineering meets business outcomes. He builds AI agents, LLM applications, and ML pipelines, and deploys them inside real businesses, where adoption and revenue impact are the measure of success.
 
 His edge is the half most engineers lack: years of working directly with founders and operators to diagnose the real problem before building anything. That is the Forward Deployed Engineer job: embed with the customer, find the bottleneck, ship the system, prove the result.
 
@@ -40,9 +40,13 @@ He doesn't just advise. He ships the systems.
 
 ## Technical Stack
 
-**AI / ML:** Claude Code, Cursor, AI-native from the build layer up. *[TODO: add the models, frameworks, vector DBs, and eval tooling used in current AI/ML projects]*
-**Product:** React 19, Next.js 15, TypeScript, Tailwind CSS, Node.js, Payload CMS, PostgreSQL
-**Infrastructure:** Cloudflare Workers, Cloudflare R2, Docker
+**Education:** BSc Computer Science. Coursework: Principles of Microeconomics (MIT), Investment Banking, Data Analytics
+**Languages:** Python, TypeScript, JavaScript, Rust, Go, Solidity
+**AI / ML:** PyTorch, Hugging Face (Transformers, Datasets), Pandas, NumPy, Jupyter, Kaggle, Gradio, GPU/CUDA, ML pipelines
+**LLMs & Agents:** Claude, Claude Code, Cursor, Groq API, Ollama, AI agents
+**Product:** React 19, Next.js 15, TypeScript, Tailwind CSS, Node.js, Prisma, REST APIs, Payload CMS, PostgreSQL
+**Infrastructure:** AWS, Docker, Cloudflare Workers, Cloudflare R2, Supabase
+**Automation & Testing:** n8n, Make, Zapier, Playwright
 **GTM Tools:** Clay, Apollo, Instantly, HubSpot, PostHog, n8n, Supabase, Stripe
 
 ## Signature Phrases

@@ -11,7 +11,7 @@
 **Links:**
 
 - GitHub: https://github.com/Clintjeez
-- LinkedIn: https://www.linkedin.com/in/clinton-james-9ba608b0/
+- LinkedIn: https://www.linkedin.com/in/clinton-james-dev/
 - Twitter/X: https://twitter.com/ClintJeezz
 - Medium: https://medium.com/@clintjeez
 - Portfolio: clintjeez.com

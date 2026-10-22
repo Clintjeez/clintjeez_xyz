@@ -147,7 +147,7 @@ Use these when referencing the tech stack in visual content (blog thumbnails, Li
 | Platform | Handle | Profile URL |
 |----------|--------|-------------|
 | Site | clintjeez.com | https://clintjeez.com |
-| LinkedIn | clinton-james-9ba608b0 | linkedin.com/in/clinton-james-9ba608b0 |
+| LinkedIn | clinton-james-dev | linkedin.com/in/clinton-james-dev |
 | X / Twitter | @ClintJeezz | x.com/ClintJeezz |
 | GitHub | Clintjeez | github.com/Clintjeez |
 | YouTube | — | *[Add channel URL when launched]* |

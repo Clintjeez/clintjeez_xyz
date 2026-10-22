@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
-    images: [{ url: OG_IMAGE_URL, width: 1200, height: 630, alt: 'Clinton James - AI Engineer, Growth & GTM Systems' }],
+    images: [{ url: OG_IMAGE_URL, width: 1200, height: 630, alt: 'Clinton James - AI & Growth Systems Engineer' }],
   },
   twitter: {
     card: 'summary_large_image',

@@ -46,7 +46,7 @@ const Footer = () => {
           <FaGithubSquare />
         </Link>
         <Link
-          href="https://www.linkedin.com/in/clinton-james-9ba608b0/"
+          href="https://www.linkedin.com/in/clinton-james-dev/"
           target="_blank"
           className="hover:text-[#bfbfbf] transition-colors duration-200"
         >
@@ -67,7 +67,7 @@ const Footer = () => {
           <FaMedium />
         </Link>
         <Link
-          href="mailto:hello@clintjeez.me"
+          href="mailto:hey@clintjeez.com"
           className="hover:text-[#bfbfbf] transition-colors duration-200"
         >
           <FaEnvelope />

@@ -46,6 +46,10 @@ Include the date and the reasoning. This is your institutional memory.
 **Why:** Offers sat right below the hero, so recruiters saw a GTM consulting menu first. Each sprint now works as a real FDE-style deployment that produces portfolio proof.
 **Note:** The 8 growth systems remain as domain knowledge and content material. `cold-dm-playbook.md` scripts still use the growth-sprint pitch and need rewriting.
 
+### Title refined to "AI & Growth Systems Engineer"
+**Decision:** The title is now "AI & Growth Systems Engineer" everywhere: hero, page title, meta, OG alt, JSON-LD, and context files. The public contact email on the site is hey@clintjeez.com (the footer used hello@clintjeez.me before).
+**Why:** It still opens with "AI" for recruiter search, and it reads more cleanly than the dash form.
+
 ---
 
 *Add new decisions below as they're made. Format: ### Title → Why → Note/Risk*

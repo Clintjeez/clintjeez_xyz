@@ -12,6 +12,7 @@
 @theme {
   --animate-marquee: marquee 25s linear infinite;
   --animate-pulse-dot: pulse-dot 1.5s ease-in-out infinite;
+  --animate-wiggle: wiggle 0.6s ease-in-out infinite;
   --font-excalifont: 'Excalifont', cursive;
 }
 
@@ -23,6 +24,18 @@
   50% {
     opacity: 0.4;
     transform: scale(0.85);
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-6deg);
+  }
+  75% {
+    transform: rotate(6deg);
   }
 }
 
@@ -80,7 +93,7 @@ body {
   background-image: url('/tile_bg.svg');
   background-position: 50% 0;
   background-repeat: repeat;
-  background-size: 142px 71px;
+  background-size: 71px 35.5px;
   position: absolute;
   top: 0%;
   bottom: 0%;

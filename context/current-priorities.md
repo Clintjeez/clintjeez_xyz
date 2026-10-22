@@ -20,7 +20,7 @@ Remaining free sprints become 48-hour AI deployments: embed with a founder, find
 See: `content/campaigns/48hr-sprint/` (update the pitch to match).
 
 ### 3. Fix the Public Surface
-Update LinkedIn headline + About, X bio, GitHub profile README, and pinned repos so they say **AI Engineer — Growth & GTM Systems**. Recruiters check these before the site.
+Update LinkedIn headline + About, X bio, GitHub profile README, and pinned repos so they say **AI & Growth Systems Engineer**. Recruiters check these before the site.
 
 ### 4. Start the Application Pipeline
 - Build a target list of 30 companies hiring FDEs / Applied AI engineers (AI labs, AI-native apps, data/infra platforms). Verify open roles before applying

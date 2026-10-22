@@ -16,7 +16,7 @@ const BlogOverview = async () => {
   })
 
   return (
-    <section className="my-20 md:my-10">
+    <section id="writings" className="my-20 md:my-10 scroll-mt-8">
       <div className="mb-16 md:mb-10">
         <h1 className="mb-3 font-bold text-[16px]">Blog Overview</h1>
         <h2 className="text-[16px] md:text-[20px] md:pr-[50px] font-light text-[#777778]">
