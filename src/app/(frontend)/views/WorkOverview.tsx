@@ -112,7 +112,7 @@ const WorkOverview = async () => {
       <div className="mb-10">
         <h1 className="mb-3 font-bold text-[16px]">Works</h1>
         <h2 className="text-[16px] md:text-[20px] md:pr-[50px] font-light text-[#777778]">
-          A selection of recent projects, shaped by a 9-year journey in software engineering and
+          A selection of recent projects, shaped by a 9+ years journey in software engineering and
           solving the problems around me.
         </h2>
       </div>
