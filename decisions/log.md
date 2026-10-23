@@ -50,6 +50,11 @@ Include the date and the reasoning. This is your institutional memory.
 **Decision:** The title is now "AI & Growth Systems Engineer" everywhere: hero, page title, meta, OG alt, JSON-LD, and context files. The public contact email on the site is hey@clintjeez.com (the footer used hello@clintjeez.me before).
 **Why:** It still opens with "AI" for recruiter search, and it reads more cleanly than the dash form.
 
+### Free sprint becomes a paid AI Implementation
+**Decision:** The free AI Deployment Sprint is now a paid "AI Implementation" (the 48-hour framing was dropped) for businesses and founders. The video testimonial request is dropped. Publishing an anonymized case study is an optional ask, never a condition of the deal.
+**Why:** The offer is strong enough to charge for, and paid work is better proof for FDE applications than free work. Asking for a testimonial adds friction to a paid sale.
+**Open:** Price is not set yet. The site CTA routes to the book-call page, with no price shown.
+
 ---
 
 *Add new decisions below as they're made. Format: ### Title → Why → Note/Risk*

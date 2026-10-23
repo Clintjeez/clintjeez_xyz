@@ -20,23 +20,22 @@ const ConsultationCta = () => {
         />
       </div>
       <p className="relative text-[10px] uppercase tracking-widest text-[#edd86e] font-semibold mb-2">
-        Free 48-Hour AI Deployment Sprint
+        AI Implementation
       </p>
       <h3 className="relative text-[#e0e0e0] text-[16px] md:text-[20px] font-bold leading-snug mb-3">
-        One workflow. One AI system. Deployed in 48 hours.
+        One workflow. One AI system. Deployed into your stack.
       </h3>
       <p className="relative text-[13px] text-[#777778] leading-relaxed mb-6 md:pr-10">
-        I&apos;m running a limited cohort of free sprints for small teams with a repetitive,
-        data-heavy workflow. One workflow diagnosed. One AI system built and deployed into your
-        stack, measured before and after. All I ask for is a short video testimonial and
-        permission to publish an anonymized case study if it works.
+        For businesses and founders with a repetitive, data-heavy workflow. I diagnose the
+        bottleneck, build an AI system into your existing stack, and measure the result before and
+        after.
       </p>
       <Link
         href="/book-call"
         onClick={() => posthog.capture('book_call_cta_clicked', { source: 'consultation_cta' })}
         className="relative inline-flex items-center gap-3 border border-[#edd86e] bg-[#17181d] hover:bg-[#484848] text-[#bfbfbf] text-[13px] font-bold px-5 py-2 rounded-md transition-all duration-300"
       >
-        <span>Apply for a free sprint</span>
+        <span>Book an implementation call</span>
         <HiArrowLongRight className="text-[#edd86e] text-[16px]" />
       </Link>
     </section>
