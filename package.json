@@ -17,7 +17,8 @@
     "dev:worker": "wrangler dev --port 8771",
     "preview:worker": "npm run build:worker && npm run dev:worker",
     "deploy:worker": "npm run build:worker && wrangler deploy",
-    "sync-drafts": "tsx scripts/sync-blog-drafts.ts"
+    "sync-drafts": "tsx scripts/sync-blog-drafts.ts",
+    "cv:pdf": "bash scripts/build-cv-pdf.sh"
   },
   "dependencies": {
     "@calcom/embed-react": "^1.5.3",

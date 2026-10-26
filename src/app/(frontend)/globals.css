@@ -155,3 +155,35 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: rgba(237, 216, 110, 0.274);
   background: radial-gradient(circle, rgba(237, 216, 110, 0.156) 26%, rgba(27, 28, 33, 0.3799894957983193) 100%);
 }
+/* CV page: print/PDF renders as a clean light resume */
+@media print {
+  /* Zero page margins stop browsers printing their own header and footer
+     (date, page title, URL); the spacing moves to padding repeated on every page */
+  @page {
+    size: letter;
+    margin: 0;
+  }
+
+  body {
+    background: #ffffff !important;
+  }
+
+  .cv-page {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 0.5in 0.55in !important;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+  .cv-page,
+  .cv-page * {
+    color: #1f1f1f !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-color: #d9d9d9 !important;
+  }
+
+  .cv-page .cv-accent {
+    color: #7a5c00 !important;
+  }
+}

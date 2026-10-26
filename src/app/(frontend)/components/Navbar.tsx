@@ -140,7 +140,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="px-6 py-5 md:px-8 md:py-6 flex items-center justify-between text-[11px] md:text-[13px] border-b border-[#2a2a2e]">
+    <nav className="print:hidden px-6 py-5 md:px-8 md:py-6 flex items-center justify-between text-[11px] md:text-[13px] border-b border-[#2a2a2e]">
       <Link
         href="/"
         onClick={scrollTo('home')}
