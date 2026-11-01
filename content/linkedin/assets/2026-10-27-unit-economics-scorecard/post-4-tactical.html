@@ -1,0 +1,87 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Post 4 Tactical</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  .canvas { width: 1080px; height: 1920px; --glow-x: 80%; --glow-y: 18%; }
+  .kicker { position: absolute; top: 72px; left: 72px; font-size: 18px; color: var(--gold); }
+  h1 { position: absolute; top: 120px; left: 72px; width: 560px; font-size: 118px; font-weight: 800; line-height: 0.95; letter-spacing: -0.035em; }
+  h1 em { color: var(--gold); font-style: italic; font-weight: 700; }
+  .lede { position: absolute; top: 520px; left: 72px; width: 520px; font-size: 22px; line-height: 1.5; color: var(--text-2); }
+  .portrait { right: -20px; top: 90px; width: 470px; height: 620px; background-image: url(portrait-bw.png); }
+  .who { position: absolute; right: 72px; top: 660px; text-align: right; font-family: 'Playfair Display', serif; }
+  .who b { display: block; font-size: 28px; }
+  .who i { font-size: 18px; color: var(--muted); }
+
+  .receipt { position: absolute; left: 72px; right: 72px; top: 760px; background: #222326; border: 1px solid #ffffff14; border-radius: 12px 12px 0 0; padding: 36px 44px 30px; }
+  .receipt::after { content: ''; position: absolute; left: 0; right: 0; bottom: -18px; height: 18px;
+    background: linear-gradient(-45deg, transparent 12px, #222326 0) 0 0 / 24px 18px, linear-gradient(45deg, transparent 12px, #222326 0) 0 0 / 24px 18px; }
+  .r-head { display: flex; justify-content: space-between; font-size: 16px; color: var(--muted); padding-bottom: 20px; border-bottom: 2px dashed #ffffff22; }
+  .r-head b { color: var(--white); font-weight: 700; letter-spacing: 0.18em; }
+  .line { display: grid; grid-template-columns: 48px 1fr auto; align-items: center; gap: 12px; padding: 15px 0; border-bottom: 1px dotted #ffffff18; font-size: 22px; }
+  .line .n { color: var(--muted); font-size: 16px; }
+  .line small { display: block; font-size: 14px; color: var(--muted); margin-top: 4px; }
+  .pill { font-size: 13px; padding: 6px 12px; border-radius: 99px; letter-spacing: 0.12em; }
+  .pill.in { color: var(--gold); border: 1px solid rgba(237,216,110,0.6); background: rgba(237,216,110,0.12); }
+  .pill.miss { color: #e0928b; border: 1px solid rgba(181,84,76,0.6); background: rgba(181,84,76,0.15); }
+  .div { text-align: center; color: var(--muted); font-size: 16px; padding: 18px 0 8px; letter-spacing: 0.1em; }
+  .totals { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 16px; }
+  .tot { padding: 20px 22px; border-radius: 10px; }
+  .tot .l { font-size: 14px; letter-spacing: 0.16em; color: var(--muted); }
+  .tot .v { font-family: 'Playfair Display', serif; font-weight: 800; font-size: 60px; margin-top: 4px; }
+  .tot.a { border: 1px dashed #ffffff30; }
+  .tot.a .v { color: var(--muted); text-decoration: line-through; text-decoration-color: #b5544c; text-decoration-thickness: 4px; }
+  .tot.b { border: 1px solid rgba(237,216,110,0.6); background: rgba(237,216,110,0.08); }
+  .tot.b .v { color: var(--gold); }
+  .eg { font-size: 13px; color: var(--muted); margin-top: 12px; text-align: right; }
+
+  .payback { position: absolute; left: 72px; right: 72px; top: 1560px; }
+  .payback h3 { font-size: 16px; color: var(--muted); }
+  .payback .eq { font-size: 25px; margin: 12px 0 26px; color: var(--white); }
+  .payback .eq b { color: var(--gold); }
+  .tl { position: relative; height: 34px; display: flex; border-radius: 6px; overflow: hidden; }
+  .tl .red { flex: 12; background: repeating-linear-gradient(90deg, rgba(181,84,76,0.6) 0 12px, rgba(181,84,76,0.3) 12px 18px); }
+  .tl .gold { flex: 12; background: var(--gold); }
+  .ticks { position: relative; height: 70px; font-size: 14px; color: var(--muted); }
+  .ticks span { position: absolute; top: 10px; transform: translateX(-50%); text-align: center; white-space: nowrap; }
+  .ticks span::before { content: ''; display: block; width: 2px; height: 12px; background: #ffffff40; margin: -10px auto 6px; }
+  .note { position: absolute; left: 72px; bottom: 76px; font-size: 32px; color: var(--gold); transform: rotate(-2deg); }
+  .handle { position: absolute; right: 72px; bottom: 82px; }
+</style></head>
+<body><div class="canvas">
+  <div class="kicker caps">Tactical · Fully loaded CAC</div>
+  <h1 class="serif">Your CAC<br>is <em>lying</em><br>to you.</h1>
+  <p class="lede">Most founders divide ad spend by new customers and call it CAC. That's ad cost per customer, often half the real number.</p>
+  <div class="portrait"></div>
+  <div class="who"><b>Clinton James</b><i>AI &amp; Growth Systems Engineer</i></div>
+
+  <div class="receipt">
+    <div class="r-head"><b>CAC RECEIPT</b><span>LAST FULL QUARTER</span></div>
+    <div class="line"><span class="n">01</span><span>Paid ads, every channel</span><span class="pill in">COUNTED</span></div>
+    <div class="line"><span class="n">02</span><span>S&amp;M salaries<small>pro-rated for acquisition time</small></span><span class="pill miss">MISSED</span></div>
+    <div class="line"><span class="n">03</span><span>Commissions &amp; bonuses</span><span class="pill miss">MISSED</span></div>
+    <div class="line"><span class="n">04</span><span>GTM stack<small>HubSpot · Apollo · Clay · Instantly</small></span><span class="pill miss">MISSED</span></div>
+    <div class="line"><span class="n">05</span><span>Agency, contractors, content</span><span class="pill miss">MISSED</span></div>
+    <div class="div">÷ NEW PAYING CUSTOMERS THIS QUARTER</div>
+    <div class="totals">
+      <div class="tot a"><div class="l">AD-ONLY "CAC"</div><div class="v">$600</div></div>
+      <div class="tot b"><div class="l">FULLY LOADED CAC</div><div class="v">$1,200</div></div>
+    </div>
+    <div class="eg">Illustrative example</div>
+  </div>
+
+  <div class="payback">
+    <h3 class="caps">Then run the payback check</h3>
+    <div class="eq">$1,200 ÷ ($100/mo × 100% margin) = <b>12 months</b></div>
+    <div class="tl"><div class="red"></div><div class="gold"></div></div>
+    <div class="ticks">
+      <span style="left:0%;transform:none">0</span>
+      <span style="left:25%">6 mo<br><b style="color:#edd86e;font-weight:500">ELITE</b></span>
+      <span style="left:50%">12 mo<br><b style="color:#fff;font-weight:500">PAID BACK</b></span>
+      <span style="left:75%">18 mo<br><b style="color:#e0928b;font-weight:500">DANGER</b></span>
+      <span style="left:100%;transform:translateX(-100%)">24</span>
+    </div>
+  </div>
+
+  <div class="note hand">Calculate it. Then spend.</div>
+  <div class="handle"><b>@</b>ClintJeezz</div>
+</div></body></html>

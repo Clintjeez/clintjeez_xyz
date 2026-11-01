@@ -1,0 +1,80 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Post 1 Framework</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  .canvas { width: 1080px; height: 1350px; --glow-x: 78%; --glow-y: 72%; }
+  .head { position: absolute; top: 64px; left: 0; right: 0; text-align: center; }
+  .head h1 { font-weight: 800; font-size: 138px; line-height: 0.92; letter-spacing: -0.035em; }
+  .head h1 em { font-style: italic; color: var(--gold); font-weight: 700; }
+  .head .divider { margin: 34px 0 26px; }
+  .head p { font-size: 21px; line-height: 1.7; color: var(--text-2); }
+
+  .portrait { right: -30px; bottom: 0; width: 520px; height: 690px; background-image: url(portrait-bw.png); }
+
+  .who { position: absolute; left: 650px; top: 520px; }
+  .who .name { font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 700; color: var(--white); }
+  .who .role { font-family: 'Playfair Display', serif; font-style: italic; font-size: 22px; color: var(--muted); margin-top: 2px; }
+  .who .rule { width: 34px; height: 2px; background: var(--white); margin-bottom: 14px; }
+
+  .card-stack { position: absolute; left: 56px; top: 520px; width: 560px; display: flex; flex-direction: column; gap: 16px; }
+  .metric { padding: 20px 22px 18px; }
+  .metric .top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; }
+  .metric .n { font-size: 14px; color: var(--gold); letter-spacing: 0.18em; }
+  .metric .t { font-size: 24px; font-weight: 700; color: var(--white); }
+  .metric .d { font-size: 14px; color: var(--muted); }
+  .scale { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+  .scale div { height: 34px; border-radius: 5px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 500; }
+  .scale .bad  { background: rgba(181,84,76,0.22); color: #e0928b; border: 1px solid rgba(181,84,76,0.5); }
+  .scale .ok   { background: #ffffff10; color: var(--text-2); border: 1px solid #ffffff22; }
+  .scale .best { background: rgba(237,216,110,0.16); color: var(--gold); border: 1px solid rgba(237,216,110,0.55); }
+  .stack { display: flex; height: 34px; border-radius: 5px; overflow: hidden; font-size: 13px; font-weight: 500; }
+  .stack div { display: flex; align-items: center; justify-content: center; color: var(--bg); }
+  .legend { position: absolute; left: 56px; top: 1100px; display: flex; gap: 22px; font-size: 14px; color: var(--muted); letter-spacing: 0.1em; }
+  .legend span::before { content: ''; display: inline-block; width: 11px; height: 11px; border-radius: 3px; margin-right: 8px; vertical-align: -1px; }
+  .legend .l1::before { background: rgba(181,84,76,0.7); }
+  .legend .l2::before { background: #ffffff40; }
+  .legend .l3::before { background: var(--gold); }
+
+  .note { position: absolute; left: 60px; top: 1170px; width: 520px; font-size: 34px; color: var(--gold); transform: rotate(-2deg); line-height: 1.25; }
+  .arrow { position: absolute; left: 672px; top: 618px; }
+  .handle { position: absolute; right: 48px; top: 28px; }
+</style></head>
+<body><div class="canvas">
+  <div class="head">
+    <h1 class="serif">Doubling ARR<br>Isn't <em>Winning.</em></h1>
+    <div class="divider"><span></span><i></i><span></span></div>
+    <p class="caps">The Unit Economics Scorecard<br>4 metrics that decide if growth is real or borrowed</p>
+  </div>
+
+  <div class="portrait"></div>
+
+  <div class="card-stack">
+    <div class="metric glass">
+      <div class="top"><span class="t">CAC <span class="d">fully loaded</span></span><span class="n">01</span></div>
+      <div class="stack">
+        <div style="flex:1;background:#edd86e">Ads</div>
+        <div style="flex:1;background:#d9c464">Salaries</div>
+        <div style="flex:1;background:#bfbfbf">Comms</div>
+        <div style="flex:1;background:#8e8e90">Tools</div>
+      </div>
+    </div>
+    <div class="metric glass">
+      <div class="top"><span class="t">LTV : CAC</span><span class="n">02</span></div>
+      <div class="scale"><div class="bad">&lt; 1:1</div><div class="ok">3:1</div><div class="best">5:1+</div></div>
+    </div>
+    <div class="metric glass">
+      <div class="top"><span class="t">CAC Payback</span><span class="n">03</span></div>
+      <div class="scale"><div class="bad">&gt; 18 mo</div><div class="ok">8–12 mo</div><div class="best">&lt; 6 mo</div></div>
+    </div>
+    <div class="metric glass">
+      <div class="top"><span class="t">NRR</span><span class="n">04</span></div>
+      <div class="scale"><div class="bad">&lt; 90%</div><div class="ok">100–110%</div><div class="best">120%+</div></div>
+    </div>
+  </div>
+  <div class="legend caps"><span class="l1">Danger</span><span class="l2">Good</span><span class="l3">Elite</span></div>
+
+  <div class="who"><div class="rule"></div><div class="name">Clinton James</div><div class="role">AI &amp; Growth Systems Engineer</div></div>
+  <svg class="arrow" width="120" height="110" viewBox="0 0 120 110"><path d="M10 6 C 20 60, 60 90, 108 96" fill="none" stroke="#bfbfbf" stroke-width="2" stroke-dasharray="5 6"/><path d="M96 86 L110 97 L94 104" fill="none" stroke="#bfbfbf" stroke-width="2"/></svg>
+  <div class="note hand">One metric in the red?<br>Fix it before you scale.</div>
+  <div class="handle"><b>@</b>ClintJeezz</div>
+</div></body></html>

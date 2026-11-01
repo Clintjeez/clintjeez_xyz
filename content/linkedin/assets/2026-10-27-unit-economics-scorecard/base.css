@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;0,900;1,500;1,700;1,800&family=Roboto+Mono:wght@400;500;700&display=swap');
+@font-face { font-family: Excalifont; src: url(Excalifont-Regular.woff2) format('woff2'); }
+
+:root {
+  --bg: #17181d;
+  --bg-mid: #222326;
+  --card: #282c34;
+  --border: #1d1d21;
+  --white: #ffffff;
+  --text-2: #bfbfbf;
+  --muted: #777778;
+  --gold: #edd86e;
+  --gold-glow: rgba(237, 216, 110, 0.16);
+  --danger: #b5544c;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body { background: var(--bg); }
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+.canvas {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at var(--glow-x, 70%) var(--glow-y, 75%), var(--gold-glow) 0%, transparent 55%),
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px) 0 0 / 71px 71px,
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px) 0 0 / 71px 71px,
+    var(--bg);
+}
+
+.serif { font-family: 'Playfair Display', serif; }
+.hand { font-family: Excalifont, cursive; }
+
+.caps {
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+}
+
+.glass {
+  background: linear-gradient(rgba(40,44,52,1) 0%, rgba(40,39,41,0.55) 85%);
+  border: 1px solid #ffffff1a;
+  border-radius: 0.7rem;
+  box-shadow: 0 7px 15px 5px #28282856;
+}
+
+.divider {
+  display: flex; align-items: center; justify-content: center; gap: 14px;
+}
+.divider span { width: 120px; height: 2px; background: var(--text-2); }
+.divider i { width: 9px; height: 9px; border-radius: 50%; background: var(--gold); }
+
+.portrait {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+  -webkit-mask-image: linear-gradient(to bottom, #000 78%, transparent 100%);
+          mask-image: linear-gradient(to bottom, #000 78%, transparent 100%);
+  filter: drop-shadow(0 0 1px rgba(237,216,110,0.55)) drop-shadow(0 0 28px rgba(237,216,110,0.12));
+}
+
+.handle {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px; color: var(--muted); letter-spacing: 0.06em;
+}
+.handle b { color: var(--gold); font-weight: 500; }

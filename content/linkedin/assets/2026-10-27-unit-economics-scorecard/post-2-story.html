@@ -1,0 +1,86 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Post 2 Story</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  .canvas { width: 1080px; height: 1080px; --glow-x: 50%; --glow-y: 30%; }
+  .kicker { position: absolute; top: 52px; left: 64px; font-size: 16px; color: var(--gold); }
+  .handle { position: absolute; top: 50px; right: 64px; }
+  h1 { position: absolute; top: 96px; left: 64px; right: 64px; font-size: 76px; font-weight: 800; line-height: 1.02; letter-spacing: -0.03em; }
+  h1 em { font-style: italic; font-weight: 700; }
+  h1 .g { color: var(--gold); }
+  h1 .r { color: #e0928b; }
+
+  .panels { position: absolute; top: 300px; left: 64px; right: 64px; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  .panel { padding: 26px 26px 24px; height: 432px; position: relative; }
+  .panel h3 { font-size: 15px; color: var(--muted); margin-bottom: 6px; }
+  .panel .big { font-family: 'Playfair Display', serif; font-size: 44px; font-weight: 800; }
+  .panel .sub { font-size: 15px; color: var(--text-2); margin-top: 2px; }
+
+  .stat { display: flex; align-items: baseline; gap: 14px; padding: 14px 0; border-top: 1px solid #ffffff14; }
+  .stat:first-of-type { border-top: 0; }
+  .stat .v { font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 800; color: #e0928b; min-width: 128px; }
+  .stat .l { font-size: 15px; color: var(--text-2); line-height: 1.4; }
+
+  .bars { margin-top: 10px; }
+  .bar-row { display: grid; grid-template-columns: 96px 1fr; align-items: center; gap: 10px; margin-top: 10px; font-size: 13px; color: var(--muted); }
+  .track { position: relative; height: 22px; }
+  .life { position: absolute; left: 0; top: 0; height: 100%; width: 34%; background: #ffffff30; border-radius: 4px; }
+  .pay { position: absolute; left: 0; top: 0; height: 100%; width: 100%; border-radius: 4px;
+         background: repeating-linear-gradient(90deg, rgba(181,84,76,0.55) 0 10px, rgba(181,84,76,0.25) 10px 16px); }
+  .churn-line { position: absolute; left: 34%; top: -6px; bottom: -6px; width: 2px; background: var(--white); }
+
+  .footer { position: absolute; left: 64px; bottom: 56px; right: 320px; }
+  .stamp { display: inline-block; border: 3px solid var(--gold); color: var(--gold); padding: 10px 22px 8px; font-size: 30px; font-weight: 700; letter-spacing: 0.2em; transform: rotate(-5deg); border-radius: 6px; }
+  .footer p { font-size: 34px; color: var(--text-2); margin-top: 22px; line-height: 1.2; }
+  .footer p b { color: var(--gold); font-weight: 400; }
+
+  .disc { position: absolute; right: 64px; bottom: 48px; width: 270px; height: 270px; border-radius: 50%; background: var(--gold); overflow: hidden; }
+  .disc .portrait { left: 0; right: 0; bottom: 0; width: 100%; height: 252px; background-image: url(portrait-color.png); filter: none; -webkit-mask-image: none; mask-image: none; }
+  .tag { position: absolute; right: 340px; bottom: 150px; font-size: 13px; color: var(--muted); text-align: right; line-height: 1.5; display: none; }
+</style></head>
+<body><div class="canvas">
+  <div class="kicker caps">Case file · SaaS acquisition</div>
+  <div class="handle"><b>@</b>ClintJeezz</div>
+
+  <h1 class="serif">The chart said <em class="g">rocket ship.</em><br>The cohort said <em class="r">life support.</em></h1>
+
+  <div class="panels">
+    <div class="panel glass">
+      <h3 class="caps">What the buyer saw</h3>
+      <div class="big">$1M → $2M</div>
+      <div class="sub">ARR doubled in 12 months</div>
+      <svg width="420" height="250" viewBox="0 0 420 250" style="margin-top:4px">
+        <defs><linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#edd86e" stop-opacity="0.35"/><stop offset="1" stop-color="#edd86e" stop-opacity="0"/></linearGradient></defs>
+        <line x1="0" y1="230" x2="420" y2="230" stroke="#ffffff22"/>
+        <line x1="0" y1="130" x2="420" y2="130" stroke="#ffffff10"/>
+        <line x1="0" y1="30" x2="420" y2="30" stroke="#ffffff10"/>
+        <path d="M0 200 L35 196 L70 190 L105 181 L140 172 L175 160 L210 147 L245 131 L280 113 L315 94 L350 72 L385 52 L410 34 L410 230 L0 230 Z" fill="url(#fill)"/>
+        <path d="M0 200 L35 196 L70 190 L105 181 L140 172 L175 160 L210 147 L245 131 L280 113 L315 94 L350 72 L385 52 L410 34" fill="none" stroke="#edd86e" stroke-width="4" stroke-linejoin="round"/>
+        <circle cx="410" cy="34" r="7" fill="#edd86e"/>
+        <text x="0" y="248" fill="#777778" font-family="Roboto Mono" font-size="13">MONTH 0</text>
+        <text x="420" y="248" fill="#777778" font-family="Roboto Mono" font-size="13" text-anchor="end">MONTH 12</text>
+      </svg>
+    </div>
+
+    <div class="panel glass">
+      <h3 class="caps">What the cohort said</h3>
+      <div class="stat"><span class="v">$3:$1</span><span class="l">S&amp;M spend per $1 of<br>recurring revenue</span></div>
+      <div class="stat"><span class="v">4 mo</span><span class="l">average customer<br>lifespan</span></div>
+      <div class="stat" style="display:block">
+        <span class="l">Payback runs past the churn date</span>
+        <div class="bars">
+          <div class="bar-row"><span>LIFESPAN</span><div class="track"><div class="life"></div></div></div>
+          <div class="bar-row"><span>PAYBACK</span><div class="track"><div class="pay"></div><div class="churn-line"></div></div></div>
+          <div class="bar-row"><span></span><div class="track" style="height:auto;font-size:12px"><span style="position:absolute;left:34%;transform:translateX(-50%);color:#fff">CHURN</span><span style="position:absolute;right:0;color:#e0928b">NEVER RECOVERED →</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="stamp">VERDICT: PASSED</span>
+    <p class="hand">Revenue growth is easy to fake.<br><b>Solvent growth is engineered.</b></p>
+  </div>
+
+  <div class="disc"><div class="portrait"></div></div>
+</div></body></html>
