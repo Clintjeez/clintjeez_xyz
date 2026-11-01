@@ -214,6 +214,10 @@ export interface Project {
    */
   screenshot?: (number | null) | Media;
   /**
+   * Square logo or app icon, shown on the homepage Works cards
+   */
+  logo?: (number | null) | Media;
+  /**
    * Job title or role, for work/experience entries (e.g. "AI Engineer")
    */
   role?: string | null;
@@ -378,6 +382,7 @@ export interface PostsSelect<T extends boolean = true> {
 export interface ProjectsSelect<T extends boolean = true> {
   title?: T;
   screenshot?: T;
+  logo?: T;
   role?: T;
   projectDescription?: T;
   stacks?:

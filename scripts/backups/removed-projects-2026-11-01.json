@@ -1,0 +1,88 @@
+[
+  {
+    "id": 9,
+    "title": "Alumunite",
+    "screenshot": 36,
+    "role": "Software Engineer",
+    "projectDescription": "Alumni crowdfunding web app with optimized scalability and maintainability",
+    "stacks": [],
+    "githubUrl": null,
+    "liveUrl": null,
+    "featured": false,
+    "featuredOrder": 6,
+    "updatedAt": "2026-10-22T14:00:12.503Z",
+    "createdAt": "2026-08-17T13:02:24.033Z"
+  },
+  {
+    "id": 8,
+    "title": "Neutron Gaming",
+    "screenshot": 35,
+    "role": "Senior Software Engineer",
+    "projectDescription": "Web3 game launcher with RESTful APIs and smart contracts for digital assets",
+    "stacks": [],
+    "githubUrl": null,
+    "liveUrl": null,
+    "featured": false,
+    "featuredOrder": 5,
+    "updatedAt": "2026-10-22T14:00:14.582Z",
+    "createdAt": "2026-08-17T13:02:21.051Z"
+  },
+  {
+    "id": 3,
+    "title": "AsklawLM",
+    "screenshot": 24,
+    "role": "AI Engineer",
+    "projectDescription": "An AI-Powered workspace for legal professionals, transforming documents drafting, legal research and collaborative legal contracts management ",
+    "stacks": [
+      {
+        "id": "68a081038e919aac709dd128",
+        "stack": "React"
+      },
+      {
+        "id": "68a081208e919aac709dd129",
+        "stack": "Langchain"
+      },
+      {
+        "id": "68a081288e919aac709dd12a",
+        "stack": "Typescript"
+      },
+      {
+        "id": "68a081368e919aac709dd12b",
+        "stack": "LLM"
+      }
+    ],
+    "githubUrl": null,
+    "liveUrl": "https://www.asklawlm.org",
+    "featured": false,
+    "featuredOrder": 3,
+    "updatedAt": "2026-10-22T14:00:19.450Z",
+    "createdAt": "2025-08-16T13:02:00.029Z"
+  },
+  {
+    "id": 1,
+    "title": "Trade Meme Coins Bot",
+    "screenshot": 26,
+    "role": null,
+    "projectDescription": "A TypeScript-based automated trading bot that monitors Twitter for meme coin mentions and automatically executes trades on the Solana blockchain using Raydium DEX.",
+    "stacks": [
+      {
+        "id": "686360fe2e712f161fbbadc7",
+        "stack": "Typescript"
+      },
+      {
+        "id": "6863610a2e712f161fbbadc9",
+        "stack": "Solana"
+      },
+      {
+        "id": "6863611f2e712f161fbbadcb",
+        "stack": "Raydium"
+      }
+    ],
+    "githubUrl": "https://github.com/Clintjeez/trade-meme-coins-bot",
+    "liveUrl": null,
+    "featured": false,
+    "featuredOrder": null,
+    "updatedAt": "2025-10-21T03:11:19.031Z",
+    "createdAt": "2025-07-01T04:17:29.772Z"
+  }
+]

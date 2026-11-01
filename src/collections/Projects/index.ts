@@ -23,6 +23,16 @@ export const Projects: CollectionConfig = {
       },
     },
     {
+      name: 'logo',
+      type: 'upload',
+      relationTo: 'media',
+      required: false,
+      label: 'Logo',
+      admin: {
+        description: 'Square logo or app icon, shown on the homepage Works cards',
+      },
+    },
+    {
       name: 'role',
       type: 'text',
       required: false,

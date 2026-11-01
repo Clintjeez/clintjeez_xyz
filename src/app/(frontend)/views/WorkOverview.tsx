@@ -1,108 +1,84 @@
 import React from 'react'
 import Image from 'next/image'
-import { HiArrowUpRight, HiOutlineEnvelope } from 'react-icons/hi2'
+import { FaGithub } from 'react-icons/fa'
+import { HiArrowUpRight } from 'react-icons/hi2'
 import type { Media, Project } from '../../../payload-types'
 import { payloadData } from '../../lib/payload'
 
-const hostOf = (url: string) => {
-  try {
-    return new URL(url).hostname.replace(/^www\./, '')
-  } catch {
-    return url
-  }
-}
+// Full-page site screenshots (site-*.jpg) don't read at thumbnail size,
+// so those projects get a monogram instead of a tiny cropped page.
+const isSiteShot = (media: Media | null | undefined) =>
+  Boolean(media?.filename?.startsWith('site-'))
+
+const linkBase =
+  'inline-flex items-center justify-center h-8 rounded-md border border-[#2a2a2e] text-[#777778] hover:text-[#edd86e] hover:border-[#edd86e]/50 transition-colors duration-300'
 
 function ProjectCard({ project }: { project: Project }) {
-  const shot = project.screenshot as Media | null | undefined
-  const href = project.liveUrl || project.githubUrl || undefined
-  const linkLabel = project.liveUrl ? hostOf(project.liveUrl) : project.githubUrl ? 'GitHub' : null
-  const Wrapper = href ? 'a' : 'div'
+  const logo = (project.logo || project.screenshot) as Media | null | undefined
+  const hasLinks = Boolean(project.liveUrl || project.githubUrl)
 
   return (
-    <Wrapper
-      {...(href ? { href, target: '_blank', rel: 'noopener noreferrer' } : {})}
-      className="group relative flex flex-col overflow-hidden rounded-lg border border-[#2a2a2e] bg-[#1b1c21] transition-all duration-500 hover:shadow-[0_7px_40px_6px_#000000aa]"
-    >
-      {/* Screenshot */}
-      <div className="relative aspect-[16/10] overflow-hidden bg-[#17181d]">
-        {shot?.url && (
+    <div className="group flex flex-col bg-[#1b1c21] rounded-lg p-4 border border-transparent hover:border-[#2a2a2e] transition-all duration-300">
+      <div className="flex items-center gap-3 mb-3">
+        {logo?.url && !isSiteShot(logo) ? (
           <Image
-            src={shot.url}
-            alt={shot.alt || project.title}
-            fill
-            sizes="(min-width: 768px) 30vw, 100vw"
-            className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105 motion-reduce:transition-none"
+            src={logo.url}
+            alt={logo.alt || project.title}
+            width={36}
+            height={36}
+            className="w-9 h-9 rounded-md object-cover shrink-0"
           />
-        )}
-
-        {/* Hover summary */}
-        <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/95 via-black/75 to-black/10 p-4 opacity-0 transition-opacity duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 motion-reduce:transition-none">
-          <div className="translate-y-4 transition-transform duration-500 ease-out group-hover:translate-y-0 group-focus-visible:translate-y-0 motion-reduce:transition-none">
-            <p className="text-[10px] md:text-[11px] leading-relaxed text-[#e0e0e0] line-clamp-4">
-              {project.projectDescription}
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Footer bar */}
-      <div className="flex items-center justify-between gap-3 border-t border-[#2a2a2e] bg-[#1b1c21] px-3.5 py-3">
-        <h3 className="truncate text-[11px] font-bold text-[#e0e0e0]">{project.title}</h3>
-        {linkLabel && (
-          <span className="inline-flex shrink-0 items-center gap-1 text-[10px] text-[#777778] transition-colors duration-300 group-hover:text-[#edd86e]">
-            {linkLabel}
-            <HiArrowUpRight className="text-[11px] transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+        ) : (
+          <span className="w-9 h-9 rounded-md shrink-0 flex items-center justify-center bg-[#17181d] border border-[#2a2a2e] text-[14px] font-bold text-[#edd86e]">
+            {project.title.charAt(0).toUpperCase()}
           </span>
         )}
+        <h3 className="min-w-0 text-[#e0e0e0] text-[13px] font-bold truncate">{project.title}</h3>
       </div>
-    </Wrapper>
-  )
-}
-
-function ContactCard() {
-  return (
-    <a
-      href="mailto:hey@clintjeez.com?subject=Let%27s%20build%20something"
-      className="group relative flex min-h-[220px] flex-col justify-between overflow-hidden rounded-lg border border-dashed border-[#edd86e]/40 bg-[#1b1c21] p-5 transition-all duration-500 hover:shadow-[0_7px_40px_6px_#000000aa]"
-    >
-      <div
-        className="pointer-events-none absolute inset-0 opacity-40 transition-opacity duration-500 group-hover:opacity-70"
-        style={{
-          backgroundImage: "url('/tile_bg.svg')",
-          backgroundSize: '142px 71px',
-        }}
-      />
-      <div className="pointer-events-none absolute -bottom-16 -right-16 h-48 w-48 rounded-full bg-[radial-gradient(circle,rgba(237,216,110,0.22),transparent_70%)] transition-transform duration-700 group-hover:scale-150" />
-
-      <p className="relative text-[10px] font-semibold uppercase tracking-widest text-[#edd86e]">
-        Your project next?
+      <p className="text-[11px] text-[#777778] leading-relaxed line-clamp-3">
+        {project.projectDescription}
       </p>
-      <div className="relative">
-        <h3 className="mb-2 text-[16px] md:text-[18px] font-bold leading-snug text-[#e0e0e0]">
-          Building something cool?
-        </h3>
-        <p className="mb-5 text-[11px] leading-relaxed text-[#777778]">
-          Let&apos;s work on it together. Tell me what you&apos;re building and where it&apos;s
-          stuck.
-        </p>
-        <span className="inline-flex items-center gap-2 rounded-md border border-[#edd86e] bg-[#17181d] px-3 py-2 text-[12px] font-excalifont text-[#bfbfbf] transition-colors duration-300 group-hover:bg-[#484848]">
-          <HiOutlineEnvelope className="text-[15px] text-[#edd86e]" />
-          hey@clintjeez.com
-          <HiArrowUpRight className="text-[12px] text-[#edd86e] transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-        </span>
-      </div>
-    </a>
+
+      {hasLinks && (
+        <div className="mt-auto pt-4 flex items-center justify-end gap-2">
+          {project.githubUrl && (
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${project.title} on GitHub`}
+              title="GitHub repo"
+              className={`${linkBase} w-8`}
+            >
+              <FaGithub className="text-[15px]" />
+            </a>
+          )}
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View ${project.title}`}
+              className={`${linkBase} gap-1.5 px-3 text-[11px]`}
+            >
+              View
+              <HiArrowUpRight className="text-[13px]" />
+            </a>
+          )}
+        </div>
+      )}
+    </div>
   )
 }
 
 const WorkOverview = async () => {
-  const featured = await (
+  const projects = await (
     await payloadData()
   ).find({
     collection: 'projects',
-    where: { featured: { equals: true } },
-    sort: 'featuredOrder',
-    limit: 3,
+    // Featured first (in their set order), then everything else.
+    sort: ['-featured', 'featuredOrder'],
+    limit: 100,
     depth: 1,
   })
 
@@ -118,11 +94,10 @@ const WorkOverview = async () => {
       </div>
 
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {featured.docs.map((project) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 auto-rows-fr gap-3">
+        {projects.docs.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
-        <ContactCard />
       </div>
     </section>
   )

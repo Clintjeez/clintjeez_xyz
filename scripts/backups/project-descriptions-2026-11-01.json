@@ -1,0 +1,27 @@
+[
+  {
+    "id": 11,
+    "title": "GENEDORA",
+    "projectDescription": "AI interpretation layer for DNA variants, built first for African genomes. Scores variants of uncertain significance from the sequence itself with a DNA language model, no population databases, and ships an explainable, ACMG-aligned evidence trail with every call."
+  },
+  {
+    "id": 10,
+    "title": "Gamavas",
+    "projectDescription": "The launchpad and discovery engine for indie games. Play hand-crafted and AI-assisted games right in the browser, or launch your own in minutes."
+  },
+  {
+    "id": 7,
+    "title": "Alubasa Labs",
+    "projectDescription": "A venture studio turning big ideas into real solutions. We build our own ventures and partner with founders from day zero, from research and product engineering to launch and scale."
+  },
+  {
+    "id": 6,
+    "title": "ThisTechThing",
+    "projectDescription": "Community connecting and empowering digital creators and tech professionals"
+  },
+  {
+    "id": 5,
+    "title": "MicroStart",
+    "projectDescription": "A marketplace to buy, sell, and launch micro-SaaS. Production-ready code and running businesses, with LaunchBoard for launches and RevBoard for real revenue."
+  }
+]
