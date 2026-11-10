@@ -10,11 +10,11 @@ import { cvCommunity, cvEducation, cvExperience, cvProfile, cvSkills } from '../
 export const metadata: Metadata = {
   title: 'CV',
   description:
-    'CV of Clinton James, Applied AI Engineer: AI agents, LLM systems and full-stack products deployed for real users, with 9+ years of software engineering.',
+    'CV of Clinton James, Forward Deployed Engineer: AI agents, LLM systems and full-stack products deployed for real users, with 9+ years of software engineering.',
   alternates: { canonical: `${SITE_URL}/cv` },
   openGraph: {
     title: 'CV | Clinton James',
-    description: 'Applied AI Engineer · Forward Deployed Engineering · AI & Growth Systems',
+    description: 'Forward Deployed Engineer',
     url: `${SITE_URL}/cv`,
   },
 }
@@ -47,9 +47,6 @@ const CvPage = () => {
             </h1>
             <p className="cv-accent font-excalifont text-[18px] text-[#edd86e] md:text-[22px] print:font-sans print:text-[11pt] print:font-bold">
               {cvProfile.title}
-              <span className="text-[#777778] print:font-normal">
-                {cvProfile.focus.map((f) => ` · ${f}`).join('')}
-              </span>
             </p>
           </div>
           <div className="flex flex-wrap gap-2 print:hidden">

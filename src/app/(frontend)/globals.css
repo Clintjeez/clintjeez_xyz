@@ -164,6 +164,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     margin: 0;
   }
 
+  html,
   body {
     background: #ffffff !important;
   }
@@ -173,17 +174,17 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     padding: 0.5in 0.55in !important;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+    background: #ffffff !important;
+  }
+
+  .cv-page * {
+    background: transparent !important;
   }
 
   .cv-page,
   .cv-page * {
-    color: #1f1f1f !important;
-    background: transparent !important;
+    color: #000000 !important;
     box-shadow: none !important;
     border-color: #d9d9d9 !important;
-  }
-
-  .cv-page .cv-accent {
-    color: #7a5c00 !important;
   }
 }

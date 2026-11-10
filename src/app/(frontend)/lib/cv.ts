@@ -3,10 +3,9 @@
 
 export const cvProfile = {
   name: 'Clinton James',
-  title: 'Applied AI Engineer',
-  focus: ['Forward Deployed Engineering', 'AI & Growth Systems'],
+  title: 'Forward Deployed Engineer',
   summary:
-    "Applied AI Engineer with 9+ years of shipping production software across fintech, Web3 and AI. Along the way, I've built multimodal AI tools and the growth systems that bring them to market. I currently run Alubasa Labs, a venture studio where we experiment with solutions to ambitious problems and support founders from day zero, from POC architecture to go-to-market. Our most recent project, Gamavas, is indie gaming infrastructure: a custom agentic harness that turns ideas into playable games, edge-network hosting for web games, and tools for publishing and distribution. In all of this work, I pair engineering depth with product and microeconomic thinking.",
+    "Solutions-driven engineer with 9+ years of shipping software and talking to users across SaaS, fintech, Web3 and AI. Along the way, I've built multimodal AI tools and the growth systems that bring them to market. I currently run Alubasa Labs, a venture studio where we experiment with solutions to ambitious problems and support founders from day zero, from POC architecture to go-to-market. Our most recent project, Gamavas, is an indie gaming infrastructure for building, hosting and publishing web games, now with 823+ users, 153 published games, 2,000+ daily visitors and 118+ active daily players. In all of this work, I pair engineering depth with product and growth thinking.",
   links: [
     { label: 'clintjeez@gmail.com', href: 'mailto:clintjeez@gmail.com' },
     { label: 'clintjeez.com', href: 'https://clintjeez.com' },
@@ -29,6 +28,27 @@ export type CvRole = {
 
 export const cvExperience: CvRole[] = [
   {
+    title: 'AI & Machine Learning Facilitator',
+    company: 'GIZ',
+    period: 'Aug 2026 – Present',
+    meta: 'Contract',
+    highlights: [
+      'Support Tech4Youth, an EU-funded program implemented by GIZ that trains and mentors 8,000+ participants across Africa in market-relevant ICT skills and digital inclusion',
+      'Built a custom adaptive learning system and curriculum for applied AI and advanced machine learning, tailored to learners from entry level to advanced, including people with disabilities (PWD)',
+      'Designed an inclusive training delivery model with interpreters and PWD-aligned accessibility guidelines',
+    ],
+  },
+  {
+    title: 'Founder & Lead Researcher',
+    company: 'Biodora',
+    period: 'Jan 2026 – Present',
+    highlights: [
+      "Building frontier biotech tools on African genomic data; first product, Genedora, tackles variants of uncertain significance (VUS), genetic results that leave clinicians unable to act, such as a BRCA1 variant that can't guide whether to screen, operate or wait",
+      'Fine-tuning Evo 2, a genomic foundation model trained on 9+ trillion nucleotides from 128,000+ eukaryotic and prokaryotic genomes, on African genome data to improve variant interpretation for underrepresented populations',
+      "Building a benchmark to evaluate the model's VUS classification on African genomes",
+    ],
+  },
+  {
     title: 'Applied AI Engineer',
     company: 'Gamavas',
     url: 'https://gamavas.fun/',
@@ -37,7 +57,8 @@ export const cvExperience: CvRole[] = [
     highlights: [
       'Designed and shipped an AI studio that turns a prompt into a playable three.js game: a tool-calling agent running up to 48 steps per turn across Claude, GPT and Gemini (Trigger.dev, Vercel AI SDK, OpenRouter)',
       'Made the agent production-grade with per-step cost tracking, token budgets, and recovery from provider outages and rate limits without losing user work',
-      'Turned AI usage into revenue with subscription plans, credit packs and per-step billing; live with real players and payments',
+      'Grew the platform to 823+ users, 153 published games, 2,000+ daily visitors and 118+ active daily players',
+      'Turned AI usage into revenue with subscription plans, credit packs and per-step billing',
       'Built the surrounding platform: game hosting on Cloudflare Workers and R2, a Next.js, tRPC and Postgres web app, and a Tauri (Rust) desktop launcher, released staging-first with tests',
     ],
   },
@@ -48,7 +69,7 @@ export const cvExperience: CvRole[] = [
     period: 'Mar 2026 – Present',
     meta: 'Remote',
     highlights: [
-      'Solo owner of product, architecture, payments and infrastructure for a marketplace to buy and sell SaaS products, from starter codebases to running businesses',
+      'Architected payments and infrastructure for a marketplace to buy and sell SaaS products, from starter codebases to running businesses',
       'Built multi-vendor listings, admin moderation, offer/counter-offer negotiation and payment flows (Next.js, Node.js, TypeScript, Payload CMS)',
       'Instrumented conversion and behavioral analytics to measure and improve onboarding',
     ],
