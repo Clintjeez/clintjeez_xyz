@@ -2,7 +2,7 @@
  * One-off: upload project logos (pulled from each live site) and attach them
  * to the `logo` field used by the homepage Works cards.
  * Usage: npx tsx scripts/set-project-logos.ts <dir-with-pngs>
- * Expects alubasa.png, genedora.png, gamavas.png, microstart.png in that dir.
+ * Expects alubasa.png, biodora.png, gamavas.png, microstart.png in that dir.
  */
 
 import { readFileSync, existsSync } from 'fs'
@@ -44,7 +44,7 @@ if (!dir || !existsSync(dir)) {
 
 const logos: Record<string, string> = {
   'Alubasa Labs': 'alubasa.png',
-  GENEDORA: 'genedora.png',
+  BIODORA: 'biodora.png',
   Gamavas: 'gamavas.png',
   MicroStart: 'microstart.png',
 }
