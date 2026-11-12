@@ -65,7 +65,8 @@ export const cvExperience: CvRole[] = [
         role: 'Applied AI Engineer',
         url: 'https://gamavas.fun/',
         highlights: [
-          'Designed and shipped an AI studio that turns a prompt into a playable three.js game: a tool-calling agent running up to 48 steps per turn across Claude, GPT and Gemini (Trigger.dev, Vercel AI SDK, OpenRouter)',
+          'Launchpad and discovery platform for indie games, playable in the browser, with an AI game builder that turns a plain-language prompt into a game creators can tweak, share and publish, no code needed',
+          'Designed and shipped the AI game builder: a tool-calling agent harness that generates playable three.js games, running up to 48 steps per turn across Claude, GPT and Gemini (Trigger.dev, Vercel AI SDK, OpenRouter)',
           'Made the agent production-grade with per-step cost tracking, token budgets, and recovery from provider outages and rate limits without losing user work',
           'Grew the platform to 823+ users, 153 published games, 2,000+ daily visitors and 118+ active daily players',
           'Turned AI usage into revenue with subscription plans, credit packs and per-step billing',
