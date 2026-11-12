@@ -1,6 +1,6 @@
 /**
  * One-off: rename the GENEDORA project to BIODORA (parent brand; GENEDORA is now its first product).
- * Usage: npx tsx scripts/rename-genedora-to-biodora.ts
+ * Usage: npx tsx scripts/rename-genedora-to-biodora.ts [path-to-new-screenshot.jpg]
  */
 
 import { readFileSync, existsSync } from 'fs'
@@ -52,10 +52,27 @@ if (!doc) {
   process.exit(1)
 }
 
+const screenshotPath = process.argv[2]
+let screenshot: number | undefined
+if (screenshotPath) {
+  if (!existsSync(screenshotPath)) {
+    console.log(`Screenshot not found: ${screenshotPath}`)
+    process.exit(1)
+  }
+  const media = await payload.create({
+    collection: 'media',
+    data: { alt: 'BIODORA homepage: frontier biotech tools for and with African biodata' },
+    filePath: screenshotPath,
+    overrideAccess: true,
+  })
+  screenshot = media.id
+}
+
 await payload.update({
   collection: 'projects',
   id: doc.id,
   data: {
+    ...(screenshot ? { screenshot } : {}),
     title: 'BIODORA',
     liveUrl: 'https://biodora.alubasalabs.com',
     projectDescription:
