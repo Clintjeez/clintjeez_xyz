@@ -134,6 +134,50 @@ const CvPage = () => {
                       </li>
                     ))}
                   </ul>
+                  {role.projects && (
+                    <div className="mt-4 flex flex-col gap-4 print:mt-1.5 print:gap-1.5">
+                      <p className="text-[10px] uppercase tracking-wide text-[#777778] print:text-[8pt] print:font-bold print:normal-case print:tracking-normal">
+                        Studio projects
+                      </p>
+                      {role.projects.map((project) => (
+                        <div
+                          key={project.name}
+                          className="rounded-lg border border-[#2a2a2e] bg-[#1b1c21] p-4 print:break-inside-avoid print:rounded-none print:border-0 print:border-l print:p-0 print:pl-3"
+                        >
+                          <div className="mb-2 flex flex-col gap-0.5 md:flex-row md:items-baseline md:justify-between md:gap-4 print:mb-0.5 print:flex-row print:items-baseline print:justify-between">
+                            <h4 className="text-[13px] font-bold text-[#e0e0e0] print:text-[9pt]">
+                              {project.url ? (
+                                <a
+                                  href={project.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="cv-accent inline-flex items-center gap-0.5 text-[#edd86e] hover:underline"
+                                >
+                                  {project.name}
+                                  <HiArrowUpRight className="text-[11px] print:hidden" />
+                                </a>
+                              ) : (
+                                <span className="text-[#edd86e] cv-accent">{project.name}</span>
+                              )}
+                              <span className="font-normal text-[#777778]"> · </span>
+                              <span className="font-normal text-[#bfbfbf]">{project.role}</span>
+                            </h4>
+                          </div>
+                          <ul className="space-y-1.5 print:space-y-0.5">
+                            {project.highlights.map((h) => (
+                              <li
+                                key={h}
+                                className="relative pl-4 text-[12px] leading-relaxed text-[#9a9a9b] md:text-[12.5px] print:pl-3 print:text-[8.5pt] print:leading-snug"
+                              >
+                                <span className="cv-accent absolute left-0 top-0 text-[#edd86e]">›</span>
+                                {h}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </li>
               ))}
             </ol>
@@ -192,11 +236,15 @@ const CvPage = () => {
                   <p className="text-[12.5px] font-bold text-[#e0e0e0] print:inline print:text-[8.5pt]">
                     {name}
                   </p>
-                  <p className="mb-1 text-[11px] text-[#777778] print:inline print:text-[8.5pt]">
-                    <span className="hidden print:inline"> (</span>
-                    {period}
-                    <span className="hidden print:inline">): </span>
-                  </p>
+                  {period ? (
+                    <p className="mb-1 text-[11px] text-[#777778] print:inline print:text-[8.5pt]">
+                      <span className="hidden print:inline"> (</span>
+                      {period}
+                      <span className="hidden print:inline">): </span>
+                    </p>
+                  ) : (
+                    <span className="hidden print:inline">: </span>
+                  )}
                   <p className="text-[11.5px] leading-relaxed text-[#9a9a9b] print:inline print:text-[8.5pt]">
                     {detail}
                   </p>

@@ -40,7 +40,7 @@ He doesn't just advise. He ships the systems.
 
 ## Technical Stack
 
-**Education:** BSc Computer Science. Coursework: Principles of Microeconomics (MIT), Investment Banking, Data Analytics
+**Education:** BSc Computer Science. Coursework: Principles of Microeconomics (MIT), Investment Banking, Data Analytics, Bioinformatics, Computational Biology
 **Languages:** Python, TypeScript, JavaScript, Rust, Go, Solidity
 **AI / ML:** PyTorch, Hugging Face (Transformers, Datasets), Pandas, NumPy, Jupyter, Kaggle, Gradio, GPU/CUDA, ML pipelines
 **LLMs & Agents:** Claude, Claude Code, Cursor, Groq API, Ollama, AI agents

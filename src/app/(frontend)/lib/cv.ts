@@ -24,6 +24,15 @@ export type CvRole = {
   period: string
   meta?: string
   highlights: string[]
+  projects?: CvProject[]
+}
+
+// Ventures built inside a studio role, shown nested under it
+export type CvProject = {
+  name: string
+  role: string
+  url?: string
+  highlights: string[]
 }
 
 export const cvExperience: CvRole[] = [
@@ -39,52 +48,49 @@ export const cvExperience: CvRole[] = [
     ],
   },
   {
-    title: 'Founder & Lead Researcher',
-    company: 'Biodora',
-    period: 'Jan 2026 – Present',
-    highlights: [
-      "Building frontier biotech tools on African genomic data; first product, Genedora, tackles variants of uncertain significance (VUS), genetic results that leave clinicians unable to act, such as a BRCA1 variant that can't guide whether to screen, operate or wait",
-      'Fine-tuning Evo 2, a genomic foundation model trained on 9+ trillion nucleotides from 128,000+ eukaryotic and prokaryotic genomes, on African genome data to improve variant interpretation for underrepresented populations',
-      "Building a benchmark to evaluate the model's VUS classification on African genomes",
-    ],
-  },
-  {
-    title: 'Applied AI Engineer',
-    company: 'Gamavas',
-    url: 'https://gamavas.fun/',
-    period: 'Sep 2026 – Present',
-    meta: 'Remote',
-    highlights: [
-      'Designed and shipped an AI studio that turns a prompt into a playable three.js game: a tool-calling agent running up to 48 steps per turn across Claude, GPT and Gemini (Trigger.dev, Vercel AI SDK, OpenRouter)',
-      'Made the agent production-grade with per-step cost tracking, token budgets, and recovery from provider outages and rate limits without losing user work',
-      'Grew the platform to 823+ users, 153 published games, 2,000+ daily visitors and 118+ active daily players',
-      'Turned AI usage into revenue with subscription plans, credit packs and per-step billing',
-      'Built the surrounding platform: game hosting on Cloudflare Workers and R2, a Next.js, tRPC and Postgres web app, and a Tauri (Rust) desktop launcher, released staging-first with tests',
-    ],
-  },
-  {
-    title: 'Full Stack Engineer',
-    company: 'Microstart',
-    url: 'https://www.microstart.co/',
-    period: 'Mar 2026 – Present',
-    meta: 'Remote',
-    highlights: [
-      'Architected payments and infrastructure for a marketplace to buy and sell SaaS products, from starter codebases to running businesses',
-      'Built multi-vendor listings, admin moderation, offer/counter-offer negotiation and payment flows (Next.js, Node.js, TypeScript, Payload CMS)',
-      'Instrumented conversion and behavioral analytics to measure and improve onboarding',
-    ],
-  },
-  {
     title: 'Founder & Lead Architect',
     company: 'Alubasa Labs',
     url: 'https://www.alubasalabs.com/',
-    period: 'Oct 2024 – Present',
+    period: 'Mar 2024 – Present',
     meta: 'Remote',
     highlights: [
       'Embed with founders and non-technical businesses as a fractional technical partner: scope the real bottleneck with stakeholders, then design, build and deploy systems into their operations (CRM, ERP, payments, AI adoption)',
       'Shipped AI and automation POCs (n8n, Make, LLM APIs) at a 72-hour average turnaround, with an 87% POC-to-pilot conversion rate',
       'Translated technical systems into business-focused GTM blueprints, shortening B2B sales cycles by ~30%',
-      'Incubate in-house ventures from research to launch, including Microstart and Gamavas',
+      'Incubate in-house ventures from research to launch, including Biodora, Microstart and Gamavas',
+    ],
+    projects: [
+      {
+        name: 'Gamavas',
+        role: 'Applied AI Engineer',
+        url: 'https://gamavas.fun/',
+        highlights: [
+          'Designed and shipped an AI studio that turns a prompt into a playable three.js game: a tool-calling agent running up to 48 steps per turn across Claude, GPT and Gemini (Trigger.dev, Vercel AI SDK, OpenRouter)',
+          'Made the agent production-grade with per-step cost tracking, token budgets, and recovery from provider outages and rate limits without losing user work',
+          'Grew the platform to 823+ users, 153 published games, 2,000+ daily visitors and 118+ active daily players',
+          'Turned AI usage into revenue with subscription plans, credit packs and per-step billing',
+          'Built the surrounding platform: game hosting on Cloudflare Workers and R2, a Next.js, tRPC and Postgres web app, and a Tauri (Rust) desktop launcher, released staging-first with tests',
+        ],
+      },
+      {
+        name: 'Biodora',
+        role: 'Lead Researcher',
+        highlights: [
+          "Building frontier biotech tools on African genomic data; first product, Genedora, tackles variants of uncertain significance (VUS), genetic results that leave clinicians unable to act, such as a BRCA1 variant that can't guide whether to screen, operate or wait",
+          'Fine-tuning Evo 2, a genomic foundation model trained on 9+ trillion nucleotides from 128,000+ eukaryotic and prokaryotic genomes, on African genome data to improve variant interpretation for underrepresented populations',
+          "Building a benchmark to evaluate the model's VUS classification on African genomes",
+        ],
+      },
+      {
+        name: 'Microstart',
+        role: 'Full Stack Engineer',
+        url: 'https://www.microstart.co/',
+        highlights: [
+          'Architected payments and infrastructure for a marketplace to buy and sell SaaS products, from starter codebases to running businesses',
+          'Built multi-vendor listings, admin moderation, offer/counter-offer negotiation and payment flows (Next.js, Node.js, TypeScript, Payload CMS)',
+          'Instrumented conversion and behavioral analytics to measure and improve onboarding',
+        ],
+      },
     ],
   },
   {
@@ -121,7 +127,7 @@ export const cvExperience: CvRole[] = [
   {
     title: 'Frontend Developer',
     company: 'Minerva Technologies',
-    period: 'May 2019 – Oct 2021',
+    period: 'May 2019 – Apr 2020',
     meta: 'Remote',
     highlights: [
       'Built Splitxchange, a React digital art marketplace that processed $57,000+ in transactions',
@@ -213,14 +219,14 @@ export const cvEducation = [
   { name: 'Product Design · Product Marketing & GTM', detail: 'Product School' },
   {
     name: 'Coursework',
-    detail: 'Principles of Microeconomics (MIT), Investment Banking, Data Analytics',
+    detail:
+      'Principles of Microeconomics (MIT), Investment Banking, Data Analytics, Bioinformatics, Computational Biology',
   },
 ]
 
-export const cvCommunity = [
+export const cvCommunity: { name: string; period?: string; detail: string }[] = [
   {
     name: 'Community Lead, ThisTechThing',
-    period: 'Jun 2024 – Present',
     detail:
       'Launched a community for creators and engineers and organized its inaugural Lagos meetup (100+ attendees)',
   },
