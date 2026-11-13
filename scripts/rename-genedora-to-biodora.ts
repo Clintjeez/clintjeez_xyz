@@ -74,6 +74,7 @@ await payload.update({
   data: {
     ...(screenshot ? { screenshot } : {}),
     title: 'BIODORA',
+    role: 'AI Engineer & Lead Researcher',
     liveUrl: 'https://biodora.alubasalabs.com',
     projectDescription:
       'Frontier biotech tools for and with African biodata. First product, GENEDORA, interprets DNA variants of uncertain significance from the sequence itself with a DNA language model, no population databases, and ships an explainable, ACMG-aligned evidence trail with every call.',

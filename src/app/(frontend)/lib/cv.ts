@@ -75,7 +75,7 @@ export const cvExperience: CvRole[] = [
       },
       {
         name: 'Biodora',
-        role: 'Lead Researcher',
+        role: 'AI Engineer & Lead Researcher',
         highlights: [
           "Building frontier biotech tools on African genomic data; first product, Genedora, tackles variants of uncertain significance (VUS), genetic results that leave clinicians unable to act, such as a BRCA1 variant that can't guide whether to screen, operate or wait",
           'Fine-tuning Evo 2, a genomic foundation model trained on 9+ trillion nucleotides from 128,000+ eukaryotic and prokaryotic genomes, on African genome data to improve variant interpretation for underrepresented populations',
