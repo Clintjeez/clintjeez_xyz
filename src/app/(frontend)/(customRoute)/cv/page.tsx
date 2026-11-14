@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 import React from 'react'
-import { HiArrowUpRight, HiOutlineEnvelope } from 'react-icons/hi2'
+import { HiArrowUpRight, HiOutlineCalendarDays, HiOutlineEnvelope } from 'react-icons/hi2'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineGlobeAlt } from 'react-icons/hi2'
 import CvDownloadButton from '../../components/CvDownloadButton'
 import { SITE_URL } from '../../lib/seo'
-import { cvCommunity, cvEducation, cvExperience, cvProfile, cvSkills } from '../../lib/cv'
+import { cvCommunity, cvCta, cvEducation, cvExperience, cvProfile, cvSkills } from '../../lib/cv'
 
 export const metadata: Metadata = {
   title: 'CV',
@@ -51,6 +51,15 @@ const CvPage = () => {
           </div>
           <div className="flex flex-wrap gap-2 print:hidden">
             <CvDownloadButton />
+            <a
+              href={cvCta.bookHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-9 items-center gap-2 rounded-md border border-[#edd86e] bg-[#17181d] px-3 text-[12px] font-bold text-[#bfbfbf] transition-all hover:bg-[#484848]"
+            >
+              <HiOutlineCalendarDays className="text-[15px] text-[#edd86e]" />
+              Book a call
+            </a>
             <a
               href="mailto:clintjeez@gmail.com"
               className="inline-flex h-9 items-center gap-2 rounded-md border border-[#2a2a2e] bg-[#17181d] px-3 text-[12px] text-[#bfbfbf] transition-all hover:bg-[#484848]"
@@ -254,6 +263,45 @@ const CvPage = () => {
           </section>
         </aside>
       </div>
+
+      {/* Closing CTA */}
+      <section className="relative mt-14 overflow-hidden rounded-xl border border-[#2a2a2e] bg-[#1b1c21] p-6 md:p-8 print:mt-4 print:break-inside-avoid print:rounded-none print:border-0 print:border-t print:p-0 print:pt-2">
+        <div className="pointer-events-none absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-[radial-gradient(circle,rgba(237,216,110,0.12),transparent_70%)] print:hidden" />
+        <div className="relative flex flex-col gap-5 md:flex-row md:items-center md:justify-between print:gap-0.5">
+          <div className="max-w-[560px] print:max-w-none">
+            <h2 className="mb-2 text-[18px] font-bold text-[#e0e0e0] md:text-[20px] print:mb-0.5 print:text-[10pt]">
+              {cvCta.heading}
+            </h2>
+            <p className="text-[13px] leading-relaxed text-[#9a9a9b] print:text-[8.5pt] print:leading-snug">
+              {cvCta.body}
+            </p>
+            <p className="hidden print:mt-0.5 print:block print:text-[8.5pt]">
+              <span className="cv-accent font-bold">{cvCta.bookLabel}:</span> {cvCta.bookDisplay}
+              {' · '}
+              {cvCta.email}
+            </p>
+          </div>
+          <div className="flex shrink-0 flex-wrap gap-2 print:hidden">
+            <a
+              href={cvCta.bookHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-10 items-center gap-2 rounded-md border border-[#edd86e] bg-[#17181d] px-4 text-[13px] font-bold text-[#bfbfbf] transition-all hover:bg-[#484848]"
+            >
+              <HiOutlineCalendarDays className="text-[16px] text-[#edd86e]" />
+              {cvCta.bookLabel}
+              <HiArrowUpRight className="text-[12px] text-[#edd86e]" />
+            </a>
+            <a
+              href={`mailto:${cvCta.email}`}
+              className="inline-flex h-10 items-center gap-2 rounded-md border border-[#2a2a2e] bg-[#17181d] px-4 text-[13px] text-[#bfbfbf] transition-all hover:bg-[#484848]"
+            >
+              <HiOutlineEnvelope className="text-[16px] text-[#edd86e]" />
+              Email me
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
