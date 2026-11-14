@@ -17,15 +17,6 @@ export const cvProfile = {
   ],
 }
 
-export const cvCta = {
-  heading: 'Hiring a Forward Deployed Engineer?',
-  body: 'I embed with customers, find the real bottleneck, and ship the AI system that fixes it. If your customers need AI deployed, not just demoed, let’s talk.',
-  bookLabel: 'Book a 15-min call',
-  bookHref: 'https://cal.com/clintonjames/15min',
-  bookDisplay: 'cal.com/clintonjames/15min',
-  email: 'clintjeez@gmail.com',
-}
-
 export type CvRole = {
   title: string
   company: string
