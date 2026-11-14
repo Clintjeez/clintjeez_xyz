@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { FaGithubSquare, FaLinkedin, FaMedium, FaEnvelope } from 'react-icons/fa'
 import { FaSquareXTwitter } from 'react-icons/fa6'
-import { HiArrowLongRight } from 'react-icons/hi2'
+import { HiArrowLongRight, HiOutlineDocumentText } from 'react-icons/hi2'
 
 const Footer = () => {
   return (
@@ -27,13 +27,22 @@ const Footer = () => {
           </span>
         </p>
 
-        <Link
-          href="/book-call"
-          className="inline-flex items-center gap-3 border border-[#edd86e] bg-[#17181d] hover:bg-[#484848] text-[#bfbfbf] text-[12px] font-bold px-4 py-2 rounded-md transition-all duration-300 shrink-0"
-        >
-          <span>Start a conversation</span>
-          <HiArrowLongRight className="text-[#edd86e] text-[16px]" />
-        </Link>
+        <div className="flex flex-wrap gap-2 shrink-0">
+          <Link
+            href="/cv"
+            className="inline-flex items-center gap-2 border border-[#2a2a2e] bg-[#17181d] hover:bg-[#484848] text-[#bfbfbf] text-[12px] px-4 py-2 rounded-md transition-all duration-300"
+          >
+            <HiOutlineDocumentText className="text-[#edd86e] text-[15px]" />
+            <span>View my CV</span>
+          </Link>
+          <Link
+            href="/book-call"
+            className="inline-flex items-center gap-3 border border-[#edd86e] bg-[#17181d] hover:bg-[#484848] text-[#bfbfbf] text-[12px] font-bold px-4 py-2 rounded-md transition-all duration-300"
+          >
+            <span>Start a conversation</span>
+            <HiArrowLongRight className="text-[#edd86e] text-[16px]" />
+          </Link>
+        </div>
       </div>
 
       {/* Social links */}
